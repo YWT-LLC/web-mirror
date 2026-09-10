@@ -32,8 +32,8 @@ const String sosIconPath = 'assets/images/sos/sos-icon.png';
 const ImageProvider sosImage = AssetImage(sosIconPath);
 
 // Liminal
-const String cleanNebulaPath = 'assets/images/liminal/clean-nebula.png';
-const ImageProvider cleanNebulaImage = AssetImage(cleanNebulaPath);
+const String balancePath = 'assets/images/liminal/balance.png';
+const ImageProvider balanceImage = AssetImage(balancePath);
 
 const String duckDuckFetchPath = 'assets/images/liminal/duck-duck-fetch.png';
 const ImageProvider duckDuckFetchImage = AssetImage(duckDuckFetchPath);

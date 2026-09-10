@@ -17,6 +17,170 @@ class LiminalScreen extends StatelessWidget {
   Widget build(BuildContext context) => Consumer<EzCP>(builder: (_, EzCP config, __) {
         final EdgeInsets wrapPadding = EzInsets.wrap(config.spacing);
 
+        Widget balance() => Tooltip(
+              enableTapToDismiss: false,
+              message: l10n(config).gImageCredit(founder),
+              child: Padding(
+                padding: wrapPadding,
+                child: EzImage(
+                  width: ezImageSize(config, context: context) * 1.5,
+                  image: balanceImage,
+                  semanticLabel: l10n(config).gImageCredit(founder),
+                ),
+              ),
+            );
+
+        Widget duckDuckFetch() => Tooltip(
+              enableTapToDismiss: false,
+              richMessage: TextSpan(
+                children: <InlineSpan>[
+                  EzPlainText(
+                    text: l10n(config).gImageCredit(elinaV),
+                    style: config.bodyStyle,
+                  ),
+                  config.richLine,
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.middle,
+                    style: config.bodyStyle,
+                    child: SelectionArea(
+                      child: Text(
+                        'https://www.pexels.com/@miami302/',
+                        style: config.bodyStyle,
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                ],
+                style: config.bodyStyle,
+              ),
+              child: Padding(
+                padding: wrapPadding,
+                child: EzImage(
+                  width: ezImageSize(config, context: context) * 1.5,
+                  image: duckDuckFetchImage,
+                  semanticLabel: l10n(config).gImageCredit(elinaV),
+                ),
+              ),
+            );
+
+        Widget lasRosas() => Tooltip(
+              enableTapToDismiss: false,
+              message: l10n(config).gImageCredit(founder),
+              child: Padding(
+                padding: wrapPadding,
+                child: EzImage(
+                  width: ezImageSize(config, context: context) * 1.5,
+                  image: lasRosasImage,
+                  semanticLabel: l10n(config).gImageCredit(founder),
+                ),
+              ),
+            );
+
+        Widget natureIsFab() => Tooltip(
+              enableTapToDismiss: false,
+              richMessage: TextSpan(
+                children: <InlineSpan>[
+                  EzPlainText(
+                    text: l10n(config).gImageCredit(flux),
+                    style: config.bodyStyle,
+                  ),
+                  config.richLine,
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.middle,
+                    style: config.bodyStyle,
+                    child: SelectionArea(
+                      child: Text(
+                        'https://www.pexels.com/@flux-1140230780/',
+                        style: config.bodyStyle,
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                ],
+                style: config.bodyStyle,
+              ),
+              child: Padding(
+                padding: wrapPadding,
+                child: EzImage(
+                  width: ezImageSize(config, context: context) * 1.5,
+                  image: natureIsFabImage,
+                  semanticLabel: l10n(config).gImageCredit(flux),
+                ),
+              ),
+            );
+
+        Widget productivity() => Tooltip(
+              enableTapToDismiss: false,
+              message: l10n(config).gImageCredit(founder),
+              child: Padding(
+                padding: wrapPadding,
+                child: EzImage(
+                  width: ezImageSize(config, context: context) * 1.5,
+                  image: productivityImage,
+                  semanticLabel: l10n(config).gImageCredit(founder),
+                ),
+              ),
+            );
+
+        Widget seaBombCleaner() => Tooltip(
+              enableTapToDismiss: false,
+              message: l10n(config).gImageCredit(founder),
+              child: Padding(
+                padding: wrapPadding,
+                child: EzImage(
+                  width: ezImageSize(config, context: context) * 1.5,
+                  image: seaBombCleanerImage,
+                  semanticLabel: l10n(config).gImageCredit(founder),
+                ),
+              ),
+            );
+
+        Widget theHood() => Tooltip(
+              enableTapToDismiss: false,
+              message: l10n(config).gImageCredit(crosby),
+              child: Padding(
+                padding: wrapPadding,
+                child: EzImage(
+                  width: ezImageSize(config, context: context) * 1.5,
+                  image: theHoodImage,
+                  semanticLabel: l10n(config).gImageCredit(crosby),
+                ),
+              ),
+            );
+
+        Widget twoDoors() => Tooltip(
+              enableTapToDismiss: false,
+              richMessage: TextSpan(
+                children: <InlineSpan>[
+                  EzPlainText(
+                    text: l10n(config).gImageCredit(nesrin),
+                    style: config.bodyStyle,
+                  ),
+                  config.richLine,
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.middle,
+                    style: config.bodyStyle,
+                    child: SelectionArea(
+                      child: Text(
+                        'https://www.pexels.com/@nesrin-ozturk-213162154/',
+                        style: config.bodyStyle,
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                ],
+                style: config.bodyStyle,
+              ),
+              child: Padding(
+                padding: wrapPadding,
+                child: EzImage(
+                  width: ezImageSize(config, context: context) * 1.5,
+                  image: twoDoorsImage,
+                  semanticLabel: l10n(config).gImageCredit(nesrin),
+                ),
+              ),
+            );
+
         return WebsiteScaffold(
           config,
           body: EzScreen(
@@ -57,184 +221,40 @@ class LiminalScreen extends StatelessWidget {
               ),
               config.separator,
 
-              EzWrap(children: <Widget>[
-                Tooltip(
-                  enableTapToDismiss: false,
-                  richMessage: TextSpan(
-                    children: <InlineSpan>[
-                      EzPlainText(
-                        text: l10n(config).gImageCredit(jMuller),
-                        style: config.bodyStyle,
-                      ),
-                      config.richLine,
-                      WidgetSpan(
-                        alignment: PlaceholderAlignment.middle,
-                        style: config.bodyStyle,
-                        child: SelectionArea(
-                          child: Text(
-                            'https://www.pexels.com/@jmueller/',
-                            style: config.bodyStyle,
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
+              EzSwapWidget(
+                restricted: EzCol(children: <Widget>[
+                  EzRow(
+                    config,
+                    reverseHands: false,
+                    children: <Widget>[
+                      balance(),
+                      duckDuckFetch(),
+                      lasRosas(),
+                      natureIsFab(),
                     ],
-                    style: config.bodyStyle,
                   ),
-                  child: Padding(
-                    padding: wrapPadding,
-                    child: EzImage(
-                      width: ezImageSize(config, context: context) * 1.5,
-                      image: cleanNebulaImage,
-                      semanticLabel: l10n(config).gImageCredit(jMuller),
-                    ),
-                  ),
-                ),
-                Tooltip(
-                  enableTapToDismiss: false,
-                  richMessage: TextSpan(
-                    children: <InlineSpan>[
-                      EzPlainText(
-                        text: l10n(config).gImageCredit(elinaV),
-                        style: config.bodyStyle,
-                      ),
-                      config.richLine,
-                      WidgetSpan(
-                        alignment: PlaceholderAlignment.middle,
-                        style: config.bodyStyle,
-                        child: SelectionArea(
-                          child: Text(
-                            'https://www.pexels.com/@miami302/',
-                            style: config.bodyStyle,
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
+                  EzRow(
+                    config,
+                    reverseHands: false,
+                    children: <Widget>[
+                      productivity(),
+                      seaBombCleaner(),
+                      theHood(),
+                      twoDoors(),
                     ],
-                    style: config.bodyStyle,
                   ),
-                  child: Padding(
-                    padding: wrapPadding,
-                    child: EzImage(
-                      width: ezImageSize(config, context: context) * 1.5,
-                      image: duckDuckFetchImage,
-                      semanticLabel: l10n(config).gImageCredit(elinaV),
-                    ),
-                  ),
-                ),
-                Tooltip(
-                  enableTapToDismiss: false,
-                  message: l10n(config).gImageCredit(founder),
-                  child: Padding(
-                    padding: wrapPadding,
-                    child: EzImage(
-                      width: ezImageSize(config, context: context) * 1.5,
-                      image: lasRosasImage,
-                      semanticLabel: l10n(config).gImageCredit(founder),
-                    ),
-                  ),
-                ),
-                Tooltip(
-                  enableTapToDismiss: false,
-                  richMessage: TextSpan(
-                    children: <InlineSpan>[
-                      EzPlainText(
-                        text: l10n(config).gImageCredit(flux),
-                        style: config.bodyStyle,
-                      ),
-                      config.richLine,
-                      WidgetSpan(
-                        alignment: PlaceholderAlignment.middle,
-                        style: config.bodyStyle,
-                        child: SelectionArea(
-                          child: Text(
-                            'https://www.pexels.com/@flux-1140230780/',
-                            style: config.bodyStyle,
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                    ],
-                    style: config.bodyStyle,
-                  ),
-                  child: Padding(
-                    padding: wrapPadding,
-                    child: EzImage(
-                      width: ezImageSize(config, context: context) * 1.5,
-                      image: natureIsFabImage,
-                      semanticLabel: l10n(config).gImageCredit(flux),
-                    ),
-                  ),
-                ),
-                Tooltip(
-                  enableTapToDismiss: false,
-                  message: l10n(config).gImageCredit(founder),
-                  child: Padding(
-                    padding: wrapPadding,
-                    child: EzImage(
-                      width: ezImageSize(config, context: context) * 1.5,
-                      image: productivityImage,
-                      semanticLabel: l10n(config).gImageCredit(founder),
-                    ),
-                  ),
-                ),
-                Tooltip(
-                  enableTapToDismiss: false,
-                  message: l10n(config).gImageCredit(founder),
-                  child: Padding(
-                    padding: wrapPadding,
-                    child: EzImage(
-                      width: ezImageSize(config, context: context) * 1.5,
-                      image: seaBombCleanerImage,
-                      semanticLabel: l10n(config).gImageCredit(founder),
-                    ),
-                  ),
-                ),
-                Tooltip(
-                  enableTapToDismiss: false,
-                  message: l10n(config).gImageCredit(crosby),
-                  child: Padding(
-                    padding: wrapPadding,
-                    child: EzImage(
-                      width: ezImageSize(config, context: context) * 1.5,
-                      image: theHoodImage,
-                      semanticLabel: l10n(config).gImageCredit(crosby),
-                    ),
-                  ),
-                ),
-                Tooltip(
-                  enableTapToDismiss: false,
-                  richMessage: TextSpan(
-                    children: <InlineSpan>[
-                      EzPlainText(
-                        text: l10n(config).gImageCredit(nesrin),
-                        style: config.bodyStyle,
-                      ),
-                      config.richLine,
-                      WidgetSpan(
-                        alignment: PlaceholderAlignment.middle,
-                        style: config.bodyStyle,
-                        child: SelectionArea(
-                          child: Text(
-                            'https://www.pexels.com/@nesrin-ozturk-213162154/',
-                            style: config.bodyStyle,
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                    ],
-                    style: config.bodyStyle,
-                  ),
-                  child: Padding(
-                    padding: wrapPadding,
-                    child: EzImage(
-                      width: ezImageSize(config, context: context) * 1.5,
-                      image: twoDoorsImage,
-                      semanticLabel: l10n(config).gImageCredit(nesrin),
-                    ),
-                  ),
-                ),
-              ]),
+                ]),
+                expanded: EzWrap(children: <Widget>[
+                  balance(),
+                  duckDuckFetch(),
+                  lasRosas(),
+                  natureIsFab(),
+                  productivity(),
+                  seaBombCleaner(),
+                  theHood(),
+                  twoDoors(),
+                ]),
+              ),
               config.separator,
 
               // Availability

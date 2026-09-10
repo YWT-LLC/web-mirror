@@ -1,6 +1,6 @@
 name: website
 description: "YWT is re-balancing tech by making self-hosting more accessible."
-version: 8.0.4
+version: 8.0.5
 publish_to: 'none'
 
 environment:
@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
 
   # Flutter (Google)
-  go_router: ^18.0.0
+  go_router: ^18.0.1
   http: ^1.6.0
   intl: ^0.20.3
   shared_preferences: ^2.5.5
@@ -47,7 +47,7 @@ flutter:
     
     - assets/images/community/fah.png
     
-    - assets/images/liminal/clean-nebula.png
+    - assets/images/liminal/balance.png
     - assets/images/liminal/duck-duck-fetch.png
     - assets/images/liminal/las-rosas.png
     - assets/images/liminal/nature-is-fab.png

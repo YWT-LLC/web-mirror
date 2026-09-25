@@ -1,6 +1,6 @@
 name: website
 description: "YWT is re-balancing tech by making self-hosting more accessible."
-version: 8.1.0
+version: 9.0.0
 publish_to: 'none'
 repository: https://github.com/YWT-LLC/web-mirror
 
@@ -45,6 +45,8 @@ flutter:
     - assets/images/app-icon.png
     - assets/images/loading-dark.gif
     - assets/images/loading-light.gif
+
+    - assets/images/a11how/app-icon.png
     
     - assets/images/community/fah.png
     

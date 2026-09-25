@@ -4,6 +4,7 @@
  */
 
 import './export.dart';
+import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:flutter/material.dart';
 
@@ -82,22 +83,10 @@ const String sosSwCCPath = 'assets/videos/sos/captions/sos-promo-sw.srt';
 const String sosUkCCPath = 'assets/videos/sos/captions/sos-promo-uk.srt';
 const String sosZhCCPath = 'assets/videos/sos/captions/sos-promo-zh.srt';
 
-// Local links //
+// Links //
 
-/// https://github.com/YWT-LLC/web-mirror/blob/main/lib/screens/settings_home.dart
 const String settingsSource =
-    'https://github.com/YWT-LLC/web-mirror/blob/main/lib/screens/settings/settings_home.dart';
-
-/// https://github.com/YWT-LLC/open_ui
-const String ouiSource = 'https://github.com/YWT-LLC/open_ui';
-
-/// https://github.com/YWT-LLC/sos
-const String sosSource = 'https://github.com/YWT-LLC/sos';
-
-/// https://github.com/YWT-LLC/liminal_launcher
-const String liminalSource = 'https://github.com/YWT-LLC/liminal_launcher';
-
-// External links //
+    '${ywt.ywtGitHub}/web-mirror/blob/main/lib/screens/settings/settings_home.dart';
 
 /// https://foldingathome.org/
 const String faHLink = 'https://foldingathome.org/';
@@ -123,7 +112,7 @@ const Set<String> assetPaths = <String>{
 };
 
 /// aka assetSources
-final Map<String, String> credits = <String, String>{
+final Map<String, dynamic> credits = <String, dynamic>{
   // Images
   openUIIconPath: founder,
   sosIconPath: 'https://fonts.google.com/icons',

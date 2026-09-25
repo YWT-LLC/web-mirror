@@ -1,163 +1,122 @@
 {
   "@@locale": "ht",
-
-  "gYWTLogoLabel": "yon sabliye de dimansyon.",
-  "gYWTLogoHint": "Aktive pou ale nan paj akèy la.",
-
-  "gLearn": "Aprann de {name}",
-  "gHomeHint": "Louvri paj akèy la",
-  "gProductsHint": "Louvri yon paj pwodwi",
-  "gMissionHint": "Louvri paj misyon an",
-  "gTeamHint": "Louvri paj ekip la",
-  "gContributeHint": "Louvri paj kontribye a",
-
-  "gShare": "Pataje",
-  "gEmail": "Imèl",
-  "gEmailTo": "Voye imèl bay {recipient}",
+  "ahBoth": ").\nTou de pou devlopè ak kontribitè.",
+  "ahDescription": "a11how rann li pi fasil pou tradui aplikasyon ki baze sou .arb (tankou ",
+  "ahMagic": "...majik la fèt!",
+  "ahSegway": "An palan de sa, a11how entegre nan tout lojisyèl YWT yo.\nSi w ap itilize kontni nou an ki pa an Anglè epi ou wè yon bagay ki pa bon, senpleman klike sou lyen ki anba paj la epi ranje li!\n\nToutotan ou gen yon kont GitHub, ou ka soumèt chanjman ak yon sèl klik.",
+  "csBecome": " sou kijan pou vin yon ",
+  "csEveryBit": "Chak ti kontribisyon ou bay nou retire yon moso (byte) nan gwo konpayi teknoloji yo.",
+  "csGit": "kontribitè GitHub",
+  "csMoney": "Lajan",
+  "csOpenLink": "Louvri yon lyen pou {page} YWT la",
+  "csPageTitle": "Kontribye",
+  "csPower": "Pouvwa",
+  "csThanks": "Yon gwo mèsi pou nenpòt ak tout sipò ou bay!",
+  "csTime": "Tan",
+  "fahIconHint": "Aktive pou louvri sit yo a.",
+  "fahIconLabel": "yon molekil pwoteyin.",
+  "fahIntro1": "Vin jwenn ekip ",
+  "fahIntro2": " Folding@home nan!",
+  "fahJoin": "Rejwenn Gwoup la",
+  "fahName": "Folding@home ye?",
+  "fahNameHint": "Louvri paj enfòmasyon Folding at Home nan",
+  "fahStats": "Ansanm, nou ranmase plis pase 400 milyon pwen.\nSa mete nou nan mitan 2% pi gwo ekip yo nan lemonnantye!",
+  "fahTeamHint": "Louvri paj ekip folding at home YWT la",
+  "fahWhats": "Kisa ",
   "gAnEmail": "yon imèl",
-  "gEmailHint": "Louvri aplikasyon imèl ou a",
-  "gNewsletter": "Bilten enfòmasyon",
-
-  "gLogoLabel": "Logo {thing}: ",
-  "gIconLabel": "Ikòn pou {app}: ",
-  "gDownloadHint": "Telechaje {app} pou {platform}.",
-  "gRepoHint": "Louvri yon lyen ki mennen nan depo devlopman an.",
-  "gYWTGitHint": "Louvri paj GitHub pou YWT",
-
-  "gImageCredit": "Kredi imaj: {creator}",
-
-  "gReachOut": "Kontakte nou",
-  "gProfile": "Pwofil {name} la",
-  "gFiverrPage": "Louvri paj Fiverr {user} la",
-
-  "gDontChaWish": "Ou pa ta renmen frontend ou a te amizan ", 
-  "gMeQ": "tankou mwen?",
+  "gContributeHint": "Louvri paj kontribye a",
   "gDontCha": "Ou pa ta renmen sa?",
   "gDontChaHint": "Louvri paj GitHub pou kòd sous ekran sa a",
-
-
-  
+  "gDontChaWish": "Ou pa ta renmen frontend ou a te amizan ",
+  "gDownloadHint": "Telechaje {app} pou {platform}.",
+  "gEmail": "Imèl",
+  "gEmailHint": "Louvri aplikasyon imèl ou a",
+  "gEmailTo": "Voye imèl bay {recipient}",
+  "gFiverrPage": "Louvri paj Fiverr {user} la",
+  "gHomeHint": "Louvri paj akèy la",
+  "gIconLabel": "Ikòn pou {app}: ",
+  "gImageCredit": "Kredi imaj: {creator}",
+  "gLearn": "Aprann de {name}",
+  "gLogoLabel": "Logo {thing}: ",
+  "gMeQ": "tankou mwen?",
+  "gMissionHint": "Louvri paj misyon an",
+  "gNewsletter": "Bilten enfòmasyon",
+  "gProductsHint": "Louvri yon paj pwodwi",
+  "gProfile": "Pwofil {name} la",
+  "gReachOut": "Kontakte nou",
+  "gRepoHint": "Louvri yon lyen ki mennen nan depo devlopman an.",
+  "gShare": "Pataje",
+  "gTeamHint": "Louvri paj ekip la",
+  "gYWTGitHint": "Louvri paj GitHub pou YWT",
+  "gYWTLogoHint": "Aktive pou ale nan paj akèy la.",
+  "gYWTLogoLabel": "yon sabliye de dimansyon.",
   "hsAnimLabel": "Logo anime YWT: lèt nan YWT yo transfòme an logo sabliye de dimansyon an",
   "hsChange": "Li lè pou chanjman.",
-
-
-  
-  "hsmIDProblem": "Idantifye pwoblèm nan",
-  "hsmIDProblemContent": "Modèl biznis ki mete pwofi an premye yo pa dirab.\n\nPa definisyon: si pwofi vini an premye, lè sa a, bagay tankou travay pou yon misyon, trete moun byen, ak itilizasyon responsab resous yo vin pase nan dezyèm plan.\n\nEpi avaris sa a pa jwenn okenn kontwòl nan gwo teknoloji yo. Jeyan teknoloji yo vin pa satisfè ankò ak lajan nou sèlman, y ap kreye pwodwi ki vize idantite nou epi monopolize lespri nou.",
-  "hsmSoWe": "Kidonk nou",
-  
+  "hsmBy": "Pa mwayen",
   "hsmFindSolution": "Jwenn yon solisyon",
   "hsmFindSolutionContent": "Erezman, gen teknològ estrawòdinè toupatou nan monn nan k ap travay ansanm pou yon pi bon avni.\nYon avni kote founisè sèvis yo ak kliyan yo gen yon relasyon aktif, an sante, epi ki benefik pou toude.\n\nKominote open source la (sous louvri).\n\nNan nwayo li, lojisyèl open source la disponib gratis pou nenpòt moun wè. Anpil pwojè kapab tou modifye epi redistribiye gratis.\nSe yon lojisyèl ki pa gen anyen pou l kache, ki bati pa moun ki rekonèt pwoblèm pataje yo mande solisyon pataje.\n\nEpi nan bèl monn lojisyèl open source la, gen yon sou-kategori: lojisyèl oto-ebèje (self-hosting).\n\nOto-ebèjman pèmèt nou pran nenpòt òdinatè ki pa itilize (menm sa ki gwosè pòch) epi estoke done nou yo la.\nLè nou fè oto-ebèjman, nou ka kontwole pwòp prezans dijital nou, olye nou siyen bay kontwòl la bay yon sèvè byen lwen, ki posede pa yon kòporasyon ki pa gen senpati.\n\nE gen vèsyon oto-ebèje pou prèske tout bagay! Soti nan Adobe rive nan Zoom, gen aktivis pasyone k ap kreye altènatif ki mete moun anvan pwofi.\n\nDonk, ki jan yon moun fè tranzisyon soti nan modèl pwofi an premye/sous fèmen pou ale nan open source? Ki jan yo kòmanse oto-ebèjman?\nSa mande anpil tan, enèji, ak konesans anvan.\n\nSe la nou antre nan jwèt la.",
-  "hsmBy": "Pa mwayen",
-  
+  "hsmFirst": "Toudabò pa mwayen",
+  "hsmIDProblem": "Idantifye pwoblèm nan",
+  "hsmIDProblemContent": "Modèl biznis ki mete pwofi an premye yo pa dirab.\n\nPa definisyon: si pwofi vini an premye, lè sa a, bagay tankou travay pou yon misyon, trete moun byen, ak itilizasyon responsab resous yo vin pase nan dezyèm plan.\n\nEpi avaris sa a pa jwenn okenn kontwòl nan gwo teknoloji yo. Jeyan teknoloji yo vin pa satisfè ankò ak lajan nou sèlman, y ap kreye pwodwi ki vize idantite nou epi monopolize lespri nou.",
   "hsmProvideValue": "Fè travay la",
   "hsmProvideValueContent1": "YWT ap re-ekilibre teknoloji a lè li rann oto-ebèjman pi aksesib.\n\nNou pral kreye aplikasyon ki pèmèt nenpòt moun posede idantite dijital yo.\nNou pral bati pon ant kominote open source la ak moun ki pa gen tan, enèji, oswa konesans alavans ki nesesè yo.\n\nEpi ou pa ka bati pon (oswa aplikasyon) san yon fondasyon solid! Se poutèt sa ",
   "hsmProvideValueContent2": " egziste.\nNou fyè dèske nou mete aksyon dèyè pawòl nou, epi nou rann entèfas itilizatè (UI) aksesib nou an open source.\n\nAn nou bati yon pi bon monn ansanm, tikras pa tikras.",
-  "hsmFirst": "Toudabò pa mwayen",
-  
-
-
-  "psPageTitle": "Pwodwi",
-  "psTitleHint": "Montre lis la",
-
-  "psShowDemo": "Montre demonstrasyon",
-  "psHideDemo": "Kache demonstrasyon",
-  "psShowPromo": "Montre pwomosyon",
-  "psHidePromo": "Kache pwomosyon",
-
-  "psLearnMore": " pou aprann plis.",
-  "psDownloadNow": "Telechaje kounye a",
-  "psComingSoon": "Vini trè byento...",
-
-
-
-  "ouSlogan": "Bati aplikasyon pou nenpòt moun",
-  "ouLike": "Tankou itilizatè ki bezwen...",
+  "hsmSoWe": "Kidonk nou",
+  "llDesign": "Konsepsyon li panche nan direksyon minimalis, men li bati ak ",
+  "llFree": ", paske yon relasyon an sante avèk teknoloji pa ta dwe rezève sèlman pou moun ki gen revni siplemantè.",
+  "llGit": "sou GitHub",
+  "llModel": "Liminal gen yon modèl \"peye sa ou kapab\".\n",
+  "llPaid": " vèsyon an se $4.99, paske (bon) kòd pa ekri tèt li.\nAPK la disponib tou ",
+  "llSlogan": "Dènye lanseur w ap janm chaje a.",
+  "llWhimsy": "Konsa, ekran akèy ou a ap san dezòd ak distraksyon, EPI l ap ka pèsonalize san limit.\nAvèk yon ti fantazi anplis.",
   "ouAccessible": "Kontwòl aksesib",
-  "ouZeroStrain": "zewo fatig pou je",
-  "ouEverything": "Tout bagay nan mitan yo",
-  "ouRandom": "Konfigirasyon aza aplike.",
-
-  "ouIs": "Open UI se yon dèlko aplikasyon.",
-  "ouDemo": "Demonstrasyon Open UI k ap kreye yon nouvo aplikasyon.",
-  "ouFoundation": "Li kreye fondasyon pou aplikasyon ki aksesib, ki mache sou plizyè platfòm, nan plizyè lang, epi ki pare pou pwodiksyon avèk yon sèl klik.",
-  "ouLocal": "Tout bagay fonksyone sou òdinatè w. Pa gen okenn idantifyan, kat kredi, ni bonbon (cookies).",
-  "ouRequirements": "Sèl bagay ou bezwen se yon koneksyon entènèt ak yon lide.",
-  "ouFlutterToo": "...ak Flutter...",
-  
-  "ouPlatform": "Disponiblite sou platfòm",
-  "ouPlatformContent": "Ou ka itilize Open UI pou kreye sou Android, iOS, Linux, macOS, Windows ak Web!",
-  
-  "ouResponsive": "Konsepsyon adaptatif (Responsive design)",
-  "ouResponsiveContent": "Pou wè sa an aksyon, jwe ak fenèt w ap itilize kounye a!",
-
-  "ouScreen": "Sipò pou lektè ekran",
-  "ouScreenContent": "Aplikasyon OUI yo sipòte itilizatè ki bezwen ",
-  "ouTalkBackHint": "Louvri yon lyen nan dokimantasyon TalkBack la",
   "ouAnd": " ak ",
-  "ouVoiceOverHint": "Louvri yon lyen nan dokimantasyon VoiceOver la",
-  
   "ouCustom": "Pèsonalizasyon pou itilizatè",
   "ouCustomContent": "Sèl fason pou vrèman aksesib pou TOUT kliyan se ba yo pouvwa pou yo chwazi sa yo vle!\nOpen UI ofri yon eksperyans itilizatè (UX) elegant pou yon kontwòl total sou aparans yon aplikasyon.",
-  
-  "ouInternational": "Entènasyonalizasyon",
-  "ouInternationalContent": "Aplikasyon OUI yo te tradui nan 14 lang (jiskaprezan).\nOUI bay tou enfrastrikti pou yon kantite tradiksyon illimité alavni.",
-  
-  "ouReliability": "Fiyabilite",
-  "ouReliabilityContent": "Lojisyèl YWT yo fèt pou dire. Sa a PA yon jenerasyon kòd entèlijans atifisyèl (AI).\nPwogramè yo se moun. LLM yo se kanna an kawotchou (rubber ducks).",
-  
+  "ouDemo": "Demonstrasyon Open UI k ap kreye yon nouvo aplikasyon.",
+  "ouEverything": "Tout bagay nan mitan yo",
+  "ouFlutterToo": "...ak Flutter...",
+  "ouFoundation": "Li kreye fondasyon pou aplikasyon ki aksesib, ki mache sou plizyè platfòm, nan plizyè lang, epi ki pare pou pwodiksyon avèk yon sèl klik.",
   "ouGetStarted": "Kòmanse",
   "ouIconLabel": "yon bak sab pou paramèt.",
-
+  "ouInternational": "Entènasyonalizasyon",
+  "ouInternationalContent": "Aplikasyon OUI yo te tradui nan 14 lang (jiskaprezan).\nOUI bay tou enfrastrikti pou yon kantite tradiksyon illimité alavni.",
+  "ouIs": "Open UI se yon dèlko aplikasyon.",
+  "ouLike": "Tankou itilizatè ki bezwen...",
+  "ouLocal": "Tout bagay fonksyone sou òdinatè w. Pa gen okenn idantifyan, kat kredi, ni bonbon (cookies).",
+  "ouPlatform": "Disponiblite sou platfòm",
+  "ouPlatformContent": "Ou ka itilize Open UI pou kreye sou Android, iOS, Linux, macOS, Windows ak Web!",
+  "ouRandom": "Konfigirasyon aza aplike.",
+  "ouReliability": "Fiyabilite",
+  "ouReliabilityContent": "Lojisyèl YWT yo fèt pou dire. Sa a PA yon jenerasyon kòd entèlijans atifisyèl (AI).\nPwogramè yo se moun. LLM yo se kanna an kawotchou (rubber ducks).",
+  "ouRequirements": "Sèl bagay ou bezwen se yon koneksyon entènèt ak yon lide.",
+  "ouResponsive": "Konsepsyon adaptatif (Responsive design)",
+  "ouResponsiveContent": "Pou wè sa an aksyon, jwe ak fenèt w ap itilize kounye a!",
+  "ouScreen": "Sipò pou lektè ekran",
+  "ouScreenContent": "Aplikasyon OUI yo sipòte itilizatè ki bezwen ",
+  "ouSlogan": "Bati aplikasyon pou nenpòt moun",
   "ouTagLine": "Lè yo bati ak Open UI, aplikasyon w yo ka vrèman atenn nenpòt piblik!\n",
-
-
-
-  "sosPromoLabel": "Yon videyo pwomosyon pou Insta SOS.",
-
-  "sosDescription": "Yon kamera, yon fa SOS, ak yon lis dwa ou yo tout nan yon sèl kote.\nLi disponib nan 14 lang epi li sipòte lektè ekran.",
-  "sosPrivate": "InstaSOS pa gen okenn kont, bonbon, ni anons.\n",
-  "sosFree": "Li konplètman gratis epi kòd la se ",
-  "sosOpenSource": "open source",
+  "ouTalkBackHint": "Louvri yon lyen nan dokimantasyon TalkBack la",
+  "ouVoiceOverHint": "Louvri yon lyen nan dokimantasyon VoiceOver la",
+  "ouZeroStrain": "zewo fatig pou je",
+  "psComingSoon": "Vini trè byento...",
+  "psDownloadNow": "Telechaje kounye a",
+  "psHideDemo": "Kache demonstrasyon",
+  "psHidePromo": "Kache pwomosyon",
+  "psLearnMore": " pou aprann plis.",
+  "psPageTitle": "Pwodwi",
+  "psShowDemo": "Montre demonstrasyon",
+  "psShowPromo": "Montre pwomosyon",
+  "psTitleHint": "Montre lis la",
   "sosConsider": "Tanpri konsidere ",
   "sosContributing": "kontribye",
-  "sosSAPS": " pou sipòte lojisyèl kòm yon sèvis piblik.",
-
+  "sosDescription": "Yon kamera, yon fa SOS, ak yon lis dwa ou yo tout nan yon sèl kote.\nLi disponib nan 14 lang epi li sipòte lektè ekran.",
+  "sosFree": "Li konplètman gratis epi kòd la se ",
   "sosIconLabel": "yon klòch notifikasyon ki gen koulè vif.",
-  "sosWeb": "Yon fason espesifik, epi ki gen anpil enpak, pou kontribye se ta peye bòdwo pou ebèje InstaSOS sou entènèt.\n\nPropriyetè magazen aplikasyon yo deja fè konnen ki bò yo kanpe, epi yo gendwa retire InstaSOS si/lè li vin popilè.\nItilizatè Android yo ap toujou gen opsyon pou yo enstale li tèt yo, men sèl altènatif solid pou itilizatè iOS yo t ap yon aplikasyon wèb.\n\nErezman, aplikasyon Flutter yo fè kalkil yo sou bò kliyan an, donk bòdwo a t ap ba.\nNou t ap (ou t ap) sèlman bezwen peye pou jesyon trafik la.",
+  "sosOpenSource": "open source",
+  "sosPrivate": "InstaSOS pa gen okenn kont, bonbon, ni anons.\n",
+  "sosPromoLabel": "Yon videyo pwomosyon pou Insta SOS.",
+  "sosSAPS": " pou sipòte lojisyèl kòm yon sèvis piblik.",
   "sosTranslators": "Tradiktè yo",
-
-  
-
-  "fahJoin": "Rejwenn Gwoup la",
-
-  "fahIconLabel": "yon molekil pwoteyin.",
-  "fahIconHint": "Aktive pou louvri sit yo a.",
-  
-  "fahIntro1": "Vin jwenn ekip ",
-  "fahIntro2": " Folding@home nan!",
-  "fahTeamHint": "Louvri paj ekip folding at home YWT la",
-  
-  "fahWhats": "Kisa ",
-  "fahName": "Folding@home ye?",
-  "fahNameHint": "Louvri paj enfòmasyon Folding at Home nan",
-  
-  "fahStats": "Ansanm, nou ranmase plis pase 400 milyon pwen.\nSa mete nou nan mitan 2% pi gwo ekip yo nan lemonnantye!",
-
-
-
-  "csPageTitle": "Kontribye",
-  
-  "csEveryBit": "Chak ti kontribisyon ou bay nou retire yon moso (byte) nan gwo konpayi teknoloji yo.",
-  
-  "csTime": "Tan",
-  "csBecome": " sou kijan pou vin yon ",
-  "csGit": "kontribitè GitHub",
-  
-  "csMoney": "Lajan",
-  "csOpenLink": "Louvri yon lyen pou {page} YWT la",
-  
-  "csPower": "Pouvwa",
-
-  "csThanks": "Yon gwo mèsi pou nenpòt ak tout sipò ou bay!"
+  "sosWeb": "Yon fason espesifik, epi ki gen anpil enpak, pou kontribye se ta peye bòdwo pou ebèje InstaSOS sou entènèt.\n\nPropriyetè magazen aplikasyon yo deja fè konnen ki bò yo kanpe, epi yo gendwa retire InstaSOS si/lè li vin popilè.\nItilizatè Android yo ap toujou gen opsyon pou yo enstale li tèt yo, men sèl altènatif solid pou itilizatè iOS yo t ap yon aplikasyon wèb.\n\nErezman, aplikasyon Flutter yo fè kalkil yo sou bò kliyan an, donk bòdwo a t ap ba.\nNou t ap (ou t ap) sèlman bezwen peye pou jesyon trafik la."
 }

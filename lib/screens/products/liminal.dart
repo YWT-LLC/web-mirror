@@ -5,6 +5,7 @@
 
 import '../../utils/export.dart';
 import '../../widgets/export.dart';
+import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:open_ui/open_ui.dart';
 import 'package:flutter/material.dart';
@@ -190,7 +191,7 @@ class LiminalScreen extends StatelessWidget {
               EzLink(
                 config,
                 text: Products.liminal.name,
-                url: Uri.parse(liminalSource),
+                url: Uri.parse(Products.liminal.source),
                 hint: l10n(config).gRepoHint,
                 style: config.displayStyle,
                 textAlign: TextAlign.center,
@@ -222,6 +223,7 @@ class LiminalScreen extends StatelessWidget {
               config.separator,
 
               EzSwapWidget(
+                config,
                 restricted: EzCol(children: <Widget>[
                   EzRow(
                     config,
@@ -275,7 +277,7 @@ class LiminalScreen extends StatelessWidget {
                   EzInlineLink(
                     config,
                     text: l10n(config).llGit,
-                    url: Uri.parse('https://github.com/YWT-LLC/liminal_launcher/releases'),
+                    url: Uri.parse(ywt.liminalReleases),
                     hint: l10n(config).gRepoHint,
                     style: config.bodyStyle,
                     textAlign: TextAlign.center,

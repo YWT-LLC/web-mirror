@@ -13,18 +13,6 @@ import 'package:url_launcher/url_launcher.dart';
 
 //* Shared *//
 
-/// 13.0.0
-const String ouiFallback = '13.0.0';
-
-/// 3.0.3
-const String sosFallback = '3.0.3';
-
-/// 1.0.2
-const String liminalFallback = '1.0.2';
-
-/// https://github.com/YWT-LLC
-const String _git = 'https://github.com/YWT-LLC';
-
 /// https://play.google.com/store/apps/details?id=llc.ywt
 const String _gPlay = 'https://play.google.com/store/apps/details?id=llc.ywt';
 
@@ -57,7 +45,7 @@ Future<String> getLatest(String repo, String fallback) async {
 
 //* Open UI *//
 
-String ouRelease(String version) => '$_git/open_ui/releases/download/$version';
+String ouRelease(String version) => '${ywt.openUIReleases}/download/$version';
 
 /// Get a [Uri] to download the latest version of Open UI
 Uri openUIDownload(DLType dlType, String version) => switch (dlType) {
@@ -99,7 +87,7 @@ class _OpenUILinkState extends State<OpenUILink> {
       _ => DLType.deb,
     };
 
-    latest = await getLatest('open_ui', ouiFallback);
+    latest = await getLatest('open_ui', Products.openUI.localLatest);
     url = openUIDownload(currDL, latest);
   }
 
@@ -165,7 +153,7 @@ class _OpenUILinkState extends State<OpenUILink> {
 /// Get a [Uri] to download the latest version of InstaSOS
 Uri sosDownload(DLType dlType, String version) => switch (dlType) {
       DLType.gPlay => Uri.parse('$_gPlay.sos'),
-      DLType.apk => Uri.parse('$_git/sos/releases/download/$version/sos-android.apk'),
+      DLType.apk => Uri.parse('${ywt.sosReleases}/download/$version/sos-android.apk'),
       _ => Uri.parse('$_appStore/instasos/id6744280817'),
     };
 
@@ -195,7 +183,7 @@ class _SOSLinkState extends State<SOSLink> {
       _ => DLType.gPlay,
     };
 
-    latest = await getLatest('sos', sosFallback);
+    latest = await getLatest('sos', Products.sos.localLatest);
     url = sosDownload(currDL, latest);
   }
 

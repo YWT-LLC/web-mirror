@@ -61,7 +61,7 @@ class SOSScreen extends StatelessWidget {
                     text: l10n(config).sosOpenSource,
                     style: config.bodyStyle,
                     textAlign: TextAlign.center,
-                    url: Uri.parse(sosSource),
+                    url: Uri.parse(Products.sos.source),
                     hint: l10n(config).gRepoHint,
                   ),
                   EzPlainText(text: '.', style: config.bodyStyle),
@@ -280,6 +280,7 @@ class _PromoVideoState extends State<_PromoVideo> {
           kid: Padding(
             padding: EdgeInsets.only(bottom: widget.config.spacing),
             child: EzSwapWidget(
+              widget.config,
               restricted: EzVideoPlayer(
                 widget.config,
                 key: const ValueKey<String>('vertical'),

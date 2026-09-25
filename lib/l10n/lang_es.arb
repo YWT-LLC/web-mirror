@@ -1,163 +1,122 @@
 {
   "@@locale": "es",
-
-  "gYWTLogoLabel": "un reloj de arena bidimensional.",
-  "gYWTLogoHint": "Activar para ir a la página de inicio.",
-
-  "gLearn": "Conozca más sobre {name}",
-  "gHomeHint": "Abrir la página de inicio",
-  "gProductsHint": "Abrir una página de producto",
-  "gMissionHint": "Abrir la página del misión",
-  "gTeamHint": "Abrir la página del equipo",
-  "gContributeHint": "Abrir la página de contribuir",
-
-  "gShare": "Compartir",
-  "gEmail": "Email",
-  "gEmailTo": "Email {recipient}",
+  "ahBoth": ").\nTanto para desarrolladores como para colaboradores.",
+  "ahDescription": "a11how simplifica la traducción de aplicaciones basadas en .arb (como ",
+  "ahMagic": "...¡ocurre la magia!",
+  "ahSegway": "Hablando de eso, a11how está integrado en todo el software de YWT.\nSi estás interactuando con nuestro contenido que no está en inglés y ves algo incorrecto, ¡simplemente haz clic en el enlace al final de la página y corrígelo!\n\nSiempre y cuando tengas una cuenta de GitHub, puedes enviar cambios con un solo clic.",
+  "csBecome": " acerca de convertirse en un ",
+  "csEveryBit": "Cada bit que das a nos le quitas un byte a los gigantes tecnológicos.",
+  "csGit": "colaborador de GitHub",
+  "csMoney": "Dinero",
+  "csOpenLink": "Abre un enlace al {page} de YWT",
+  "csPageTitle": "Contribuir",
+  "csPower": "Poder",
+  "csThanks": "¡Muchas gracias por todo el apoyo!",
+  "csTime": "Tiempo",
+  "fahIconHint": "Activar para abrir su página.",
+  "fahIconLabel": "Logotipo de Folding at home: una molécula de proteína.",
+  "fahIntro1": "¡Únete al ",
+  "fahIntro2": " equipo de Folding@home!",
+  "fahJoin": "Únete a Fold",
+  "fahName": "Folding@home?",
+  "fahNameHint": "Abrir la página de folding at home",
+  "fahStats": "Juntos, hemos ganado más de 400 millones de puntos.\n¡Lo que nos sitúa en el 2% de los mejores equipos del mundo!",
+  "fahTeamHint": "Abre la página del equipo YWT folding at home",
+  "fahWhats": "¿Qué es ",
   "gAnEmail": "un email",
-  "gEmailHint": "Abrir el cliente de email",
-  "gNewsletter": "Boletín de noticias",
-
-  "gLogoLabel": "Logotipo de {thing}: ",
-  "gIconLabel": "El icono de {app}: ",
-  "gDownloadHint": "Descargar {app} para {platform}.",
-  "gRepoHint": "Abre un enlace al repositorio de desarrollo.",
-  "gYWTGitHint": "Abrir la página de GitHub de YWT",
-
-  "gImageCredit": "Crédito de la imagen: {creator}",
-
-  "gReachOut": "Contacto",
-  "gProfile": "Perfil de {name}",
-  "gFiverrPage": "Abre la página de {user} en Fiverr",
-
-  "gDontChaWish": "¿No te gustaría que tu frontend fuera divertido ", 
-  "gMeQ": "como yo?",
+  "gContributeHint": "Abrir la página de contribuir",
   "gDontCha": "¿No?",
   "gDontChaHint": "Abre la página de GitHub del código fuente de esta pantalla",
-
-
-
+  "gDontChaWish": "¿No te gustaría que tu frontend fuera divertido ",
+  "gDownloadHint": "Descargar {app} para {platform}.",
+  "gEmail": "Email",
+  "gEmailHint": "Abrir el cliente de email",
+  "gEmailTo": "Email {recipient}",
+  "gFiverrPage": "Abre la página de {user} en Fiverr",
+  "gHomeHint": "Abrir la página de inicio",
+  "gIconLabel": "El icono de {app}: ",
+  "gImageCredit": "Crédito de la imagen: {creator}",
+  "gLearn": "Conozca más sobre {name}",
+  "gLogoLabel": "Logotipo de {thing}: ",
+  "gMeQ": "como yo?",
+  "gMissionHint": "Abrir la página del misión",
+  "gNewsletter": "Boletín de noticias",
+  "gProductsHint": "Abrir una página de producto",
+  "gProfile": "Perfil de {name}",
+  "gReachOut": "Contacto",
+  "gRepoHint": "Abre un enlace al repositorio de desarrollo.",
+  "gShare": "Compartir",
+  "gTeamHint": "Abrir la página del equipo",
+  "gYWTGitHint": "Abrir la página de GitHub de YWT",
+  "gYWTLogoHint": "Activar para ir a la página de inicio.",
+  "gYWTLogoLabel": "un reloj de arena bidimensional.",
   "hsAnimLabel": "Logotipo animado de YWT: las letras de YWT se transforman en el logotipo bidimensional del reloj de arena",
   "hsChange": "Es hora de cambiar",
-  
-
-  
-  "hsmIDProblem": "Identificación del problema",
-  "hsmIDProblemContent": "Los modelos de negocio que dan prioridad al beneficio no son sostenibles.\n\nPor definición, cosas como trabajar por una misión, tratar bien a las personas y consumir recursos de forma responsable pasan a un segundo plano.\n\nLos gigantes tecnológicos no se conforman con llevarse nuestro dinero. Ahora construyen productos para captar nuestras identidades y monopolizar nuestras mentes. Y nadie les dice nada.",
-  "hsmSoWe": "Así que nosotros",
-  
+  "hsmBy": "Por",
   "hsmFindSolution": "Encuentra una solución",
   "hsmFindSolutionContent": "Afortunadamente, hay tecnólogos increíbles en todo el mundo que trabajan juntos para lograr una mejor narrativa.\nUna en la que los proveedores de servicios y los clientes tengan una relación activa, saludable y mutuamente beneficiosa.\n\nLa comunidad de código abierto.\n\nEn esencia, el software de código abierto está disponible de forma gratuita para que cualquiera lo vea. Muchos proyectos también se pueden modificar y redistribuir libremente.\nEs un software que no tiene nada que ocultar, creado por gente que reconoce que los problemas compartidos requieren soluciones compartidas.\n\nY en el maravilloso mundo del software de código abierto, existe una subcategoría: el software de alojamiento propio.\n\nEl alojamiento propio nos permite tomar cualquier computadora que no esté en uso (incluso las de bolsillo) y almacenar allí nuestros datos.\nAl alojarnos nosotros mismos, podemos controlar nuestra propia presencia digital, en lugar de ceder el control a un servidor lejano, propiedad de una corporación poco empática.\n\n¡Y existen versiones alojadas por nosotros mismos de casi todo! Desde Adobe hasta Zoom, hay hacktivistas apasionados que crean alternativas que priorizan a las personas por sobre las ganancias.\n\nEntonces, ¿cómo se hace la transición de un código cerrado que prioriza las ganancias a un código abierto? ¿Cómo empiezan a alojar sus propios archivos?\nRequiere mucho tiempo, energía y conocimientos previos.\n\nAhí es donde entramos nosotros.",
-  "hsmBy": "Por",
-  
+  "hsmFirst": "Por primera vez",
+  "hsmIDProblem": "Identificación del problema",
+  "hsmIDProblemContent": "Los modelos de negocio que dan prioridad al beneficio no son sostenibles.\n\nPor definición, cosas como trabajar por una misión, tratar bien a las personas y consumir recursos de forma responsable pasan a un segundo plano.\n\nLos gigantes tecnológicos no se conforman con llevarse nuestro dinero. Ahora construyen productos para captar nuestras identidades y monopolizar nuestras mentes. Y nadie les dice nada.",
   "hsmProvideValue": "Haciendo el trabajo",
   "hsmProvideValueContent1": "YWT está reequilibrando la tecnología al hacer que el autohospedaje sea más accesible.\n\nConstruiremos aplicaciones que permitan a cualquiera ser dueño de su identidad digital.\nConstruiremos puentes entre la comunidad de código abierto y aquellos sin el tiempo, la energía o los conocimientos previos requeridos.\n\n¡Y no se pueden construir puentes (ni aplicaciones) sin una base sólida! Es por eso que ",
   "hsmProvideValueContent2": " existe.\nNos enorgullece respaldar las palabras con acciones y hemos hecho que nuestra interfaz de usuario accesible sea de código abierto.\n\nConstruyamos juntos un mundo mejor, bit a bit.",
-  "hsmFirst": "Por primera vez",
-  
-
-
-  "psPageTitle": "Productos",
-  "psTitleHint": "Mostrar lista",
-
-  "psShowDemo": "Mostrar demo",
-  "psHideDemo": "Ocultar demo",
-  "psShowPromo": "Mostrar promo",
-  "psHidePromo": "Ocultar promo",
-
-  "psLearnMore": " para saber más.",
-  "psDownloadNow": "Descargar ahora",
-  "psComingSoon": "Próximamente...",
-
-
-
-  "ouSlogan": "Crea apps para todos",
-  "ouLike": "Como usuarios que necesitan ...",
+  "hsmSoWe": "Así que nosotros",
+  "llDesign": "Su diseño tiende al minimalismo, pero está construido con ",
+  "llFree": ", porque una relación saludable con la tecnología no debería ser exclusiva de quienes tienen ingresos disponibles.",
+  "llGit": "en GitHub",
+  "llModel": "Liminal tiene un modelo de \"paga lo que puedas\".\nLa ",
+  "llPaid": " versión cuesta $4.99, porque el (buen) código no se escribe solo.\nEl APK también está disponible ",
+  "llSlogan": "El último launcher que instalarás.",
+  "llWhimsy": "Así que tu pantalla de inicio estará libre de desorden y distracciones, Y será infinitamente personalizable.\nCon un toque de fantasía, además.",
   "ouAccessible": "Controles accesibles",
-  "ouZeroStrain": "cero fatiga visual",
-  "ouEverything": "Algo más",
-  "ouRandom": "Configuración aleatoria aplicada.",
-
-  "ouIs": "Open UI es un generador de aplicaciones.",
-  "ouDemo": "Demostración de Open UI creando una nueva aplicación.",
-  "ouFoundation": "Crea la base para aplicaciones accesibles, multiplataforma, multilingües y listas para producción en un solo clic.",
-  "ouLocal": "Todo funciona en tu ordenador. No hay credenciales, tarjetas de crédito ni cookies.",
-  "ouRequirements": "Los únicos requisitos son una conexión a Internet y una idea.",
-  "ouFlutterToo": "...y Flutter...",
-  
-  "ouPlatform": "Disponibilidad de plataforma",
-  "ouPlatformContent": "¡Puedes usar Open UI para crear apps de Android, iOS, Linux, macOS, Windows y Web!",
-  
-  "ouResponsive": "Diseño adaptativo",
-  "ouResponsiveContent": "Para verlo en acción, ¡interactúa con la ventana que estás usando ahora mismo!",
-
-  "ouScreen": "Soporte para lectores de pantalla",
-  "ouScreenContent": "Las apps de OUI ayudan a los usuarios que lo necesitan ",
-  "ouTalkBackHint": "Abrir un enlace a la documentación de TalkBack",
   "ouAnd": " y ",
-  "ouVoiceOverHint": "Abrir un enlace a la documentación de VoiceOver",
-  
   "ouCustom": "Personalización del usuario",
   "ouCustomContent": "¡La única forma de ser verdaderamente accesible para TODOS los clientes es brindarles la libertad de elección!\nOpen UI proporciona una UX elegante para un control total sobre la apariencia de una aplicación.",
-  
-  "ouInternational": "Internacionalización",
-  "ouInternationalContent": "Las aplicaciones de OUI se han traducido a 14 idiomas (hasta el momento).\nOUI también proporciona la infraestructura para futuras traducciones ilimitadas.",
-  
-  "ouReliability": "Fiabilidad",
-  "ouReliabilityContent": "El software de YWT está diseñado para durar. Esto NO es generación de código de IA.\nLas programadoras son personas. Los LLM son como patos de goma.",
-
+  "ouDemo": "Demostración de Open UI creando una nueva aplicación.",
+  "ouEverything": "Algo más",
+  "ouFlutterToo": "...y Flutter...",
+  "ouFoundation": "Crea la base para aplicaciones accesibles, multiplataforma, multilingües y listas para producción en un solo clic.",
   "ouGetStarted": "Velo en directo",
   "ouIconLabel": "un configuración sandbox.",
-
+  "ouInternational": "Internacionalización",
+  "ouInternationalContent": "Las aplicaciones de OUI se han traducido a 14 idiomas (hasta el momento).\nOUI también proporciona la infraestructura para futuras traducciones ilimitadas.",
+  "ouIs": "Open UI es un generador de aplicaciones.",
+  "ouLike": "Como usuarios que necesitan ...",
+  "ouLocal": "Todo funciona en tu ordenador. No hay credenciales, tarjetas de crédito ni cookies.",
+  "ouPlatform": "Disponibilidad de plataforma",
+  "ouPlatformContent": "¡Puedes usar Open UI para crear apps de Android, iOS, Linux, macOS, Windows y Web!",
+  "ouRandom": "Configuración aleatoria aplicada.",
+  "ouReliability": "Fiabilidad",
+  "ouReliabilityContent": "El software de YWT está diseñado para durar. Esto NO es generación de código de IA.\nLas programadoras son personas. Los LLM son como patos de goma.",
+  "ouRequirements": "Los únicos requisitos son una conexión a Internet y una idea.",
+  "ouResponsive": "Diseño adaptativo",
+  "ouResponsiveContent": "Para verlo en acción, ¡interactúa con la ventana que estás usando ahora mismo!",
+  "ouScreen": "Soporte para lectores de pantalla",
+  "ouScreenContent": "Las apps de OUI ayudan a los usuarios que lo necesitan ",
+  "ouSlogan": "Crea apps para todos",
   "ouTagLine": "¡Cuando se construye con Open UI, tus apps pueden llegar a cualquier audiencia!\n",
-
-
-
-  "sosPromoLabel": "Un video promocional de Insta SOS.",
-
-  "sosDescription": "Una cámara, una baliza SOS y una lista de tus derechos, todo en un solo lugar.\nEstá disponible en 14 idiomas y es compatible con lectores de pantalla.",
-  "sosPrivate": "InstaSOS no tiene cuentas, cookies ni anuncios.\n",
-  "sosFree": "Es completamente gratuito y el código es de ",
-  "sosOpenSource": "código abierto",
+  "ouTalkBackHint": "Abrir un enlace a la documentación de TalkBack",
+  "ouVoiceOverHint": "Abrir un enlace a la documentación de VoiceOver",
+  "ouZeroStrain": "cero fatiga visual",
+  "psComingSoon": "Próximamente...",
+  "psDownloadNow": "Descargar ahora",
+  "psHideDemo": "Ocultar demo",
+  "psHidePromo": "Ocultar promo",
+  "psLearnMore": " para saber más.",
+  "psPageTitle": "Productos",
+  "psShowDemo": "Mostrar demo",
+  "psShowPromo": "Mostrar promo",
+  "psTitleHint": "Mostrar lista",
   "sosConsider": "Por favor, considere ",
   "sosContributing": "contribuir",
-  "sosSAPS": " al soporte del software como un servicio público.",
-
+  "sosDescription": "Una cámara, una baliza SOS y una lista de tus derechos, todo en un solo lugar.\nEstá disponible en 14 idiomas y es compatible con lectores de pantalla.",
+  "sosFree": "Es completamente gratuito y el código es de ",
   "sosIconLabel": "Un icono de notificación de color fuerte.",
-  "sosWeb": "Una forma específica y de gran impacto de contribuir sería asumir el costo de alojar InstaSOS en línea.\n\nLos dueños de las tiendas de aplicaciones han dejado claras sus lealtades, e InstaSOS podría ser eliminada si/cuando gane tracción.\nLos usuarios de Android siempre tendrán la opción de instalarla manualmente, pero la única alternativa viable para los usuarios de iOS sería una aplicación web.\n\nAfortunadamente, el procesamiento de las aplicaciones hechas en Flutter se realiza del lado del cliente, por lo que la factura sería baja.\nSolo tendríamos (tendrías) que pagar por la gestión del tráfico.",
+  "sosOpenSource": "código abierto",
+  "sosPrivate": "InstaSOS no tiene cuentas, cookies ni anuncios.\n",
+  "sosPromoLabel": "Un video promocional de Insta SOS.",
+  "sosSAPS": " al soporte del software como un servicio público.",
   "sosTranslators": "Traductoras",
-
-  
-
-  "fahJoin": "Únete a Fold",
-
-  "fahIconLabel": "Logotipo de Folding at home: una molécula de proteína.",
-  "fahIconHint": "Activar para abrir su página.",
-  
-  "fahIntro1": "¡Únete al ",
-  "fahIntro2": " equipo de Folding@home!",
-  "fahTeamHint": "Abre la página del equipo YWT folding at home",
-  
-  "fahWhats": "¿Qué es ",
-  "fahName": "Folding@home?",
-  "fahNameHint": "Abrir la página de folding at home",
-  
-  "fahStats": "Juntos, hemos ganado más de 400 millones de puntos.\n¡Lo que nos sitúa en el 2% de los mejores equipos del mundo!",
-
-
-
-  "csPageTitle": "Contribuir",
-  
-  "csEveryBit": "Cada bit que das a nos le quitas un byte a los gigantes tecnológicos.",
-  
-  "csTime": "Tiempo",
-  "csBecome": " acerca de convertirse en un ",
-  "csGit": "colaborador de GitHub",
-  
-  "csMoney": "Dinero",
-  "csOpenLink": "Abre un enlace al {page} de YWT",
-  
-  "csPower": "Poder",
-  
-  "csThanks": "¡Muchas gracias por todo el apoyo!"
+  "sosWeb": "Una forma específica y de gran impacto de contribuir sería asumir el costo de alojar InstaSOS en línea.\n\nLos dueños de las tiendas de aplicaciones han dejado claras sus lealtades, e InstaSOS podría ser eliminada si/cuando gane tracción.\nLos usuarios de Android siempre tendrán la opción de instalarla manualmente, pero la única alternativa viable para los usuarios de iOS sería una aplicación web.\n\nAfortunadamente, el procesamiento de las aplicaciones hechas en Flutter se realiza del lado del cliente, por lo que la factura sería baja.\nSolo tendríamos (tendrías) que pagar por la gestión del tráfico."
 }

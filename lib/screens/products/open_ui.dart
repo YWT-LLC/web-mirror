@@ -39,7 +39,7 @@ class _OpenUIScreenState extends State<OpenUIScreen> {
       _ => DLType.deb,
     };
 
-    latest = await getLatest('open_ui', ouiFallback);
+    latest = await getLatest('open_ui', Products.openUI.localLatest);
     url = openUIDownload(dlType, latest);
     setState(() {});
   }

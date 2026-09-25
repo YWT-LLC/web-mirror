@@ -211,7 +211,7 @@ class WebsiteDrawer extends StatelessWidget {
             ),
           ),
           config.spacer,
-          ..._pageLinks.products(config),
+          ..._pageLinks.products(config, style: config.headlineStyle),
           config.spacer,
           _pageLinks.contribute,
         ],

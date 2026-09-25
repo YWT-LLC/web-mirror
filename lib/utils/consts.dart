@@ -29,7 +29,7 @@ const String openUIIconPath = 'assets/images/open-ui/app-icon.png';
 const ImageProvider openUIImage = AssetImage(openUIIconPath);
 
 // SOS
-const String sosIconPath = 'assets/images/sos/sos-icon.png';
+const String sosIconPath = 'assets/images/sos/app-icon.png';
 const ImageProvider sosImage = AssetImage(sosIconPath);
 
 // Liminal
@@ -56,6 +56,10 @@ const ImageProvider theHoodImage = AssetImage(theHoodPath);
 
 const String twoDoorsPath = 'assets/images/liminal/two-doors.png';
 const ImageProvider twoDoorsImage = AssetImage(twoDoorsPath);
+
+// a11how
+const String a11howIconPath = 'assets/images/a11how/app-icon.png';
+const ImageProvider a11howImage = AssetImage(a11howIconPath);
 
 // Community
 const String fahIconPath = 'assets/images/community/fah.png';

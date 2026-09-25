@@ -1,163 +1,122 @@
 {
   "@@locale": "ja",
-
-  "gYWTLogoLabel": "2次元の砂時計。",
-  "gYWTLogoHint": "選択してホームページへ移動します。",
-
-  "gLearn": "{name} について学ぶ",
-  "gHomeHint": "ホームページを開く",
-  "gProductsHint": "製品ページを開く",
-  "gMissionHint": "ミッションページを開く",
-  "gTeamHint": "チームページを開く",
-  "gContributeHint": "貢献ページを開く",
-
-  "gShare": "共有",
-  "gEmail": "メール",
-  "gEmailTo": "{recipient} にメールを送信",
+  "ahBoth": "）。\n開発者とコントリビューターの両方に役立ちます。",
+  "ahDescription": "a11how は、.arb ベースのアプリの翻訳を効率化します（例： ",
+  "ahMagic": "...魔法が起こります！",
+  "ahSegway": "ちなみに、a11how は YWT のすべてのソフトウェアに統合されています。\n英語以外のコンテンツを利用しているときに間違いを見つけた場合は、ページ下部のリンクをクリックして修正してください！\n\nGitHub アカウントをお持ちであれば、ワンクリックで変更を送信できます。",
+  "csBecome": " 次になることについて: ",
+  "csEveryBit": "あなたが私たちに与えるすべてのビット（bit）が、巨大テクノロジー企業からバイト（byte）を奪い取ります。",
+  "csGit": "GitHubコントリビューター",
+  "csMoney": "資金",
+  "csOpenLink": "YWTの{page}へのリンクを開く",
+  "csPageTitle": "貢献する",
+  "csPower": "力",
+  "csThanks": "あらゆるご支援に心より感謝申し上げます！",
+  "csTime": "時間",
+  "fahIconHint": "選択して彼らのサイトを開きます。",
+  "fahIconLabel": "タンパク質分子。",
+  "fahIntro1": "次のチームに参加しよう: ",
+  "fahIntro2": " Folding@home チーム！",
+  "fahJoin": "Foldに参加する",
+  "fahName": "Folding@homeとは？",
+  "fahNameHint": "Folding at Homeの概要ページを開く",
+  "fahStats": "私たちはこれまでに合計で4億ポイント以上を獲得しました。\nこれは、世界中の全チームの上位2%に入ります！",
+  "fahTeamHint": "YWTのFolding@homeチームページを開く",
+  "fahWhats": "これって何？: ",
   "gAnEmail": "メール",
-  "gEmailHint": "メールクライアントを開く",
-  "gNewsletter": "ニュースレター",
-
-  "gLogoLabel": "{thing}のロゴ: ",
-  "gIconLabel": "{app}のアイコン: ",
-  "gDownloadHint": "{platform}向けの{app}をダウンロードします。",
-  "gRepoHint": "開発リポジトリへのリンクを開く",
-  "gYWTGitHint": "YWTのGitHubページを開く",
-
-  "gImageCredit": "画像クレジット: {creator}",
-
-  "gReachOut": "連絡する",
-  "gProfile": "{name}のプロフィール",
-  "gFiverrPage": "{user}のFiverrページを開く",
-
-  "gDontChaWish": "あなたのフロントエンドも楽しくなればいいのにと ", 
-  "gMeQ": "私のように思いませんか？",
+  "gContributeHint": "貢献ページを開く",
   "gDontCha": "思いませんか？",
   "gDontChaHint": "この画面のソースコードのGitHubページを開く",
-
-
-  
+  "gDontChaWish": "あなたのフロントエンドも楽しくなればいいのにと ",
+  "gDownloadHint": "{platform}向けの{app}をダウンロードします。",
+  "gEmail": "メール",
+  "gEmailHint": "メールクライアントを開く",
+  "gEmailTo": "{recipient} にメールを送信",
+  "gFiverrPage": "{user}のFiverrページを開く",
+  "gHomeHint": "ホームページを開く",
+  "gIconLabel": "{app}のアイコン: ",
+  "gImageCredit": "画像クレジット: {creator}",
+  "gLearn": "{name} について学ぶ",
+  "gLogoLabel": "{thing}のロゴ: ",
+  "gMeQ": "私のように思いませんか？",
+  "gMissionHint": "ミッションページを開く",
+  "gNewsletter": "ニュースレター",
+  "gProductsHint": "製品ページを開く",
+  "gProfile": "{name}のプロフィール",
+  "gReachOut": "連絡する",
+  "gRepoHint": "開発リポジトリへのリンクを開く",
+  "gShare": "共有",
+  "gTeamHint": "チームページを開く",
+  "gYWTGitHint": "YWTのGitHubページを開く",
+  "gYWTLogoHint": "選択してホームページへ移動します。",
+  "gYWTLogoLabel": "2次元の砂時計。",
   "hsAnimLabel": "YWTのアニメーションロゴ: YWTの文字が2次元の砂時計のロゴに変形します",
   "hsChange": "今こそ、変わる時です",
-
-  
-  
-  "hsmIDProblem": "問題を特定する",
-  "hsmIDProblemContent": "利益第一のビジネスモデルは持続可能ではありません。\n\n定義上、利益が最優先されるのであれば、使命に向かって努力することや、人々を正当に扱うこと、資源の責任ある消費などは、すべて後回しになります。\n\nそして、この貪欲さは巨大テクノロジー企業の中で野放しにされてきました。巨大テクノロジー企業は私たちのお金だけでは満足できなくなり、私たちのアイデンティティを標的にし、私たちの心を独占するための製品を作っています。",
-  "hsmSoWe": "だからこそ私たちは",
-  
+  "hsmBy": "〜によって",
   "hsmFindSolution": "解決策を見つける",
   "hsmFindSolutionContent": "幸いなことに、世界中にはより良い物語に向けて共に働く素晴らしい技術者たちがいます。\nサービス提供者と顧客が、活発で健全な、互恵的な関係を築ける物語です。\n\nそれがオープンソースコミュニティです。\n\n根本的に、オープンソースソフトウェアは誰でも無料で見ることができます。多くのプロジェクトは自由に修正や再配布も可能です。\nこれは隠し事のないソフトウェアであり、共有の問題には共有の解決策が必要だと認識している人々によって構築されています。\n\nそして、オープンソースソフトウェアの素晴らしい世界には、セルフホスティングソフトウェアというサブカテゴリが存在します。\n\nセルフホスティングにより、使用されていないコンピューター（ポケットサイズのものも含め）を利用して、そこにデータを保存することができます。\nセルフホスティングを行うことで、共感力のない企業が所有する遠く離れたサーバーにコントロールを譲り渡すのではなく、自分自身のデジタルプレゼンスをコントロールすることができます。\n\nそして、AdobeからZoomまで、ほぼすべてのものにセルフホスト版が存在します！利益よりも人を優先する代替手段を構築している情熱的なハクティビストたちがいるのです。\n\nでは、利益第一・クローズドソースからオープンソースへ、どのように移行すればよいのでしょうか？どうやってセルフホスティングを始めればよいのでしょうか？\nそれには多くの時間、エネルギー、そして予備知識が必要です。\n\nそこで私たちの出番です。",
-  "hsmBy": "〜によって",
-  
+  "hsmFirst": "まず最初に",
+  "hsmIDProblem": "問題を特定する",
+  "hsmIDProblemContent": "利益第一のビジネスモデルは持続可能ではありません。\n\n定義上、利益が最優先されるのであれば、使命に向かって努力することや、人々を正当に扱うこと、資源の責任ある消費などは、すべて後回しになります。\n\nそして、この貪欲さは巨大テクノロジー企業の中で野放しにされてきました。巨大テクノロジー企業は私たちのお金だけでは満足できなくなり、私たちのアイデンティティを標的にし、私たちの心を独占するための製品を作っています。",
   "hsmProvideValue": "実行に移す",
   "hsmProvideValueContent1": "YWTは、セルフホスティングをより身近なものにすることで、テクノロジーのバランスを再構築しています。\n\n私たちは、誰もが自分のデジタルアイデンティティを所有できるようなアプリを開発します。\nオープンソースコミュニティと、それに必要な時間や労力、事前の知識を持たない人々との間に架け橋を築きます。\n\nそして、強固な基盤なしに架け橋（やアプリ）を築くことはできません！だからこそ、",
   "hsmProvideValueContent2": "が存在するのです。\n私たちは言葉を行動で示すことを誇りとしており、アクセシビリティの高いUIをオープンソース化しました。\n\n少しずつ、共により良い世界を築いていきましょう。",
-  "hsmFirst": "まず最初に",
-
-
-  
-  "psPageTitle": "製品",
-  "psTitleHint": "リストを表示",
-
-  "psShowDemo": "デモを表示",
-  "psHideDemo": "デモを隠す",
-  "psShowPromo": "プロモーションを表示",
-  "psHidePromo": "プロモーションを隠す",
-
-  "psLearnMore": " をクリックして詳細をご覧ください。",
-  "psDownloadNow": "今すぐダウンロード",
-  "psComingSoon": "近日公開...",
-
-
-
-  "ouSlogan": "誰のためのアプリでも構築",
-  "ouLike": "以下を必要とするユーザーのように...",
+  "hsmSoWe": "だからこそ私たちは",
+  "llDesign": "デザインはミニマリズムを追求していますが、",
+  "llFree": "、テクノロジーとの健全な関係は、自由に使えるお金がある人だけのものであるべきではないからです。",
+  "llGit": "GitHub上",
+  "llModel": "Liminalは「Pay What You Can（払える分だけ払う）」モデルを採用しています。\n",
+  "llPaid": " 版は4.99ドルです。なぜなら（質の高い）コードは勝手に書き上がるものではないからです。\nAPKは次の場所でも入手可能です： ",
+  "llSlogan": "あなたがロードする、最後のランチャー。",
+  "llWhimsy": "そのため、ホーム画面は散らかったり気を散らしたりするものがなく、かつ無限にカスタマイズ可能です。\nおまけに、ちょっとした遊び心も。",
   "ouAccessible": "アクセシブルなコントロール",
-  "ouZeroStrain": "眼精疲労ゼロ",
-  "ouEverything": "その間にあるすべて",
-  "ouRandom": "ランダムな設定が適用されました。",
-
-  "ouIs": "Open UIはアプリジェネレーターです。",
-  "ouDemo": "Open UIが新しいアプリを作成するデモンストレーション。",
-  "ouFoundation": "アクセシブルでクロスプラットフォーム、多言語対応、実稼働準備完了のアプリの基盤をワンクリックで作成します。",
-  "ouLocal": "すべてがあなたのコンピューター上で実行されます。認証情報、クレジットカード、Cookieは一切必要ありません。",
-  "ouRequirements": "必要なのはインターネット接続とアイデアだけです。",
-  "ouFlutterToo": "...そしてFlutter...",
-  
-  "ouPlatform": "プラットフォームの可用性",
-  "ouPlatformContent": "Open UIを使用して、Android、iOS、Linux、macOS、Windows、およびWeb向けのアプリを作成できます！",
-  
-  "ouResponsive": "レスポンシブデザイン",
-  "ouResponsiveContent": "実際の動作を確認するには、今使用しているウィンドウを動かしてみてください！",
-
-  "ouScreen": "スクリーンリーダーのサポート",
-  "ouScreenContent": "OUIアプリは次を必要とするユーザーをサポートします: ",
-  "ouTalkBackHint": "TalkBackのドキュメントへのリンクを開く",
   "ouAnd": " および ",
-  "ouVoiceOverHint": "VoiceOverのドキュメントへのリンクを開く",
-  
   "ouCustom": "ユーザーカスタマイズ",
   "ouCustomContent": "すべての顧客にとって真にアクセシブルであるための唯一の方法は、選択の自由を彼らに与えることです！\nOpen UIは、アプリの外観を完全にコントロールするためのエレガントなUXを提供します。",
-  
-  "ouInternational": "国際化",
-  "ouInternationalContent": "OUIのアプリは、（これまでに）14の言語に翻訳されています。\nOUIは、将来の無制限の翻訳のためのインフラも提供します。",
-  
-  "ouReliability": "信頼性",
-  "ouReliabilityContent": "YWTのソフトウェアは長持ちするように構築されています。これはAIによるコード生成ではありません。\nのプログラマーは人間です。LLMはラバーダック（ただの相談役）です。",
-    
+  "ouDemo": "Open UIが新しいアプリを作成するデモンストレーション。",
+  "ouEverything": "その間にあるすべて",
+  "ouFlutterToo": "...そしてFlutter...",
+  "ouFoundation": "アクセシブルでクロスプラットフォーム、多言語対応、実稼働準備完了のアプリの基盤をワンクリックで作成します。",
   "ouGetStarted": "はじめる",
   "ouIconLabel": "設定サンドボックス。",
-
+  "ouInternational": "国際化",
+  "ouInternationalContent": "OUIのアプリは、（これまでに）14の言語に翻訳されています。\nOUIは、将来の無制限の翻訳のためのインフラも提供します。",
+  "ouIs": "Open UIはアプリジェネレーターです。",
+  "ouLike": "以下を必要とするユーザーのように...",
+  "ouLocal": "すべてがあなたのコンピューター上で実行されます。認証情報、クレジットカード、Cookieは一切必要ありません。",
+  "ouPlatform": "プラットフォームの可用性",
+  "ouPlatformContent": "Open UIを使用して、Android、iOS、Linux、macOS、Windows、およびWeb向けのアプリを作成できます！",
+  "ouRandom": "ランダムな設定が適用されました。",
+  "ouReliability": "信頼性",
+  "ouReliabilityContent": "YWTのソフトウェアは長持ちするように構築されています。これはAIによるコード生成ではありません。\nのプログラマーは人間です。LLMはラバーダック（ただの相談役）です。",
+  "ouRequirements": "必要なのはインターネット接続とアイデアだけです。",
+  "ouResponsive": "レスポンシブデザイン",
+  "ouResponsiveContent": "実際の動作を確認するには、今使用しているウィンドウを動かしてみてください！",
+  "ouScreen": "スクリーンリーダーのサポート",
+  "ouScreenContent": "OUIアプリは次を必要とするユーザーをサポートします: ",
+  "ouSlogan": "誰のためのアプリでも構築",
   "ouTagLine": "Open UIで構築すれば、あなたのアプリは本当にどんなターゲット層にも届けることができます！\n",
-
-
-
-  "sosPromoLabel": "InstaSOSのプロモーションビデオ。",
-
-  "sosDescription": "カメラ、SOSビーコン、権利のリストがすべて1か所に。\n14言語に対応しており、スクリーンリーダーもサポートしています。",
-  "sosPrivate": "InstaSOSにはアカウント、Cookie、広告はありません。\n",
-  "sosFree": "完全に無料で、コードは ",
-  "sosOpenSource": "オープンソース",
+  "ouTalkBackHint": "TalkBackのドキュメントへのリンクを開く",
+  "ouVoiceOverHint": "VoiceOverのドキュメントへのリンクを開く",
+  "ouZeroStrain": "眼精疲労ゼロ",
+  "psComingSoon": "近日公開...",
+  "psDownloadNow": "今すぐダウンロード",
+  "psHideDemo": "デモを隠す",
+  "psHidePromo": "プロモーションを隠す",
+  "psLearnMore": " をクリックして詳細をご覧ください。",
+  "psPageTitle": "製品",
+  "psShowDemo": "デモを表示",
+  "psShowPromo": "プロモーションを表示",
+  "psTitleHint": "リストを表示",
   "sosConsider": "ぜひご検討ください: ",
   "sosContributing": "貢献",
-  "sosSAPS": " （公共サービスとしてのソフトウェアを支援するために）。",
-
+  "sosDescription": "カメラ、SOSビーコン、権利のリストがすべて1か所に。\n14言語に対応しており、スクリーンリーダーもサポートしています。",
+  "sosFree": "完全に無料で、コードは ",
   "sosIconLabel": "派手な色の通知ベル。",
-  "sosWeb": "貢献の1つの具体的かつ非常に影響力のある方法は、InstaSOSをオンラインでホストする費用を負担することです。\n\nアプリストアの運営者は自分たちの立場を明確にしており、InstaSOSが普及した場合、削除される可能性があります。\nAndroidユーザーには常に自分でインストールする選択肢がありますが、iOSユーザーにとって唯一の実行可能な代替案はWebアプリとなります。\n\nありがたいことに、Flutterアプリはクライアントサイドでの計算処理となるため、費用は低く抑えられます。\n私たち（あなた）が支払う必要があるのはトラフィック管理の費用のみです。",
+  "sosOpenSource": "オープンソース",
+  "sosPrivate": "InstaSOSにはアカウント、Cookie、広告はありません。\n",
+  "sosPromoLabel": "InstaSOSのプロモーションビデオ。",
+  "sosSAPS": " （公共サービスとしてのソフトウェアを支援するために）。",
   "sosTranslators": "翻訳者",
-
-  
-
-  "fahJoin": "Foldに参加する",
-
-  "fahIconLabel": "タンパク質分子。",
-  "fahIconHint": "選択して彼らのサイトを開きます。",
-  
-  "fahIntro1": "次のチームに参加しよう: ",
-  "fahIntro2": " Folding@home チーム！",
-  "fahTeamHint": "YWTのFolding@homeチームページを開く",
-  
-  "fahWhats": "これって何？: ",
-  "fahName": "Folding@homeとは？",
-  "fahNameHint": "Folding at Homeの概要ページを開く",
-  
-  "fahStats": "私たちはこれまでに合計で4億ポイント以上を獲得しました。\nこれは、世界中の全チームの上位2%に入ります！",
-
-
-
-  "csPageTitle": "貢献する",
-  
-  "csEveryBit": "あなたが私たちに与えるすべてのビット（bit）が、巨大テクノロジー企業からバイト（byte）を奪い取ります。",
-  
-  "csTime": "時間",
-  "csBecome": " 次になることについて: ",
-  "csGit": "GitHubコントリビューター",
-  
-  "csMoney": "資金",
-  "csOpenLink": "YWTの{page}へのリンクを開く",
-  
-  "csPower": "力",
-
-  "csThanks": "あらゆるご支援に心より感謝申し上げます！"
+  "sosWeb": "貢献の1つの具体的かつ非常に影響力のある方法は、InstaSOSをオンラインでホストする費用を負担することです。\n\nアプリストアの運営者は自分たちの立場を明確にしており、InstaSOSが普及した場合、削除される可能性があります。\nAndroidユーザーには常に自分でインストールする選択肢がありますが、iOSユーザーにとって唯一の実行可能な代替案はWebアプリとなります。\n\nありがたいことに、Flutterアプリはクライアントサイドでの計算処理となるため、費用は低く抑えられます。\n私たち（あなた）が支払う必要があるのはトラフィック管理の費用のみです。"
 }

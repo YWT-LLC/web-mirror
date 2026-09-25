@@ -19,45 +19,24 @@ class PageLinks extends StatelessWidget {
 
   // Define the build(s) //
 
-  List<Widget> products(EzCP config) => <Widget>[
-        // Open UI
-        EzLink(
-          config,
-          text: Products.openUI.name,
-          style: config.headlineStyle,
-          textColor: config.colors.onSurface,
-          backgroundColor: Colors.transparent,
-          textAlign: TextAlign.center,
-          url: Uri.parse(Products.openUI.url),
-          hint: l10n(config).gLearn(Products.openUI.name),
-        ),
-        config.spacer,
-
-        // SOS
-        EzLink(
-          config,
-          text: Products.sos.name,
-          style: config.headlineStyle,
-          textColor: config.colors.onSurface,
-          backgroundColor: Colors.transparent,
-          textAlign: TextAlign.center,
-          url: Uri.parse(Products.sos.url),
-          hint: l10n(config).gLearn(Products.sos.name),
-        ),
-        config.spacer,
-
-        // Liminal
-        EzLink(
-          config,
-          text: Products.liminal.name,
-          style: config.headlineStyle,
-          textColor: config.colors.onSurface,
-          backgroundColor: Colors.transparent,
-          textAlign: TextAlign.center,
-          url: Uri.parse(Products.liminal.url),
-          hint: l10n(config).gLearn(Products.liminal.name),
-        ),
-      ];
+  List<Widget> products(
+    EzCP config, {
+    required TextStyle? style,
+    dynamic Function(bool)? onHover,
+  }) =>
+      Products.values
+          .map((Products product) => EzLink(
+                config,
+                text: product.name,
+                style: style,
+                textColor: config.colors.onSurface,
+                backgroundColor: Colors.transparent,
+                textAlign: TextAlign.center,
+                url: Uri.parse(product.url),
+                hint: l10n(config).gLearn(product.name),
+                onHover: onHover,
+              ))
+          .toList();
 
   Widget get productMenu {
     final MenuController controller = MenuController();
@@ -112,46 +91,11 @@ class PageLinks extends StatelessWidget {
             }
           },
         ),
-        menuChildren: <Widget>[
-          // Open UI
-          EzLink(
-            config,
-            text: Products.openUI.name,
-            style: config.titleStyle,
-            textColor: config.colors.onSurface,
-            backgroundColor: Colors.transparent,
-            textAlign: TextAlign.center,
-            url: Uri.parse(Products.openUI.url),
-            hint: l10n(config).gLearn(Products.openUI.name),
-            onHover: setAutoClose,
-          ),
-
-          // SOS
-          EzLink(
-            config,
-            text: Products.sos.name,
-            style: config.titleStyle,
-            textColor: config.colors.onSurface,
-            backgroundColor: Colors.transparent,
-            textAlign: TextAlign.center,
-            url: Uri.parse(Products.sos.url),
-            hint: l10n(config).gLearn(Products.sos.name),
-            onHover: setAutoClose,
-          ),
-
-          // Liminal
-          EzLink(
-            config,
-            text: Products.liminal.name,
-            style: config.titleStyle,
-            textColor: config.colors.onSurface,
-            backgroundColor: Colors.transparent,
-            textAlign: TextAlign.center,
-            url: Uri.parse(Products.liminal.url),
-            hint: l10n(config).gLearn(Products.liminal.name),
-            onHover: setAutoClose,
-          ),
-        ],
+        menuChildren: products(
+          config,
+          style: config.titleStyle,
+          onHover: setAutoClose,
+        ),
       ),
     );
   }

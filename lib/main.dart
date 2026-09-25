@@ -120,6 +120,11 @@ class Website extends StatelessWidget {
                   name: Products.liminal.path,
                   builder: (_, __) => const LiminalScreen(),
                 ),
+                GoRoute(
+                  path: Products.a11how.path,
+                  name: Products.a11how.path,
+                  builder: (_, __) => const A11HowScreen(),
+                ),
 
                 // Contribute
                 GoRoute(

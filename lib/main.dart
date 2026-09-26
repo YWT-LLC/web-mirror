@@ -29,14 +29,19 @@ void main() async {
     preferences: await SharedPreferencesWithCache.create(
       cacheOptions: SharedPreferencesWithCacheOptions(allowList: allEZConfigKeys.keys.toSet()),
     ),
-    defaults: isMobile() ? ywtMobileConfig : ywtDesktopConfig,
+    defaults: isMobile() ? websiteMobile : websiteDesktop,
+    neverReset: neverResetKeys,
   );
 
   // Run the app //
 
   final (Locale storedLocale, OUILang storedOUILang) = await ezStoredL10n();
 
-  runApp(Website(storedLocale, storedOUILang, await Lang.delegate.load(storedLocale)));
+  runApp(Website(
+    storedLocale,
+    storedOUILang,
+    await Lang.delegate.load(storedLocale),
+  ));
 }
 
 class Website extends StatelessWidget {
@@ -44,7 +49,12 @@ class Website extends StatelessWidget {
   final OUILang storedOUILang;
   final Lang storedLang;
 
-  const Website(this.storedLocale, this.storedOUILang, this.storedLang, {super.key});
+  const Website(
+    this.storedLocale,
+    this.storedOUILang,
+    this.storedLang, {
+    super.key,
+  });
 
   // Define URL redirects //
 
@@ -106,23 +116,23 @@ class Website extends StatelessWidget {
               routes: <RouteBase>[
                 // Products
                 GoRoute(
-                  path: Products.openUI.path,
-                  name: Products.openUI.path,
+                  path: Products.openUI.routerPath,
+                  name: Products.openUI.routerPath,
                   builder: (_, __) => const OpenUIScreen(),
                 ),
                 GoRoute(
-                  path: Products.sos.path,
-                  name: Products.sos.path,
+                  path: Products.sos.routerPath,
+                  name: Products.sos.routerPath,
                   builder: (_, __) => const SOSScreen(),
                 ),
                 GoRoute(
-                  path: Products.liminal.path,
-                  name: Products.liminal.path,
+                  path: Products.liminal.routerPath,
+                  name: Products.liminal.routerPath,
                   builder: (_, __) => const LiminalScreen(),
                 ),
                 GoRoute(
-                  path: Products.a11how.path,
-                  name: Products.a11how.path,
+                  path: Products.a11how.routerPath,
+                  name: Products.a11how.routerPath,
                   builder: (_, __) => const A11HowScreen(),
                 ),
 

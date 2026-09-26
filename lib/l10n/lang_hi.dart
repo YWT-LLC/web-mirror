@@ -154,6 +154,9 @@ class LangHi extends Lang {
   String get gNewsletter => 'न्यूज़लेटर';
 
   @override
+  String get gOpenWebApp => 'वेब ऐप खोलें';
+
+  @override
   String get gProductsHint => 'उत्पाद पेज खोलें';
 
   @override
@@ -172,6 +175,9 @@ class LangHi extends Lang {
 
   @override
   String get gTeamHint => 'टीम पेज खोलें';
+
+  @override
+  String get gTryLive => 'इसे लाइव आज़माएं!';
 
   @override
   String get gYWTGitHint => 'YWT का गिटहब (GitHub) पेज खोलें';
@@ -392,6 +398,9 @@ class LangHi extends Lang {
   String get sosIconLabel => 'एक चमकीले रंग की नोटिफिकेशन घंटी।';
 
   @override
+  String get sosOR => '- या -';
+
+  @override
   String get sosOpenSource => 'ओपन सोर्स';
 
   @override
@@ -410,5 +419,5 @@ class LangHi extends Lang {
 
   @override
   String get sosWeb =>
-      'योगदान देने का एक विशिष्ट और अत्यधिक प्रभावशाली तरीका InstaSOS को ऑनलाइन होस्ट करने का खर्च उठाना होगा।\n\nऐप स्टोर के मालिकों ने अपनी निष्ठा स्पष्ट कर दी है, और जब/यदि InstaSOS लोकप्रियता हासिल करता है तो इसे हटाया जा सकता है।\nAndroid उपयोगकर्ताओं के पास हमेशा स्वयं इंस्टॉल करने का विकल्प होगा, लेकिन iOS उपयोगकर्ताओं के लिए एकमात्र व्यवहार्य विकल्प एक वेब ऐप होगा।\n\nसौभाग्य से, फ्लटर (Flutter) ऐप्स क्लाइंट साइड कंप्यूट हैं, इसलिए बिल कम होगा।\nहमें (आपको) केवल ट्रैफ़िक प्रबंधन (traffic management) के लिए भुगतान करना होगा।';
+      'नोट: वेब पर कार्यक्षमता सीमित है।\nयह केवल एक KYR कैमरा है (सिर्फ इंस्टा, कोई SOS नहीं)।';
 }

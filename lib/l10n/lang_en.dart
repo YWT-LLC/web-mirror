@@ -152,6 +152,9 @@ class LangEn extends Lang {
   String get gNewsletter => 'Newsletter';
 
   @override
+  String get gOpenWebApp => 'Open the web app';
+
+  @override
   String get gProductsHint => 'Open a product page';
 
   @override
@@ -170,6 +173,9 @@ class LangEn extends Lang {
 
   @override
   String get gTeamHint => 'Open the team page';
+
+  @override
+  String get gTryLive => 'Try it live!';
 
   @override
   String get gYWTGitHint => 'Open the GitHub page for YWT';
@@ -389,6 +395,9 @@ class LangEn extends Lang {
   String get sosIconLabel => 'a loudly colored notification bell.';
 
   @override
+  String get sosOR => '- OR -';
+
+  @override
   String get sosOpenSource => 'open source';
 
   @override
@@ -405,7 +414,7 @@ class LangEn extends Lang {
 
   @override
   String get sosWeb =>
-      'One specific, and highly impactful, way to contribute would be to foot the bill for hosting InstaSOS online.\n\nThe app store owners have made their allegiances clear, and InstaSOS may be removed if/when it gains traction.\nAndroid users will always have the option to self install, but the only viable alternative for iOS users would be a web app.\n\nThankfully, Flutter apps are client side compute, so the bill would be low.\nWe\'d (you\'d) only need to pay for traffic management.';
+      'Note: functionality is limited on web.\nIt is just a KYR camera (just the Insta, no SOS).';
 }
 
 /// The translations for English, as used in the United States (`en_US`).
@@ -556,6 +565,9 @@ class LangEnUs extends LangEn {
   String get gNewsletter => 'Newsletter';
 
   @override
+  String get gOpenWebApp => 'Open the web app';
+
+  @override
   String get gProductsHint => 'Open a product page';
 
   @override
@@ -574,6 +586,9 @@ class LangEnUs extends LangEn {
 
   @override
   String get gTeamHint => 'Open the team page';
+
+  @override
+  String get gTryLive => 'Try it live!';
 
   @override
   String get gYWTGitHint => 'Open the GitHub page for YWT';
@@ -793,6 +808,9 @@ class LangEnUs extends LangEn {
   String get sosIconLabel => 'a loudly colored notification bell.';
 
   @override
+  String get sosOR => '- OR -';
+
+  @override
   String get sosOpenSource => 'open source';
 
   @override
@@ -809,5 +827,5 @@ class LangEnUs extends LangEn {
 
   @override
   String get sosWeb =>
-      'One specific, and highly impactful, way to contribute would be to foot the bill for hosting InstaSOS online.\n\nThe app store owners have made their allegiances clear, and InstaSOS may be removed if/when it gains traction.\nAndroid users will always have the option to self install, but the only viable alternative for iOS users would be a web app.\n\nThankfully, Flutter apps are client side compute, so the bill would be low.\nWe\'d (you\'d) only need to pay for traffic management.';
+      'Note: functionality is limited on web.\nIt is just a KYR camera (just the Insta, no SOS).';
 }

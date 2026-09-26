@@ -155,6 +155,9 @@ class LangEs extends Lang {
   String get gNewsletter => 'Boletín de noticias';
 
   @override
+  String get gOpenWebApp => 'Abrir la aplicación web';
+
+  @override
   String get gProductsHint => 'Abrir una página de producto';
 
   @override
@@ -173,6 +176,9 @@ class LangEs extends Lang {
 
   @override
   String get gTeamHint => 'Abrir la página del equipo';
+
+  @override
+  String get gTryLive => '¡Pruébalo en vivo!';
 
   @override
   String get gYWTGitHint => 'Abrir la página de GitHub de YWT';
@@ -395,6 +401,9 @@ class LangEs extends Lang {
   String get sosIconLabel => 'Un icono de notificación de color fuerte.';
 
   @override
+  String get sosOR => '- O -';
+
+  @override
   String get sosOpenSource => 'código abierto';
 
   @override
@@ -411,5 +420,5 @@ class LangEs extends Lang {
 
   @override
   String get sosWeb =>
-      'Una forma específica y de gran impacto de contribuir sería asumir el costo de alojar InstaSOS en línea.\n\nLos dueños de las tiendas de aplicaciones han dejado claras sus lealtades, e InstaSOS podría ser eliminada si/cuando gane tracción.\nLos usuarios de Android siempre tendrán la opción de instalarla manualmente, pero la única alternativa viable para los usuarios de iOS sería una aplicación web.\n\nAfortunadamente, el procesamiento de las aplicaciones hechas en Flutter se realiza del lado del cliente, por lo que la factura sería baja.\nSolo tendríamos (tendrías) que pagar por la gestión del tráfico.';
+      'Nota: la funcionalidad es limitada en la web.\nEs solo una cámara KYR (solo la Insta, sin SOS).';
 }

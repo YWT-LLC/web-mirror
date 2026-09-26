@@ -154,6 +154,9 @@ class LangFil extends Lang {
   String get gNewsletter => 'Newsletter';
 
   @override
+  String get gOpenWebApp => 'Buksan ang web app';
+
+  @override
   String get gProductsHint => 'Buksan ang page ng produkto';
 
   @override
@@ -172,6 +175,9 @@ class LangFil extends Lang {
 
   @override
   String get gTeamHint => 'Buksan ang page ng team';
+
+  @override
+  String get gTryLive => 'Subukan ito nang live!';
 
   @override
   String get gYWTGitHint => 'Buksan ang GitHub page para sa YWT';
@@ -388,6 +394,9 @@ class LangFil extends Lang {
   String get sosIconLabel => 'isang matingkad na kulay ng notification bell.';
 
   @override
+  String get sosOR => '- O -';
+
+  @override
   String get sosOpenSource => 'open source';
 
   @override
@@ -406,5 +415,5 @@ class LangFil extends Lang {
 
   @override
   String get sosWeb =>
-      'Isang tiyak, at napakaimpluwensyang paraan upang makatulong ay ang pagbabayad para sa hosting ng InstaSOS online.\n\nMalinaw na ang kinikilingan ng mga may-ari ng app store, at maaaring alisin ang InstaSOS kung/kapag nakakuha ito ng traksyon.\nLaging may opsyon ang mga user ng Android na mag-install nang sarili, ngunit ang tanging mabubuhay na alternatibo para sa mga user ng iOS ay isang web app.\n\nSa kabutihang palad, ang mga Flutter app ay client side compute, kaya\'t mababa lang ang bayarin.\nKailangan lang naming (ninyong) magbayad para sa traffic management.';
+      'Tandaan: limitado ang kakayahan sa web.\nIsa lamang itong KYR camera (ang Insta lang, walang SOS).';
 }

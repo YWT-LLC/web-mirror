@@ -151,6 +151,9 @@ class LangJa extends Lang {
   String get gNewsletter => 'ニュースレター';
 
   @override
+  String get gOpenWebApp => 'ウェブアプリを開く';
+
+  @override
   String get gProductsHint => '製品ページを開く';
 
   @override
@@ -169,6 +172,9 @@ class LangJa extends Lang {
 
   @override
   String get gTeamHint => 'チームページを開く';
+
+  @override
+  String get gTryLive => '実際に試してみる！';
 
   @override
   String get gYWTGitHint => 'YWTのGitHubページを開く';
@@ -382,6 +388,9 @@ class LangJa extends Lang {
   String get sosIconLabel => '派手な色の通知ベル。';
 
   @override
+  String get sosOR => '- または -';
+
+  @override
   String get sosOpenSource => 'オープンソース';
 
   @override
@@ -397,6 +406,5 @@ class LangJa extends Lang {
   String get sosTranslators => '翻訳者';
 
   @override
-  String get sosWeb =>
-      '貢献の1つの具体的かつ非常に影響力のある方法は、InstaSOSをオンラインでホストする費用を負担することです。\n\nアプリストアの運営者は自分たちの立場を明確にしており、InstaSOSが普及した場合、削除される可能性があります。\nAndroidユーザーには常に自分でインストールする選択肢がありますが、iOSユーザーにとって唯一の実行可能な代替案はWebアプリとなります。\n\nありがたいことに、Flutterアプリはクライアントサイドでの計算処理となるため、費用は低く抑えられます。\n私たち（あなた）が支払う必要があるのはトラフィック管理の費用のみです。';
+  String get sosWeb => '注: ウェブ版では機能が制限されています。\n単なるKYRカメラです（Instaのみ、SOS機能なし）。';
 }

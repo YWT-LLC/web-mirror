@@ -154,6 +154,9 @@ class LangRu extends Lang {
   String get gNewsletter => 'Новостная рассылка';
 
   @override
+  String get gOpenWebApp => 'Открыть веб-приложение';
+
+  @override
   String get gProductsHint => 'Открыть страницу продуктов';
 
   @override
@@ -172,6 +175,9 @@ class LangRu extends Lang {
 
   @override
   String get gTeamHint => 'Открыть страницу команды';
+
+  @override
+  String get gTryLive => 'Попробуйте вживую!';
 
   @override
   String get gYWTGitHint => 'Открыть страницу YWT на GitHub';
@@ -392,6 +398,9 @@ class LangRu extends Lang {
   String get sosIconLabel => 'ярко раскрашенный колокольчик уведомлений.';
 
   @override
+  String get sosOR => '- ИЛИ -';
+
+  @override
   String get sosOpenSource => 'open source';
 
   @override
@@ -410,5 +419,5 @@ class LangRu extends Lang {
 
   @override
   String get sosWeb =>
-      'Один из конкретных и очень действенных способов помочь — оплатить счет за онлайн-хостинг InstaSOS.\n\nВладельцы магазинов приложений четко обозначили свои приоритеты, и InstaSOS могут удалить, если/когда приложение наберет популярность.\nУ пользователей Android всегда будет возможность установить его самостоятельно, но единственной жизнеспособной альтернативой для пользователей iOS станет веб-приложение.\n\nК счастью, приложения Flutter вычисляются на стороне клиента, поэтому счета будут небольшими.\nНам (вам) придется платить только за управление трафиком.';
+      'Примечание: функционал в веб-версии ограничен.\nЭто только KYR-камера (только Insta, без SOS).';
 }

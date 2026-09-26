@@ -87,7 +87,7 @@ class _OpenUILinkState extends State<OpenUILink> {
       _ => DLType.deb,
     };
 
-    latest = await getLatest('open_ui', Products.openUI.localLatest);
+    latest = await getLatest('open_ui', Products.openUI.versionFallback);
     url = openUIDownload(currDL, latest);
   }
 
@@ -183,7 +183,7 @@ class _SOSLinkState extends State<SOSLink> {
       _ => DLType.gPlay,
     };
 
-    latest = await getLatest('sos', Products.sos.localLatest);
+    latest = await getLatest('sos', Products.sos.versionFallback);
     url = sosDownload(currDL, latest);
   }
 

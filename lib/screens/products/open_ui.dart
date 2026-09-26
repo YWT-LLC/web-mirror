@@ -39,7 +39,7 @@ class _OpenUIScreenState extends State<OpenUIScreen> {
       _ => DLType.deb,
     };
 
-    latest = await getLatest('open_ui', Products.openUI.localLatest);
+    latest = await getLatest('open_ui', Products.openUI.versionFallback);
     url = openUIDownload(dlType, latest);
     setState(() {});
   }
@@ -267,7 +267,7 @@ class _OpenUIScreenState extends State<OpenUIScreen> {
               ),
               config.margin,
               OpenUILink(config),
-              EzFooter(config),
+              EzFooter(config, a11howPath: ywt.websiteContributeA11),
             ],
           ),
         ),

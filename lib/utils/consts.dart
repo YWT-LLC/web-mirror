@@ -6,6 +6,7 @@
 import './export.dart';
 import 'package:ywt_private/ywt_private.dart' as ywt;
 
+import 'package:open_ui/open_ui.dart';
 import 'package:flutter/material.dart';
 
 // Titles //
@@ -129,4 +130,40 @@ final Map<String, dynamic> credits = <String, dynamic>{
   openUIDemoPath: founder,
   sosPromoPath: '$founder & $montana',
   sosVerticalPromoPath: '$founder & $montana',
+};
+
+//* EzConfig *//
+
+// a11how //
+
+const String developingKey = 'developing';
+const String recentUrlsKey = 'recentUrls';
+
+final List<String> recentUrls = <String>[
+  '${ywt.openUIGitHub}/tree/main/lib/src/l10n',
+  '${ywt.openUIGitHub}/tree/main/example/lib/l10n',
+  'https://github.com/YWT-LLC/web-mirror/tree/main/lib/l10n',
+  '${ywt.sosGitHub}/tree/main/lib/l10n',
+  '${ywt.liminalGitHub}/tree/main/lib/l10n',
+  '${ywt.a11howGitHub}/tree/main/lib/l10n',
+  '${ywt.smokeSignalGitHub}/tree/main/lib/l10n',
+];
+
+// Shared //
+
+final Map<String, Object> websiteMobile = <String, Object>{
+  ...ywtMobileConfig,
+  developingKey: false,
+  recentUrlsKey: recentUrls,
+};
+
+final Map<String, Object> websiteDesktop = <String, Object>{
+  ...ywtDesktopConfig,
+  developingKey: false,
+  recentUrlsKey: recentUrls,
+};
+
+const Set<String> neverResetKeys = <String>{
+  developingKey,
+  recentUrlsKey,
 };

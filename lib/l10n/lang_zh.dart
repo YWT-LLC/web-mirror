@@ -149,6 +149,9 @@ class LangZh extends Lang {
   String get gNewsletter => '新闻简报';
 
   @override
+  String get gOpenWebApp => '打开网页版应用';
+
+  @override
   String get gProductsHint => '打开产品页';
 
   @override
@@ -167,6 +170,9 @@ class LangZh extends Lang {
 
   @override
   String get gTeamHint => '打开团队页';
+
+  @override
+  String get gTryLive => '在线体验！';
 
   @override
   String get gYWTGitHint => '打开 YWT 的 GitHub 页面';
@@ -375,6 +381,9 @@ class LangZh extends Lang {
   String get sosIconLabel => '一个色彩醒目的通知铃声图标。';
 
   @override
+  String get sosOR => '- 或 -';
+
+  @override
   String get sosOpenSource => '开源的';
 
   @override
@@ -390,8 +399,7 @@ class LangZh extends Lang {
   String get sosTranslators => '译者';
 
   @override
-  String get sosWeb =>
-      '一种具体的、具有巨大影响力的贡献方式，是为 InstaSOS 在线托管买单。\n\n应用商店所有者已经表明了他们的立场，如果/当 InstaSOS 获得关注时，它可能会被移除。\nAndroid 用户将始终可以选择自行安装，但 iOS 用户唯一可行的替代方案将是 Web 应用程序。\n\n值得庆幸的是，Flutter 应用程序是客户端计算，所以账单会很低。\n我们 (你) 只需要支付流量管理费用。';
+  String get sosWeb => '注意：网页版功能受限。\n这只是一个 KYR 相机（仅限 Insta，无 SOS 功能）。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -539,6 +547,9 @@ class LangZhCn extends LangZh {
   String get gNewsletter => '新闻简报';
 
   @override
+  String get gOpenWebApp => '打开网页版应用';
+
+  @override
   String get gProductsHint => '打开产品页';
 
   @override
@@ -557,6 +568,9 @@ class LangZhCn extends LangZh {
 
   @override
   String get gTeamHint => '打开团队页';
+
+  @override
+  String get gTryLive => '在线体验！';
 
   @override
   String get gYWTGitHint => '打开 YWT 的 GitHub 页面';
@@ -765,6 +779,9 @@ class LangZhCn extends LangZh {
   String get sosIconLabel => '一个色彩醒目的通知铃声图标。';
 
   @override
+  String get sosOR => '- 或 -';
+
+  @override
   String get sosOpenSource => '开源的';
 
   @override
@@ -780,6 +797,5 @@ class LangZhCn extends LangZh {
   String get sosTranslators => '译者';
 
   @override
-  String get sosWeb =>
-      '一种具体的、具有巨大影响力的贡献方式，是为 InstaSOS 在线托管买单。\n\n应用商店所有者已经表明了他们的立场，如果/当 InstaSOS 获得关注时，它可能会被移除。\nAndroid 用户将始终可以选择自行安装，但 iOS 用户唯一可行的替代方案将是 Web 应用程序。\n\n值得庆幸的是，Flutter 应用程序是客户端计算，所以账单会很低。\n我们 (你) 只需要支付流量管理费用。';
+  String get sosWeb => '注意：网页版功能受限。\n这只是一个 KYR 相机（仅限 Insta，无 SOS 功能）。';
 }

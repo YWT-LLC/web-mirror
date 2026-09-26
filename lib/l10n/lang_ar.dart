@@ -152,6 +152,9 @@ class LangAr extends Lang {
   String get gNewsletter => 'النشرة الإخبارية';
 
   @override
+  String get gOpenWebApp => 'افتح تطبيق الويب';
+
+  @override
   String get gProductsHint => 'فتح صفحة المنتج';
 
   @override
@@ -170,6 +173,9 @@ class LangAr extends Lang {
 
   @override
   String get gTeamHint => 'فتح صفحة الفريق';
+
+  @override
+  String get gTryLive => 'جربه مباشرة!';
 
   @override
   String get gYWTGitHint => 'فتح صفحة GitHub لشركة YWT';
@@ -388,6 +394,9 @@ class LangAr extends Lang {
   String get sosIconLabel => 'جرس إشعارات بألوان صاخبة.';
 
   @override
+  String get sosOR => '- أو -';
+
+  @override
   String get sosOpenSource => 'مفتوح المصدر';
 
   @override
@@ -405,7 +414,7 @@ class LangAr extends Lang {
 
   @override
   String get sosWeb =>
-      'إحدى الطرق المحددة وعالية التأثير للمساهمة هي تغطية فاتورة استضافة InstaSOS عبر الإنترنت.\n\nلقد أوضح مالكو متاجر التطبيقات ولاءاتهم، وقد تتم إزالة InstaSOS إذا/عندما يكتسب شعبية.\nسيكون لدى مستخدمي Android دائمًا خيار التثبيت الذاتي، لكن البديل الوحيد القابل للتطبيق لمستخدمي iOS هو تطبيق ويب.\n\nلحسن الحظ، تعتمد تطبيقات Flutter على حوسبة جانب العميل، لذا ستكون الفاتورة منخفضة.\nسنحتاج (أنت) فقط إلى الدفع مقابل إدارة حركة المرور.';
+      'ملاحظة: الوظائف محدودة على الويب.\nإنها مجرد كاميرا KYR (Insta فقط، بدون SOS).';
 }
 
 /// The translations for Arabic, as used in Egypt (`ar_EG`).
@@ -556,6 +565,9 @@ class LangArEg extends LangAr {
   String get gNewsletter => 'النشرة الإخبارية';
 
   @override
+  String get gOpenWebApp => 'افتح تطبيق الويب';
+
+  @override
   String get gProductsHint => 'فتح صفحة المنتج';
 
   @override
@@ -574,6 +586,9 @@ class LangArEg extends LangAr {
 
   @override
   String get gTeamHint => 'فتح صفحة الفريق';
+
+  @override
+  String get gTryLive => 'جربه مباشرة!';
 
   @override
   String get gYWTGitHint => 'فتح صفحة GitHub لشركة YWT';
@@ -792,6 +807,9 @@ class LangArEg extends LangAr {
   String get sosIconLabel => 'جرس إشعارات بألوان صاخبة.';
 
   @override
+  String get sosOR => '- أو -';
+
+  @override
   String get sosOpenSource => 'مفتوح المصدر';
 
   @override
@@ -809,5 +827,5 @@ class LangArEg extends LangAr {
 
   @override
   String get sosWeb =>
-      'إحدى الطرق المحددة وعالية التأثير للمساهمة هي تغطية فاتورة استضافة InstaSOS عبر الإنترنت.\n\nلقد أوضح مالكو متاجر التطبيقات ولاءاتهم، وقد تتم إزالة InstaSOS إذا/عندما يكتسب شعبية.\nسيكون لدى مستخدمي Android دائمًا خيار التثبيت الذاتي، لكن البديل الوحيد القابل للتطبيق لمستخدمي iOS هو تطبيق ويب.\n\nلحسن الحظ، تعتمد تطبيقات Flutter على حوسبة جانب العميل، لذا ستكون الفاتورة منخفضة.\nسنحتاج (أنت) فقط إلى الدفع مقابل إدارة حركة المرور.';
+      'ملاحظة: الوظائف محدودة على الويب.\nإنها مجرد كاميرا KYR (Insta فقط، بدون SOS).';
 }

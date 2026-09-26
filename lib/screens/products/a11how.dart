@@ -5,6 +5,7 @@
 
 import '../../utils/export.dart';
 import '../../widgets/export.dart';
+import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:open_ui/open_ui.dart';
 import 'package:flutter/material.dart';
@@ -24,8 +25,8 @@ class A11HowScreen extends StatelessWidget {
               EzLink(
                 config,
                 text: Products.a11how.name,
-                url: Uri.parse(Products.a11how.source),
-                hint: l10n(config).gRepoHint,
+                url: Uri.parse(Products.a11how.liveUrl),
+                hint: l10n(config).gOpenWebApp,
                 style: config.displayStyle,
                 textAlign: TextAlign.center,
               ),
@@ -47,7 +48,7 @@ class A11HowScreen extends StatelessWidget {
                   EzInlineLink(
                     config,
                     text: 'Flutter apps',
-                    url: Uri.parse(Products.openUI.url),
+                    url: Uri.parse(Products.openUI.productUrl),
                     hint: l10n(config).gLearn(Products.openUI.name),
                     style: config.bodyStyle,
                     textAlign: TextAlign.center,
@@ -76,7 +77,7 @@ class A11HowScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: config.bodyStyle,
               ),
-              EzFooter(config),
+              EzFooter(config, a11howPath: ywt.websiteContributeA11),
             ]),
           ),
           fabs: <Widget>[config.spacer, SettingsFAB(config)],

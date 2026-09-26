@@ -15,28 +15,34 @@ extension Config on Products {
         Products.a11how => 'a11how',
       };
 
-  String get path => switch (this) {
+  String get routerPath => switch (this) {
         Products.openUI => 'products/open-ui',
         Products.sos => 'products/sos',
         Products.liminal => 'products/liminal',
         Products.a11how => 'products/a11how',
       };
 
-  String get url => switch (this) {
+  String get productUrl => switch (this) {
         Products.openUI => 'https://ywt.llc/#/products/open-ui',
         Products.sos => 'https://ywt.llc/#/products/sos',
         Products.liminal => 'https://ywt.llc/#/products/liminal',
         Products.a11how => 'https://ywt.llc/#/products/a11how',
       };
 
-  String get source => switch (this) {
+  String get liveUrl => switch (this) {
+        Products.sos => 'https://ywt.llc/sos',
+        Products.a11how => 'https://ywt.llc/a11how',
+        _ => 'https://ywt.llc/#/settings/',
+      };
+
+  String get sourceUrl => switch (this) {
         Products.openUI => '${ywt.ywtGitHub}/open_ui',
         Products.sos => '${ywt.ywtGitHub}/sos',
         Products.liminal => '${ywt.ywtGitHub}/liminal_launcher',
         Products.a11how => '${ywt.ywtGitHub}/a11how',
       };
 
-  String get localLatest => switch (this) {
+  String get versionFallback => switch (this) {
         Products.openUI => '13.0.0',
         Products.sos => '3.0.3',
         Products.liminal => '1.0.2',

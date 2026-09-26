@@ -41,12 +41,14 @@
   "gMeQ": "像我一样？",
   "gMissionHint": "打开使命页",
   "gNewsletter": "新闻简报",
+  "gOpenWebApp": "打开网页版应用",
   "gProductsHint": "打开产品页",
   "gProfile": "{name}的个人资料",
   "gReachOut": "联系我们",
   "gRepoHint": "打开开发代码库的链接。",
   "gShare": "分享",
   "gTeamHint": "打开团队页",
+  "gTryLive": "在线体验！",
   "gYWTGitHint": "打开 YWT 的 GitHub 页面",
   "gYWTLogoHint": "激活以返回首页。",
   "gYWTLogoLabel": "一个二维的沙漏。",
@@ -113,10 +115,11 @@
   "sosDescription": "将相机、SOS 信标和您的权利清单集于一处。\n它提供14种语言版本，并支持屏幕阅读器。",
   "sosFree": "它是完全免费的，并且代码是",
   "sosIconLabel": "一个色彩醒目的通知铃声图标。",
+  "sosOR": "- 或 -",
   "sosOpenSource": "开源的",
   "sosPrivate": "InstaSOS 没有帐户、cookie 或广告。\n",
   "sosPromoLabel": "Insta SOS 的宣传视频。",
   "sosSAPS": " 以支持作为公共服务的软件。",
   "sosTranslators": "译者",
-  "sosWeb": "一种具体的、具有巨大影响力的贡献方式，是为 InstaSOS 在线托管买单。\n\n应用商店所有者已经表明了他们的立场，如果/当 InstaSOS 获得关注时，它可能会被移除。\nAndroid 用户将始终可以选择自行安装，但 iOS 用户唯一可行的替代方案将是 Web 应用程序。\n\n值得庆幸的是，Flutter 应用程序是客户端计算，所以账单会很低。\n我们 (你) 只需要支付流量管理费用。"
+  "sosWeb": "注意：网页版功能受限。\n这只是一个 KYR 相机（仅限 Insta，无 SOS 功能）。"
 }

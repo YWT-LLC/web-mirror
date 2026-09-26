@@ -41,12 +41,14 @@
   "gMeQ": "kama mimi?",
   "gMissionHint": "Fungua ukurasa wa dhamira",
   "gNewsletter": "Jarida",
+  "gOpenWebApp": "Fungua programu ya wavuti",
   "gProductsHint": "Fungua ukurasa wa bidhaa",
   "gProfile": "Wasifu wa {name}",
   "gReachOut": "Wasiliana",
   "gRepoHint": "Fungua kiungo cha hifadhi ya uundaji.",
   "gShare": "Shiriki",
   "gTeamHint": "Fungua ukurasa wa timu",
+  "gTryLive": "Ijaribu mubashara!",
   "gYWTGitHint": "Fungua ukurasa wa GitHub wa YWT",
   "gYWTLogoHint": "Washa ili uende kwenye ukurasa wa mwanzo.",
   "gYWTLogoLabel": "Kipima saa cha mchanga cha pande mbili.",
@@ -113,10 +115,11 @@
   "sosDescription": "Kamera, kiashirio cha SOS, na orodha ya haki zako vyote mahali pamoja.\nInapatikana katika lugha 14 na inasaidia visomaji vya skrini.",
   "sosFree": "Ni bure kabisa na msimbo huu ni ",
   "sosIconLabel": "kengele ya arifa yenye rangi inayong'aa sana.",
+  "sosOR": "- AU -",
   "sosOpenSource": "programu huria",
   "sosPrivate": "InstaSOS haina akaunti, vidakuzi, au matangazo.\n",
   "sosPromoLabel": "Video ya matangazo ya Insta SOS.",
   "sosSAPS": " ili kusaidia programu kama huduma ya umma.",
   "sosTranslators": "Watafsiri",
-  "sosWeb": "Njia moja hususa, na yenye athari kubwa ya kuchangia itakuwa kulipia gharama za kuweka InstaSOS mtandaoni.\n\nWamiliki wa maduka ya programu wameweka wazi utiifu wao, na InstaSOS inaweza kuondolewa ikiwa/wakati itakapopata umaarufu.\nWatumiaji wa Android kila wakati watakuwa na chaguo la kusakinisha wenyewe, lakini mbadala pekee unaofaa kwa watumiaji wa iOS itakuwa ni programu ya wavuti.\n\nTunashukuru, programu za Flutter hufanya kazi upande wa mteja, kwa hivyo bili itakuwa ndogo.\nSisi (Wewe) tutahitaji tu kulipia usimamizi wa trafiki ya mtandao."
+  "sosWeb": "Kumbuka: utendaji una kikomo kwenye wavuti.\nNi kamera ya KYR tu (Insta pekee, hakuna SOS)."
 }

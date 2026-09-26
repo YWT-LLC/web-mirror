@@ -153,7 +153,7 @@ class ContributeScreen extends StatelessWidget {
                 style: ezSubTitleStyle(config.styles),
                 textAlign: TextAlign.center,
               ),
-              EzFooter(config),
+              EzFooter(config, a11howPath: ywt.websiteContributeA11),
             ]),
           ),
           fabs: <Widget>[config.spacer, SettingsFAB(config)],

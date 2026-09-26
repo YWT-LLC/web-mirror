@@ -258,7 +258,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     text: openUI,
                                     style: config.bodyStyle,
                                     textAlign: TextAlign.start,
-                                    url: Uri.parse(Products.openUI.url),
+                                    url: Uri.parse(Products.openUI.productUrl),
                                     hint: l10n(config).gProductsHint,
                                   ),
                                   EzPlainText(
@@ -291,12 +291,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         Container(
                           alignment: config.isLTR ? Alignment.centerLeft : Alignment.centerRight,
+                          margin: EdgeInsets.all(config.marginVal),
                           width: double.infinity,
-                          child: EzFooter(config, textAlign: TextAlign.start),
+                          child: EzFooter(
+                            config,
+                            a11howPath: ywt.websiteContributeA11,
+                            textAlign: TextAlign.start,
+                          ),
                         ),
                       ],
                     ),
-                    EzFooter(config),
                   ]),
                 ),
               ]),

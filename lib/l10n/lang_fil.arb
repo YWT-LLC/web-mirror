@@ -41,12 +41,14 @@
   "gMeQ": "tulad ko?",
   "gMissionHint": "Buksan ang page ng misyon",
   "gNewsletter": "Newsletter",
+  "gOpenWebApp": "Buksan ang web app",
   "gProductsHint": "Buksan ang page ng produkto",
   "gProfile": "Profile ni {name}",
   "gReachOut": "Makipag-ugnayan",
   "gRepoHint": "Buksan ang link sa development repo.",
   "gShare": "Ibahagi",
   "gTeamHint": "Buksan ang page ng team",
+  "gTryLive": "Subukan ito nang live!",
   "gYWTGitHint": "Buksan ang GitHub page para sa YWT",
   "gYWTLogoHint": "I-activate para pumunta sa home page.",
   "gYWTLogoLabel": "isang two-dimensional na orasa.",
@@ -113,10 +115,11 @@
   "sosDescription": "Isang camera, SOS beacon, at listahan ng iyong mga karapatan lahat sa isang lugar.\nIto ay makukuha sa 14 na wika at sumusuporta sa mga screen reader.",
   "sosFree": "Ito ay ganap na libre at ang code ay ",
   "sosIconLabel": "isang matingkad na kulay ng notification bell.",
+  "sosOR": "- O -",
   "sosOpenSource": "open source",
   "sosPrivate": "Ang InstaSOS ay walang accounts, cookies, o mga ad.\n",
   "sosPromoLabel": "Isang promotional video para sa Insta SOS.",
   "sosSAPS": " upang suportahan ang software bilang isang pampublikong serbisyo.",
   "sosTranslators": "Mga Tagasalin",
-  "sosWeb": "Isang tiyak, at napakaimpluwensyang paraan upang makatulong ay ang pagbabayad para sa hosting ng InstaSOS online.\n\nMalinaw na ang kinikilingan ng mga may-ari ng app store, at maaaring alisin ang InstaSOS kung/kapag nakakuha ito ng traksyon.\nLaging may opsyon ang mga user ng Android na mag-install nang sarili, ngunit ang tanging mabubuhay na alternatibo para sa mga user ng iOS ay isang web app.\n\nSa kabutihang palad, ang mga Flutter app ay client side compute, kaya't mababa lang ang bayarin.\nKailangan lang naming (ninyong) magbayad para sa traffic management."
+  "sosWeb": "Tandaan: limitado ang kakayahan sa web.\nIsa lamang itong KYR camera (ang Insta lang, walang SOS)."
 }

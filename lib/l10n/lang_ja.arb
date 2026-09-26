@@ -41,12 +41,14 @@
   "gMeQ": "私のように思いませんか？",
   "gMissionHint": "ミッションページを開く",
   "gNewsletter": "ニュースレター",
+  "gOpenWebApp": "ウェブアプリを開く",
   "gProductsHint": "製品ページを開く",
   "gProfile": "{name}のプロフィール",
   "gReachOut": "連絡する",
   "gRepoHint": "開発リポジトリへのリンクを開く",
   "gShare": "共有",
   "gTeamHint": "チームページを開く",
+  "gTryLive": "実際に試してみる！",
   "gYWTGitHint": "YWTのGitHubページを開く",
   "gYWTLogoHint": "選択してホームページへ移動します。",
   "gYWTLogoLabel": "2次元の砂時計。",
@@ -113,10 +115,11 @@
   "sosDescription": "カメラ、SOSビーコン、権利のリストがすべて1か所に。\n14言語に対応しており、スクリーンリーダーもサポートしています。",
   "sosFree": "完全に無料で、コードは ",
   "sosIconLabel": "派手な色の通知ベル。",
+  "sosOR": "- または -",
   "sosOpenSource": "オープンソース",
   "sosPrivate": "InstaSOSにはアカウント、Cookie、広告はありません。\n",
   "sosPromoLabel": "InstaSOSのプロモーションビデオ。",
   "sosSAPS": " （公共サービスとしてのソフトウェアを支援するために）。",
   "sosTranslators": "翻訳者",
-  "sosWeb": "貢献の1つの具体的かつ非常に影響力のある方法は、InstaSOSをオンラインでホストする費用を負担することです。\n\nアプリストアの運営者は自分たちの立場を明確にしており、InstaSOSが普及した場合、削除される可能性があります。\nAndroidユーザーには常に自分でインストールする選択肢がありますが、iOSユーザーにとって唯一の実行可能な代替案はWebアプリとなります。\n\nありがたいことに、Flutterアプリはクライアントサイドでの計算処理となるため、費用は低く抑えられます。\n私たち（あなた）が支払う必要があるのはトラフィック管理の費用のみです。"
+  "sosWeb": "注: ウェブ版では機能が制限されています。\n単なるKYRカメラです（Instaのみ、SOS機能なし）。"
 }

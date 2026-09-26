@@ -6,6 +6,7 @@
 import '../export.dart';
 import '../../utils/export.dart';
 import '../../widgets/export.dart';
+import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:open_ui/open_ui.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +62,7 @@ class SOSScreen extends StatelessWidget {
                     text: l10n(config).sosOpenSource,
                     style: config.bodyStyle,
                     textAlign: TextAlign.center,
-                    url: Uri.parse(Products.sos.source),
+                    url: Uri.parse(Products.sos.sourceUrl),
                     hint: l10n(config).gRepoHint,
                   ),
                   EzPlainText(text: '.', style: config.bodyStyle),
@@ -102,11 +103,31 @@ class SOSScreen extends StatelessWidget {
               SOSLink(config),
 
               // SOS web
-              config.separator,
-              EzText(
+              EzRichText(
                 config,
-                text: l10n(config).sosWeb,
-                style: config.bodyStyle,
+                children: <InlineSpan>[
+                  config.richLine,
+                  config.richLine,
+                  EzPlainText(
+                    text: l10n(config).sosOR,
+                    style: config.bodyStyle,
+                  ),
+                  config.richLine,
+                  config.richLine,
+                  EzInlineLink(
+                    config,
+                    text: l10n(config).gTryLive,
+                    style: config.titleStyle,
+                    textAlign: TextAlign.center,
+                    url: Uri.parse(Products.sos.liveUrl),
+                    hint: l10n(config).gOpenWebApp,
+                  ),
+                  config.richLine,
+                  EzPlainText(
+                    text: l10n(config).sosWeb,
+                    style: config.bodyStyle,
+                  ),
+                ],
                 textAlign: TextAlign.center,
               ),
               config.divider,
@@ -223,7 +244,7 @@ class SOSScreen extends StatelessWidget {
                   members: <Widget>[FreelancerCoin(config, leah)],
                 ),
               ]),
-              EzFooter(config),
+              EzFooter(config, a11howPath: ywt.websiteContributeA11),
             ]),
           ),
           fabs: <Widget>[config.spacer, SettingsFAB(config)],

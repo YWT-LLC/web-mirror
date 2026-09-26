@@ -41,12 +41,14 @@
   "gMeQ": "tankou mwen?",
   "gMissionHint": "Louvri paj misyon an",
   "gNewsletter": "Bilten enfòmasyon",
+  "gOpenWebApp": "Louvri aplikasyon wèb la",
   "gProductsHint": "Louvri yon paj pwodwi",
   "gProfile": "Pwofil {name} la",
   "gReachOut": "Kontakte nou",
   "gRepoHint": "Louvri yon lyen ki mennen nan depo devlopman an.",
   "gShare": "Pataje",
   "gTeamHint": "Louvri paj ekip la",
+  "gTryLive": "Eseye l an dirèk!",
   "gYWTGitHint": "Louvri paj GitHub pou YWT",
   "gYWTLogoHint": "Aktive pou ale nan paj akèy la.",
   "gYWTLogoLabel": "yon sabliye de dimansyon.",
@@ -113,10 +115,11 @@
   "sosDescription": "Yon kamera, yon fa SOS, ak yon lis dwa ou yo tout nan yon sèl kote.\nLi disponib nan 14 lang epi li sipòte lektè ekran.",
   "sosFree": "Li konplètman gratis epi kòd la se ",
   "sosIconLabel": "yon klòch notifikasyon ki gen koulè vif.",
+  "sosOR": "- OSWA -",
   "sosOpenSource": "open source",
   "sosPrivate": "InstaSOS pa gen okenn kont, bonbon, ni anons.\n",
   "sosPromoLabel": "Yon videyo pwomosyon pou Insta SOS.",
   "sosSAPS": " pou sipòte lojisyèl kòm yon sèvis piblik.",
   "sosTranslators": "Tradiktè yo",
-  "sosWeb": "Yon fason espesifik, epi ki gen anpil enpak, pou kontribye se ta peye bòdwo pou ebèje InstaSOS sou entènèt.\n\nPropriyetè magazen aplikasyon yo deja fè konnen ki bò yo kanpe, epi yo gendwa retire InstaSOS si/lè li vin popilè.\nItilizatè Android yo ap toujou gen opsyon pou yo enstale li tèt yo, men sèl altènatif solid pou itilizatè iOS yo t ap yon aplikasyon wèb.\n\nErezman, aplikasyon Flutter yo fè kalkil yo sou bò kliyan an, donk bòdwo a t ap ba.\nNou t ap (ou t ap) sèlman bezwen peye pou jesyon trafik la."
+  "sosWeb": "Nòt: fonksyonalite a limite sou wèb la.\nLi se jis yon kamera KYR (sèlman Insta a, pa gen SOS)."
 }

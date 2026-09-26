@@ -1,6 +1,6 @@
 name: website
 description: "YWT is re-balancing tech by making self-hosting more accessible."
-version: 9.0.0
+version: 9.0.1
 publish_to: 'none'
 repository: https://github.com/YWT-LLC/web-mirror
 

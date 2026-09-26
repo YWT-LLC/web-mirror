@@ -154,6 +154,9 @@ class LangUk extends Lang {
   String get gNewsletter => 'Розсилка';
 
   @override
+  String get gOpenWebApp => 'Відкрити вебзастосунок';
+
+  @override
   String get gProductsHint => 'Відкрити сторінку продукту';
 
   @override
@@ -172,6 +175,9 @@ class LangUk extends Lang {
 
   @override
   String get gTeamHint => 'Відкрити сторінку команди';
+
+  @override
+  String get gTryLive => 'Спробуйте наживо!';
 
   @override
   String get gYWTGitHint => 'Відкрити сторінку GitHub для YWT';
@@ -389,6 +395,9 @@ class LangUk extends Lang {
   String get sosIconLabel => 'яскраво розфарбований дзвіночок сповіщень.';
 
   @override
+  String get sosOR => '- АБО -';
+
+  @override
   String get sosOpenSource => 'відкритий (open source)';
 
   @override
@@ -407,5 +416,5 @@ class LangUk extends Lang {
 
   @override
   String get sosWeb =>
-      'Один конкретний і дуже дієвий спосіб зробити внесок — оплатити рахунок за хостинг InstaSOS в Інтернеті.\n\nВласники магазинів застосунків чітко заявили про свою позицію, і InstaSOS може бути видалений, якщо/коли він набере популярності.\nКористувачі Android завжди матимуть можливість самостійного встановлення, але єдиною життєздатною альтернативою для користувачів iOS буде веб-застосунок.\n\nНа щастя, застосунки Flutter обчислюються на стороні клієнта, тому рахунок буде невеликим.\nНам (вам) потрібно буде платити лише за управління трафіком.';
+      'Примітка: функціонал у вебверсії обмежений.\nЦе лише KYR-камера (тільки Insta, без SOS).';
 }

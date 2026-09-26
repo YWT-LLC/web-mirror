@@ -152,6 +152,9 @@ class LangHt extends Lang {
   String get gNewsletter => 'Bilten enfòmasyon';
 
   @override
+  String get gOpenWebApp => 'Louvri aplikasyon wèb la';
+
+  @override
   String get gProductsHint => 'Louvri yon paj pwodwi';
 
   @override
@@ -170,6 +173,9 @@ class LangHt extends Lang {
 
   @override
   String get gTeamHint => 'Louvri paj ekip la';
+
+  @override
+  String get gTryLive => 'Eseye l an dirèk!';
 
   @override
   String get gYWTGitHint => 'Louvri paj GitHub pou YWT';
@@ -390,6 +396,9 @@ class LangHt extends Lang {
   String get sosIconLabel => 'yon klòch notifikasyon ki gen koulè vif.';
 
   @override
+  String get sosOR => '- OSWA -';
+
+  @override
   String get sosOpenSource => 'open source';
 
   @override
@@ -406,5 +415,5 @@ class LangHt extends Lang {
 
   @override
   String get sosWeb =>
-      'Yon fason espesifik, epi ki gen anpil enpak, pou kontribye se ta peye bòdwo pou ebèje InstaSOS sou entènèt.\n\nPropriyetè magazen aplikasyon yo deja fè konnen ki bò yo kanpe, epi yo gendwa retire InstaSOS si/lè li vin popilè.\nItilizatè Android yo ap toujou gen opsyon pou yo enstale li tèt yo, men sèl altènatif solid pou itilizatè iOS yo t ap yon aplikasyon wèb.\n\nErezman, aplikasyon Flutter yo fè kalkil yo sou bò kliyan an, donk bòdwo a t ap ba.\nNou t ap (ou t ap) sèlman bezwen peye pou jesyon trafik la.';
+      'Nòt: fonksyonalite a limite sou wèb la.\nLi se jis yon kamera KYR (sèlman Insta a, pa gen SOS).';
 }

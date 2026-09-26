@@ -32,7 +32,7 @@ class PageLinks extends StatelessWidget {
                 textColor: config.colors.onSurface,
                 backgroundColor: Colors.transparent,
                 textAlign: TextAlign.center,
-                url: Uri.parse(product.url),
+                url: Uri.parse(product.productUrl),
                 hint: l10n(config).gLearn(product.name),
                 onHover: onHover,
               ))

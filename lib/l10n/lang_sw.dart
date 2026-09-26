@@ -154,6 +154,9 @@ class LangSw extends Lang {
   String get gNewsletter => 'Jarida';
 
   @override
+  String get gOpenWebApp => 'Fungua programu ya wavuti';
+
+  @override
   String get gProductsHint => 'Fungua ukurasa wa bidhaa';
 
   @override
@@ -172,6 +175,9 @@ class LangSw extends Lang {
 
   @override
   String get gTeamHint => 'Fungua ukurasa wa timu';
+
+  @override
+  String get gTryLive => 'Ijaribu mubashara!';
 
   @override
   String get gYWTGitHint => 'Fungua ukurasa wa GitHub wa YWT';
@@ -394,6 +400,9 @@ class LangSw extends Lang {
   String get sosIconLabel => 'kengele ya arifa yenye rangi inayong\'aa sana.';
 
   @override
+  String get sosOR => '- AU -';
+
+  @override
   String get sosOpenSource => 'programu huria';
 
   @override
@@ -410,5 +419,5 @@ class LangSw extends Lang {
 
   @override
   String get sosWeb =>
-      'Njia moja hususa, na yenye athari kubwa ya kuchangia itakuwa kulipia gharama za kuweka InstaSOS mtandaoni.\n\nWamiliki wa maduka ya programu wameweka wazi utiifu wao, na InstaSOS inaweza kuondolewa ikiwa/wakati itakapopata umaarufu.\nWatumiaji wa Android kila wakati watakuwa na chaguo la kusakinisha wenyewe, lakini mbadala pekee unaofaa kwa watumiaji wa iOS itakuwa ni programu ya wavuti.\n\nTunashukuru, programu za Flutter hufanya kazi upande wa mteja, kwa hivyo bili itakuwa ndogo.\nSisi (Wewe) tutahitaji tu kulipia usimamizi wa trafiki ya mtandao.';
+      'Kumbuka: utendaji una kikomo kwenye wavuti.\nNi kamera ya KYR tu (Insta pekee, hakuna SOS).';
 }

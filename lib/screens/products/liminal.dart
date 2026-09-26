@@ -191,7 +191,7 @@ class LiminalScreen extends StatelessWidget {
               EzLink(
                 config,
                 text: Products.liminal.name,
-                url: Uri.parse(Products.liminal.source),
+                url: Uri.parse(Products.liminal.sourceUrl),
                 hint: l10n(config).gRepoHint,
                 style: config.displayStyle,
                 textAlign: TextAlign.center,
@@ -208,7 +208,7 @@ class LiminalScreen extends StatelessWidget {
                   EzInlineLink(
                     config,
                     text: Products.openUI.name,
-                    url: Uri.parse(Products.openUI.url),
+                    url: Uri.parse(Products.openUI.productUrl),
                     hint: l10n(config).gLearn(Products.openUI.name),
                     style: config.bodyStyle,
                     textAlign: TextAlign.center,
@@ -287,7 +287,7 @@ class LiminalScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: config.bodyStyle,
               ),
-              EzFooter(config),
+              EzFooter(config, a11howPath: ywt.websiteContributeA11),
             ]),
           ),
           fabs: <Widget>[config.spacer, SettingsFAB(config)],

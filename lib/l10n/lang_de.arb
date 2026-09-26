@@ -41,12 +41,14 @@
   "gMeQ": "wie ich?",
   "gMissionHint": "Missionsseite öffnen",
   "gNewsletter": "Newsletter",
+  "gOpenWebApp": "Web-App öffnen",
   "gProductsHint": "Produktseite öffnen",
   "gProfile": "{name} Profil",
   "gReachOut": "Kontakt aufnehmen",
   "gRepoHint": "Link zum Entwicklungs-Repository öffnen.",
   "gShare": "Teilen",
   "gTeamHint": "Teamseite öffnen",
+  "gTryLive": "Live ausprobieren!",
   "gYWTGitHint": "GitHub-Seite von YWT öffnen",
   "gYWTLogoHint": "Aktivieren, um zur Startseite zu gelangen.",
   "gYWTLogoLabel": "eine zweidimensionale Sanduhr.",
@@ -113,10 +115,11 @@
   "sosDescription": "Eine Kamera, ein SOS-Signal und eine Liste deiner Rechte an einem Ort.\nEs ist in 14 Sprachen verfügbar und unterstützt Screenreader.",
   "sosFree": "Es ist völlig kostenlos und der Code ist ",
   "sosIconLabel": "eine knallbunte Benachrichtigungsglocke.",
+  "sosOR": "- ODER -",
   "sosOpenSource": "Open Source",
   "sosPrivate": "InstaSOS hat keine Konten, Cookies oder Werbung.\n",
   "sosPromoLabel": "Ein Werbevideo für Insta SOS.",
   "sosSAPS": ", um Software als öffentlichen Dienst zu unterstützen.",
   "sosTranslators": "Übersetzer",
-  "sosWeb": "Eine spezifische und sehr wirkungsvolle Möglichkeit, einen Beitrag zu leisten, bestünde darin, die Kosten für das Online-Hosting von InstaSOS zu übernehmen.\n\nDie App-Store-Betreiber haben ihre Loyalitäten deutlich gemacht, und InstaSOS könnte entfernt werden, wenn es an Zugkraft gewinnt.\nAndroid-Nutzer werden immer die Möglichkeit haben, es selbst zu installieren, aber die einzige praktikable Alternative für iOS-Nutzer wäre eine Web-App.\n\nZum Glück werden Flutter-Apps clientseitig berechnet, sodass die Rechnung niedrig ausfallen würde.\nWir (du) müssten nur für das Traffic-Management bezahlen."
+  "sosWeb": "Hinweis: Die Funktionalität im Web ist eingeschränkt.\nEs ist nur eine KYR-Kamera (nur Insta, kein SOS)."
 }

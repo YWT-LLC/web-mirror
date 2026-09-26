@@ -41,12 +41,14 @@
   "gMeQ": "comme les miennes ?",
   "gMissionHint": "Ouvre la page de mission",
   "gNewsletter": "Lettre d'information",
+  "gOpenWebApp": "Ouvrir l'application web",
   "gProductsHint": "Ouvrir une page produit",
   "gProfile": "Profil de {name}",
   "gReachOut": "Contactez-nous",
   "gRepoHint": "Ouvrir un lien vers le dépôt de développement.",
   "gShare": "Partager",
   "gTeamHint": "Ouvre la page de l'équipe",
+  "gTryLive": "Essayez-le en direct !",
   "gYWTGitHint": "Ouvre la page GitHub d'YWT",
   "gYWTLogoHint": "Activer pour accéder à la page d'accueil.",
   "gYWTLogoLabel": "un sablier en deux dimensions.",
@@ -113,10 +115,11 @@
   "sosDescription": "Une caméra, une balise SOS et une liste de vos droits, le tout au même endroit.\nIl est disponible en 14 langues et prend en charge les lecteurs d'écran.",
   "sosFree": "C'est totalement gratuit et le code est ",
   "sosIconLabel": "Une icône de notification aux couleurs vives.",
+  "sosOR": "- OU -",
   "sosOpenSource": "open source",
   "sosPrivate": "InstaSOS n'a pas de comptes, de cookies ou de publicités.\n",
   "sosPromoLabel": "Une vidéo promotionnelle pour Insta SOS.",
   "sosSAPS": " au support des logiciels en tant que service public.",
   "sosTranslators": "Traducteurs",
-  "sosWeb": "Une façon spécifique, et à fort impact, de contribuer serait de régler la facture de l'hébergement d'InstaSOS en ligne.\n\nLes propriétaires des boutiques d'applications ont clairement affiché la couleur quant à leurs alliances, et InstaSOS risque d'être retiré si/quand il gagnera du terrain.\nLes utilisateurs d'Android auront toujours la possibilité de l'installer manuellement, mais la seule alternative viable pour les utilisateurs d'iOS serait une application web.\n\nHeureusement, les applications Flutter effectuent leurs calculs côté client, la facture serait donc peu élevée.\nNous n'aurions (vous n'auriez) à payer que pour la gestion du trafic."
+  "sosWeb": "Remarque : la fonctionnalité est limitée sur le web.\nIl s'agit juste d'une caméra KYR (juste l'Insta, pas de SOS)."
 }

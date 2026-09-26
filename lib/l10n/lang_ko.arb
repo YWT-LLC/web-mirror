@@ -41,12 +41,14 @@
   "gMeQ": "나처럼?",
   "gMissionHint": "미션 페이지 열기",
   "gNewsletter": "뉴스레터",
+  "gOpenWebApp": "웹 앱 열기",
   "gProductsHint": "제품 페이지 열기",
   "gProfile": "{name}의 프로필",
   "gReachOut": "연락하기",
   "gRepoHint": "개발 리포지토리 링크 열기.",
   "gShare": "공유",
   "gTeamHint": "팀 페이지 열기",
+  "gTryLive": "직접 사용해보기!",
   "gYWTGitHint": "YWT의 GitHub 페이지 열기",
   "gYWTLogoHint": "홈페이지로 가려면 활성화하세요.",
   "gYWTLogoLabel": "2차원 모래시계.",
@@ -113,10 +115,11 @@
   "sosDescription": "카메라, SOS 비콘, 사용자의 권리 목록이 모두 한 곳에 있습니다.\n14개 언어로 제공되며 스크린 리더를 지원합니다.",
   "sosFree": "이 앱은 완전히 무료이며 코드는 ",
   "sosIconLabel": "화려한 색상의 알림 종.",
+  "sosOR": "- 또는 -",
   "sosOpenSource": "오픈 소스",
   "sosPrivate": "InstaSOS에는 계정, 쿠키 또는 광고가 없습니다.\n",
   "sosPromoLabel": "인스타 SOS(Insta SOS) 홍보 영상.",
   "sosSAPS": "하는 것을 고려해 보세요.",
   "sosTranslators": "번역가",
-  "sosWeb": "크게 기여할 수 있는 구체적이고 매우 영향력 있는 방법 중 하나는 InstaSOS를 온라인에 호스팅하는 비용을 지불하는 것입니다.\n\n앱 스토어 소유자들은 자신들의 입장을 명확히 밝혔으며, InstaSOS가 인기를 얻게 되면 제거될 수 있습니다.\nAndroid 사용자는 항상 직접 설치할 수 있는 옵션이 있지만, iOS 사용자에게 실행 가능한 유일한 대안은 웹 앱뿐입니다.\n\n다행히 Flutter 앱은 클라이언트 측 컴퓨팅이므로 비용이 낮습니다.\n우리는(당신은) 트래픽 관리 비용만 지불하면 됩니다."
+  "sosWeb": "참고: 웹에서는 기능이 제한됩니다.\n단순한 KYR 카메라입니다(SOS 기능 없이 Insta만 지원)."
 }

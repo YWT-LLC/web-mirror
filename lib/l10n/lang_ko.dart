@@ -151,6 +151,9 @@ class LangKo extends Lang {
   String get gNewsletter => '뉴스레터';
 
   @override
+  String get gOpenWebApp => '웹 앱 열기';
+
+  @override
   String get gProductsHint => '제품 페이지 열기';
 
   @override
@@ -169,6 +172,9 @@ class LangKo extends Lang {
 
   @override
   String get gTeamHint => '팀 페이지 열기';
+
+  @override
+  String get gTryLive => '직접 사용해보기!';
 
   @override
   String get gYWTGitHint => 'YWT의 GitHub 페이지 열기';
@@ -382,6 +388,9 @@ class LangKo extends Lang {
   String get sosIconLabel => '화려한 색상의 알림 종.';
 
   @override
+  String get sosOR => '- 또는 -';
+
+  @override
   String get sosOpenSource => '오픈 소스';
 
   @override
@@ -398,5 +407,5 @@ class LangKo extends Lang {
 
   @override
   String get sosWeb =>
-      '크게 기여할 수 있는 구체적이고 매우 영향력 있는 방법 중 하나는 InstaSOS를 온라인에 호스팅하는 비용을 지불하는 것입니다.\n\n앱 스토어 소유자들은 자신들의 입장을 명확히 밝혔으며, InstaSOS가 인기를 얻게 되면 제거될 수 있습니다.\nAndroid 사용자는 항상 직접 설치할 수 있는 옵션이 있지만, iOS 사용자에게 실행 가능한 유일한 대안은 웹 앱뿐입니다.\n\n다행히 Flutter 앱은 클라이언트 측 컴퓨팅이므로 비용이 낮습니다.\n우리는(당신은) 트래픽 관리 비용만 지불하면 됩니다.';
+      '참고: 웹에서는 기능이 제한됩니다.\n단순한 KYR 카메라입니다(SOS 기능 없이 Insta만 지원).';
 }

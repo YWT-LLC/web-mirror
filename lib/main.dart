@@ -114,26 +114,40 @@ class Website extends StatelessWidget {
               name: homePath,
               builder: (_, GoRouterState state) => const HomeScreen(),
               routes: <RouteBase>[
-                // Products
+                // Products (landing)
                 GoRoute(
-                  path: Products.openUI.routerPath,
-                  name: Products.openUI.routerPath,
-                  builder: (_, __) => const OpenUIScreen(),
-                ),
-                GoRoute(
-                  path: Products.sos.routerPath,
-                  name: Products.sos.routerPath,
-                  builder: (_, __) => const SOSScreen(),
-                ),
-                GoRoute(
-                  path: Products.liminal.routerPath,
-                  name: Products.liminal.routerPath,
-                  builder: (_, __) => const LiminalScreen(),
-                ),
-                GoRoute(
-                  path: Products.a11how.routerPath,
-                  name: Products.a11how.routerPath,
-                  builder: (_, __) => const A11HowScreen(),
+                  path: 'products',
+                  name: 'products',
+                  builder: (_, GoRouterState state) => const LandingScreen(),
+                  routes: <RouteBase>[
+                    // Open UI
+                    GoRoute(
+                      path: Products.openUI.routerPath,
+                      name: Products.openUI.routerPath,
+                      builder: (_, __) => const OpenUIScreen(),
+                    ),
+
+                    // SOS
+                    GoRoute(
+                      path: Products.sos.routerPath,
+                      name: Products.sos.routerPath,
+                      builder: (_, __) => const SOSScreen(),
+                    ),
+
+                    // Liminal
+                    GoRoute(
+                      path: Products.liminal.routerPath,
+                      name: Products.liminal.routerPath,
+                      builder: (_, __) => const LiminalScreen(),
+                    ),
+
+                    // a11how
+                    GoRoute(
+                      path: Products.a11how.routerPath,
+                      name: Products.a11how.routerPath,
+                      builder: (_, __) => const A11HowScreen(),
+                    ),
+                  ],
                 ),
 
                 // Contribute

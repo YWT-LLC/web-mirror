@@ -3,6 +3,8 @@
  * See LICENSE for distribution and usage details.
  */
 
+import 'package:ywt_private/ywt_private.dart' as ywt;
+
 //* Files *//
 
 export 'products/a11how.dart';
@@ -17,61 +19,32 @@ export 'settings.dart';
 
 //* Paths && URLs *//
 
-const String baseURL = 'https://ywt.llc/#/';
+const String baseURL = '${ywt.ywtSite}/#';
 
-/// Type query parameter == 'type'
 const String typeQP = 'type';
-
-/// Advanced query parameter == 'advanced'
 const String advQP = 'advanced';
-
-/// Page query parameter == 'advanced'
 const String pageQP = 'page';
 
 // Core //
 
-/// https://ywt.llc/
-const String homeURL = 'https://ywt.llc/';
-
-/// contribute
 const String contributePath = 'contribute';
-
-/// https://ywt.llc/#/contribute
-const String contributeURL = '${baseURL}contribute';
+const String contributeURL = '$baseURL/contribute';
 
 // Settings //
 
-/// settings
 const String settingsPath = 'settings';
+const String settingsURL = '$baseURL/settings';
 
-/// https://ywt.llc/#/settings
-const String settingsURL = '${baseURL}settings';
-
-/// color-settings
 const String colorSettingsPath = 'color-settings';
-
-/// color
 const String colorRedirect = 'color';
-
-/// https://ywt.llc/#/settings?type=color
 const String colorSettingsURL = '$settingsURL?$typeQP=$colorRedirect';
 
-/// design-settings
 const String designSettingsPath = 'design-settings';
-
-/// design
 const String designRedirect = 'design';
-
-/// https://ywt.llc/#/settings?type=design
 const String designSettingsURL = '$settingsURL?$typeQP=$designRedirect';
 
-/// text-settings
 const String textSettingsPath = 'text-settings';
-
-/// text
 const String textRedirect = 'text';
-
-/// https://ywt.llc/#/settings?type=text
 const String textSettingsURL = '$settingsURL?$typeQP=$textRedirect';
 
 // Settings' lookups //

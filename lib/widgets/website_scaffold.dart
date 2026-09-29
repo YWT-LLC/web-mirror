@@ -5,7 +5,6 @@
 
 import './export.dart';
 import '../utils/export.dart';
-import '../screens/export.dart';
 import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:flutter/material.dart';
@@ -54,7 +53,7 @@ class WebsiteScaffold extends StatelessWidget {
     final Widget linkLogo = EzLinkWidget(
       config,
       isImage: true,
-      url: Uri.parse(homeURL),
+      url: Uri.parse(ywt.ywtSite),
       label: l10n(config).gLogoLabel(ywtName),
       hint: l10n(config).gYWTLogoHint,
       tooltip: l10n(config).gHomeHint,

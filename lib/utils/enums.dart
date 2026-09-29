@@ -23,29 +23,29 @@ extension Config on Products {
       };
 
   String get productUrl => switch (this) {
-        Products.openUI => 'https://ywt.llc/#/products/open-ui',
-        Products.sos => 'https://ywt.llc/#/products/sos',
-        Products.liminal => 'https://ywt.llc/#/products/liminal',
-        Products.a11how => 'https://ywt.llc/#/products/a11how',
+        Products.openUI => '${ywt.ywtProducts}/open-ui',
+        Products.sos => '${ywt.ywtProducts}/sos',
+        Products.liminal => '${ywt.ywtProducts}/liminal',
+        Products.a11how => '${ywt.ywtProducts}/a11how',
       };
 
   String get liveUrl => switch (this) {
-        Products.sos => 'https://ywt.llc/sos',
-        Products.a11how => 'https://ywt.llc/a11how',
-        _ => 'https://ywt.llc/#/settings/',
+        Products.sos => ywt.sosLive,
+        Products.a11how => ywt.a11howLive,
+        _ => '${ywt.ywtSite}/#/settings/',
       };
 
   String get sourceUrl => switch (this) {
-        Products.openUI => '${ywt.ywtGitHub}/open_ui',
-        Products.sos => '${ywt.ywtGitHub}/sos',
-        Products.liminal => '${ywt.ywtGitHub}/liminal_launcher',
-        Products.a11how => '${ywt.ywtGitHub}/a11how',
+        Products.openUI => ywt.openUIGitHub,
+        Products.sos => ywt.sosGitHub,
+        Products.liminal => ywt.liminalGitHub,
+        Products.a11how => ywt.a11howGitHub,
       };
 
   String get versionFallback => switch (this) {
-        Products.openUI => '13.0.0',
-        Products.sos => '3.0.3',
-        Products.liminal => '1.0.2',
-        Products.a11how => '1.0.0',
+        Products.openUI => '13.1.0',
+        Products.sos => '3.1.0',
+        Products.liminal => '1.1.0',
+        Products.a11how => '1.1.0',
       };
 }

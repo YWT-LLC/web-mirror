@@ -267,8 +267,7 @@ class LiminalScreen extends StatelessWidget {
                   EzInlineLink(
                     config,
                     text: 'Google Play',
-                    url: Uri.parse(
-                        'https://play.google.com/store/apps/details?id=llc.ywt.liminal_launcher'),
+                    url: Uri.parse(ywt.liminalGPlay),
                     hint: l10n(config).gLearn('Liminal'),
                     style: config.bodyStyle,
                     textAlign: TextAlign.center,

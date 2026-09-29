@@ -13,12 +13,6 @@ import 'package:url_launcher/url_launcher.dart';
 
 //* Shared *//
 
-/// https://play.google.com/store/apps/details?id=llc.ywt
-const String _gPlay = 'https://play.google.com/store/apps/details?id=llc.ywt';
-
-/// https://apps.apple.com/us/app
-const String _appStore = 'https://apps.apple.com/us/app';
-
 /// Download types
 enum DLType { gPlay, apk, iOS, macOS, windows, deb, rpm }
 
@@ -49,9 +43,9 @@ String ouRelease(String version) => '${ywt.openUIReleases}/download/$version';
 
 /// Get a [Uri] to download the latest version of Open UI
 Uri openUIDownload(DLType dlType, String version) => switch (dlType) {
-      DLType.gPlay => Uri.parse('$_gPlay.open_ui'),
+      DLType.gPlay => Uri.parse(ywt.openUIGPlay),
       DLType.apk => Uri.parse('${ouRelease(version)}/open-ui-android.apk'),
-      DLType.iOS => Uri.parse('$_appStore/open-ui/id6499560244'),
+      DLType.iOS => Uri.parse(ywt.openUIAppStore),
       DLType.macOS => Uri.parse('${ouRelease(version)}/open-ui-mac.zip'),
       DLType.windows => Uri.parse('${ouRelease('12.0.0')}/open-ui-windows.exe'),
       DLType.deb => Uri.parse('${ouRelease('12.0.0')}/open-ui-linux.deb'),
@@ -152,9 +146,9 @@ class _OpenUILinkState extends State<OpenUILink> {
 
 /// Get a [Uri] to download the latest version of InstaSOS
 Uri sosDownload(DLType dlType, String version) => switch (dlType) {
-      DLType.gPlay => Uri.parse('$_gPlay.sos'),
+      DLType.gPlay => Uri.parse(ywt.sosGPlay),
       DLType.apk => Uri.parse('${ywt.sosReleases}/download/$version/sos-android.apk'),
-      _ => Uri.parse('$_appStore/instasos/id6744280817'),
+      _ => Uri.parse(ywt.sosAppStore),
     };
 
 class SOSLink extends StatefulWidget {

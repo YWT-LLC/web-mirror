@@ -9,8 +9,8 @@ import '../../widgets/export.dart';
 import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:open_ui/open_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:video_player/video_player.dart';
 
 class OpenUIScreen extends StatefulWidget {
@@ -39,7 +39,7 @@ class _OpenUIScreenState extends State<OpenUIScreen> {
       _ => DLType.deb,
     };
 
-    latest = await getLatest('open_ui', Products.openUI.versionFallback);
+    latest = await getLatest('open_ui', Product.oui.versionFallback);
     url = openUIDownload(dlType, latest);
     setState(() {});
   }
@@ -63,14 +63,19 @@ class _OpenUIScreenState extends State<OpenUIScreen> {
             config,
             children: <Widget>[
               // Headline && slogan (link)
-              EzText(config, text: openUI, style: config.displayStyle, textAlign: TextAlign.center),
+              EzText(
+                config,
+                text: Product.oui.name,
+                style: config.displayStyle,
+                textAlign: TextAlign.center,
+              ),
               EzLink(
                 config,
                 text: l10n(config).ouSlogan,
                 style: config.headlineStyle!,
                 textAlign: TextAlign.center,
                 url: url,
-                hint: l10n(config).gDownloadHint(openUI, dlType.name),
+                hint: l10n(config).gDownloadHint(Product.oui.label, dlType.name),
               ),
               config.spacer,
 
@@ -78,18 +83,18 @@ class _OpenUIScreenState extends State<OpenUIScreen> {
               EzText(
                 config,
                 text: l10n(config).ouLike,
-                style: ezSubTitleStyle(config.styles),
+                style: config.subTitleStyle,
                 textAlign: TextAlign.center,
               ),
               config.margin,
               OUIDemo(config),
-              config.divider,
+              EzDivider(config),
 
               // Use it in a sentence
               EzText(
                 config,
                 text: l10n(config).ouIs,
-                style: ezSubTitleStyle(config.styles),
+                style: config.subTitleStyle,
                 textAlign: TextAlign.center,
               ),
 
@@ -123,7 +128,7 @@ class _OpenUIScreenState extends State<OpenUIScreen> {
                 style: config.labelStyle,
                 textAlign: TextAlign.center,
               ),
-              config.divider,
+              EzDivider(config),
 
               // The pillars //
               // Platform availability
@@ -256,18 +261,18 @@ class _OpenUIScreenState extends State<OpenUIScreen> {
                 ],
                 textAlign: TextAlign.center,
               ),
-              config.divider,
+              EzDivider(config),
 
-              // Download Open UI (again) //
+              // Download (again) //
               EzText(
                 config,
                 text: l10n(config).ouGetStarted,
-                style: ezSubTitleStyle(config.styles),
+                style: config.subTitleStyle,
                 textAlign: TextAlign.center,
               ),
               config.margin,
               OpenUILink(config),
-              EzFooter(config, a11howPath: ywt.websiteContributeA11),
+              config.separator,
             ],
           ),
         ),

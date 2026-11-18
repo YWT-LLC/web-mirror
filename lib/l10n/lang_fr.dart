@@ -17,18 +17,47 @@ class LangFr extends Lang {
       'a11how simplifie la traduction des applications basées sur .arb (comme ';
 
   @override
+  String get ahFlutter => 'applications Flutter';
+
+  @override
+  String get ahGit => 'compte GitHub';
+
+  @override
   String get ahMagic => '...la magie opère !';
 
   @override
   String get ahSegway =>
-      'En parlant de cela, a11how est intégré dans tous les logiciels de YWT.\nSi vous interagissez avec notre contenu non anglophone et que vous remarquez une erreur, cliquez simplement sur le lien en bas de la page et corrigez-la !\n\nTant que vous possédez un compte GitHub, vous pouvez soumettre des modifications en un seul clic.';
+      'En parlant de cela, a11how est intégré dans tous les logiciels de YWT.\nSi vous interagissez avec notre contenu non anglophone et que vous remarquez une erreur, cliquez simplement sur le lien en bas de la page et corrigez-la !\n\nTant que vous possédez un ';
+
+  @override
+  String get ahSubmitChange =>
+      ', vous pouvez soumettre des modifications en un seul clic.';
+
+  @override
+  String get ahSubmitFix => 'Soumettre une correction.';
+
+  @override
+  String get coiApp => '-app';
+
+  @override
+  String get coiDescription =>
+      'Malheureusement, c\'est le terme officiel.\nUne super-app, c\'est un tas de petites applications réunies.\nCOI POND, c\'est (à peu près) toutes les applications de YWT réunies.\n\nSi vous voulez une transition facile vers la vie auto-hébergée, procurez-vous un COI POND.\n\nC\'est beaucoup moins cher qu\'un vrai bassin à Koï.';
+
+  @override
+  String get coiFree => '(le nôtre est gratuit)';
+
+  @override
+  String get coiIts => 'C\'est une';
+
+  @override
+  String get coiSuper => '\tSuper App';
 
   @override
   String get csBecome => ' pour devenir un ';
 
   @override
   String get csEveryBit =>
-      'Pour nous, chaque bit est à un octet de distance des géants de la tech.';
+      'Chaque bit pour YWT est un octet de moins pour les géants de la tech.';
 
   @override
   String get csGit => 'contributeur GitHub';
@@ -86,7 +115,13 @@ class LangFr extends Lang {
   String get fahWhats => 'Qu\'est-ce que ';
 
   @override
+  String get gA11howLogo => 'une icône de traduction aux couleurs de YWT.';
+
+  @override
   String get gAnEmail => 'un e-mail';
+
+  @override
+  String get gCoiPondLogo => 'deux carpes Koï aux couleurs de YWT.';
 
   @override
   String get gContributeHint => 'Ouvre la page d\'contribuer';
@@ -142,6 +177,10 @@ class LangFr extends Lang {
   }
 
   @override
+  String get gLiminalLogo =>
+      'une petite grenouille sur un grand nénuphar, teintée aux couleurs de YWT.';
+
+  @override
   String gLogoLabel(Object thing) {
     return 'Logo de $thing : ';
   }
@@ -157,6 +196,9 @@ class LangFr extends Lang {
 
   @override
   String get gOpenWebApp => 'Ouvrir l\'application web';
+
+  @override
+  String get gPresentsLogo => 'un cadeau ouvert aux couleurs de YWT.';
 
   @override
   String get gProductsHint => 'Ouvrir une page produit';
@@ -177,6 +219,11 @@ class LangFr extends Lang {
 
   @override
   String get gTeamHint => 'Ouvre la page de l\'équipe';
+
+  @override
+  String gTryFor(Object app, Object platform) {
+    return 'Essayer $app pour $platform';
+  }
 
   @override
   String get gTryLive => 'Essayez-le en direct !';
@@ -205,28 +252,24 @@ class LangFr extends Lang {
 
   @override
   String get hsmFindSolutionContent =>
-      'Heureusement, il existe partout dans le monde des technologues extraordinaires qui travaillent ensemble pour un meilleur récit.\nUn récit dans lequel les fournisseurs de services et les clients entretiennent une relation active, saine et mutuellement bénéfique.\n\nLa communauté open source.\n\nÀ la base, les logiciels open source sont librement disponibles pour que tout le monde puisse les consulter. De nombreux projets peuvent également être librement modifiés et redistribués.\nIl s\'agit de logiciels qui n\'ont rien à cacher, créés par des gens qui reconnaissent que les problèmes communs nécessitent des solutions communes.\n\nEt dans le monde merveilleux des logiciels open source, il existe une sous-catégorie : les logiciels auto-hébergés.\n\nL\'auto-hébergement nous permet de prendre n\'importe quel ordinateur non utilisé (y compris ceux de poche) et d\'y stocker nos données.\nEn auto-hébergant, nous pouvons contrôler notre propre présence numérique, plutôt que de céder le contrôle à un serveur distant, appartenant à une société peu empathique.\n\nEt il existe des versions auto-hébergées de presque tout ! D\'Adobe à Zoom, des hacktivistes passionnés créent des alternatives qui privilégient les personnes au profit.\n\nAlors, comment passe-t-on du profit/fermé à l\'open source ? Comment commencent-ils à s\'auto-héberger ?\nCela prend beaucoup de temps, d\'énergie et de connaissances préalables.\n\nC\'est là que nous intervenons.';
+      'Heureusement, il existe partout dans le monde des technologues extraordinaires qui travaillent ensemble pour un meilleur récit.\nUn récit dans lequel les fournisseurs de services et les clients entretiennent une relation active, saine et mutuellement bénéfique.\n\nLa communauté open source.\n\nÀ la base, les logiciels open source sont librement consultables par tous.\nDe nombreux projets peuvent également être librement modifiés et redistribués.\nCe sont des logiciels qui n\'ont rien à cacher, créés par des gens qui reconnaissent que les problèmes communs nécessitent des solutions communes.\n\nEt dans le monde merveilleux des logiciels open source, il existe une sous-catégorie : l\'auto-hébergement.\n\nL\'auto-hébergement nous permet de prendre n\'importe quel ordinateur inutilisé (même ceux de poche !) et d\'y stocker nos données.\nEn nous auto-hébergeant, nous pouvons posséder notre empreinte numérique, plutôt que de céder le contrôle à une méga-entreprise qui considère le suicide induit par la psychose comme un compromis nécessaire.\n\nEt il existe des versions auto-hébergées de presque tout !\nD\'Adobe à Zoom, des hacktivistes passionnés créent des alternatives qui font passer les personnes avant le profit.\n\nAlors, comment passer du profit d\'abord à l\'open source ? Comment se lancer dans l\'auto-hébergement ?\nCela demande beaucoup de temps, d\'énergie et de connaissances préalables.\n\nC\'est là qu\'intervient YWT.';
 
   @override
-  String get hsmFirst => 'Par premier';
+  String get hsmGetStarted => 'Commencer';
 
   @override
   String get hsmIDProblem => 'Identifier le problème';
 
   @override
   String get hsmIDProblemContent =>
-      'Les modèles économiques axés sur le profit ne sont pas durables.\n\nPar définition : Si le profit vient en premier, alors des choses comme travailler pour une mission, bien traiter les gens et consommer de manière responsable les ressources deviennent des sujets de second plan.\n\nEt cette cupidité n\'a pas été maîtrisée dans les grandes entreprises technologiques. Les géants de la technologie ne se contentent plus de prendre notre argent. Ils créent désormais des produits qui ciblent nos identités et monopolisent nos esprits.';
+      'Les modèles économiques axés sur le profit ne sont pas durables.\n\nSi le profit passe en premier, alors œuvrer pour une mission, bien traiter les gens et consommer les ressources de manière responsable deviennent secondaires.\n\nEt cette cupidité du profit d\'abord s\'est répandue sans contrôle dans les grandes entreprises technologiques.\nLes géants de la tech ne se contentent plus de notre argent et créent des produits qui ciblent nos identités et monopolisent nos esprits.';
 
   @override
   String get hsmProvideValue => 'Faire le travail';
 
   @override
-  String get hsmProvideValueContent1 =>
-      'YWT rééquilibre la technologie en rendant l\'auto-hébergement plus accessible.\n\nNous créerons des applications qui permettent à chacun de posséder son identité numérique.\nNous construirons des ponts entre la communauté open source et ceux qui n\'ont pas le temps, l\'énergie ou les connaissances préalables nécessaires.\n\nEt on ne peut pas construire des ponts (ou des applications) sans des fondations solides ! C\'est pourquoi ';
-
-  @override
-  String get hsmProvideValueContent2 =>
-      ' existe.\nNous sommes fiers de joindre le geste à la parole et avons rendu notre interface utilisateur accessible en open source.\n\nConstruisons ensemble un monde meilleur, bit par bit.';
+  String get hsmProvideValueContent =>
+      'YWT rééquilibre la tech en rendant l\'auto-hébergement plus accessible.\n\nNous créons des applications qui permettent à chacun de posséder son identité numérique.\nNous construisons des ponts entre la communauté open source et celles et ceux qui n\'ont pas le temps, l\'énergie ou les connaissances préalables nécessaires.';
 
   @override
   String get hsmSoWe => 'Alors nous';
@@ -357,6 +400,23 @@ class LangFr extends Lang {
 
   @override
   String get ouZeroStrain => 'zéro fatigue oculaire';
+
+  @override
+  String get prCreative => 'Laissez parler votre créativité !';
+
+  @override
+  String get prDescription =>
+      'Et en tant que créateur, vous fixez votre propre prix !\nPeut-être créez-vous une configuration pour le daltonisme que vous souhaitez proposer gratuitement.\nVotre altruisme ne sera pas puni ici : les fichiers de configuration coûtent très peu à stocker (on y revient plus tard).\n\nOu peut-être passez-vous des semaines sur un fond gif personnalisé et un ou plusieurs packs audio.\nVous voudriez être rémunéré pour ce travail, non ? En plus, les gif de haute qualité peuvent prendre pas mal de place…\n\nPour garder les lumières allumées, nous facturons à tout le monde 1 USD/mois pour garder votre compte actif.\nLes créateurs se voient aussi facturer (en toute transparence !) leurs coûts (stockage, transactions, etc.).\nMais ! Ce même dollar est déduit de votre facture.\nEn plus, nous prenons 0 % (rien, nada, zéro) de vos ventes. Nous nous contentons d\'arrondir au dollar supérieur.\n\nDonc, pour résumer : nous gagnons 1,00 USD/mois sur ceux qui téléchargent, et 0,01-0,99 USD/mois sur les créateurs.\nEt, comme évoqué plus haut : si vous n\'avez pas créé de visuels personnalisés, vous ne stockerez qu\'un fichier texte.\nQuelques centimes par mois.\n\nNous voulons que la création se fasse avec le moins de friction possible.\nSurtout pour ceux qui offrent leurs créations gratuitement.\n\nSi vous êtes créateur, vous devrez garder votre compte actif et à jour.\nMais ne vous inquiétez pas, nous ne sommes pas des cinglés qui voleront votre contenu si vous oubliez un paiement.\nNous supprimerons simplement notre copie (et économiserons sur les coûts de serveur) jusqu\'à ce que vous soyez prêt à revenir.\n\nSi vous téléchargez, tout le contenu acheté/gratuit déjà téléchargé restera disponible tant que nos serveurs seront allumés.\nVous ne pourrez simplement pas obtenir de nouveau contenu avec un compte inactif.';
+
+  @override
+  String get prMoneyU2 => 'Un moyen pour vous aussi de gagner de l\'argent !';
+
+  @override
+  String get prTitle => 'YWT présente...';
+
+  @override
+  String get prUGC =>
+      'Presents est notre boutique de contenu généré par les utilisateurs (UGC).\nElle reprend les meilleurs concepts de ce fameux magasin de gros américain avec les hot-dogs, et de ce fameux site pour vendre des trucs artistiques, etc.\n\nPresque tous les aspects de notre interface sont facilement personnalisables.\nIl est aussi facile d\'enregistrer des copies des configurations que vous adorez, et de les changer à tout moment.\nPresents vous permet de partager ces configurations avec tout le monde. Par exemple...';
 
   @override
   String get psComingSoon => 'Bientôt disponible...';

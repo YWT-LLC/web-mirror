@@ -17,18 +17,46 @@ class LangEs extends Lang {
       'a11how simplifica la traducción de aplicaciones basadas en .arb (como ';
 
   @override
+  String get ahFlutter => 'apps de Flutter';
+
+  @override
+  String get ahGit => 'cuenta de GitHub';
+
+  @override
   String get ahMagic => '...¡ocurre la magia!';
 
   @override
   String get ahSegway =>
-      'Hablando de eso, a11how está integrado en todo el software de YWT.\nSi estás interactuando con nuestro contenido que no está en inglés y ves algo incorrecto, ¡simplemente haz clic en el enlace al final de la página y corrígelo!\n\nSiempre y cuando tengas una cuenta de GitHub, puedes enviar cambios con un solo clic.';
+      'Hablando de eso, a11how está integrado en todo el software de YWT.\nSi estás interactuando con nuestro contenido que no está en inglés y ves algo incorrecto, ¡simplemente haz clic en el enlace al final de la página y corrígelo!\n\nSiempre y cuando tengas una ';
+
+  @override
+  String get ahSubmitChange => ', puedes enviar cambios con un solo clic.';
+
+  @override
+  String get ahSubmitFix => 'Envía una corrección.';
+
+  @override
+  String get coiApp => '-app';
+
+  @override
+  String get coiDescription =>
+      'Lamentablemente, ese es el término oficial.\nUna súper-app es un montón de apps pequeñas juntas.\nCOI POND es (casi) todas las apps de YWT juntas.\n\nSi quieres una transición fácil a la vida autoalojada, consigue un COI POND.\n\nEs mucho más barato que un estanque Koi de verdad.';
+
+  @override
+  String get coiFree => '(el nuestro es gratis)';
+
+  @override
+  String get coiIts => 'Es una';
+
+  @override
+  String get coiSuper => '\tSúper App';
 
   @override
   String get csBecome => ' acerca de convertirse en un ';
 
   @override
   String get csEveryBit =>
-      'Cada bit que das a nos le quitas un byte a los gigantes tecnológicos.';
+      'Cada bit para YWT es un byte menos para los gigantes tecnológicos.';
 
   @override
   String get csGit => 'colaborador de GitHub';
@@ -86,7 +114,14 @@ class LangEs extends Lang {
   String get fahWhats => '¿Qué es ';
 
   @override
+  String get gA11howLogo =>
+      'un icono de traducción con la paleta de colores de YWT.';
+
+  @override
   String get gAnEmail => 'un email';
+
+  @override
+  String get gCoiPondLogo => 'dos peces Koi con la paleta de colores de YWT.';
 
   @override
   String get gContributeHint => 'Abrir la página de contribuir';
@@ -141,6 +176,10 @@ class LangEs extends Lang {
   }
 
   @override
+  String get gLiminalLogo =>
+      'una pequeña rana sobre un gran nenúfar, teñida con la paleta de colores de YWT.';
+
+  @override
   String gLogoLabel(Object thing) {
     return 'Logotipo de $thing: ';
   }
@@ -156,6 +195,10 @@ class LangEs extends Lang {
 
   @override
   String get gOpenWebApp => 'Abrir la aplicación web';
+
+  @override
+  String get gPresentsLogo =>
+      'un regalo abierto con la paleta de colores de YWT.';
 
   @override
   String get gProductsHint => 'Abrir una página de producto';
@@ -176,6 +219,11 @@ class LangEs extends Lang {
 
   @override
   String get gTeamHint => 'Abrir la página del equipo';
+
+  @override
+  String gTryFor(Object app, Object platform) {
+    return 'Prueba $app para $platform';
+  }
 
   @override
   String get gTryLive => '¡Pruébalo en vivo!';
@@ -204,28 +252,24 @@ class LangEs extends Lang {
 
   @override
   String get hsmFindSolutionContent =>
-      'Afortunadamente, hay tecnólogos increíbles en todo el mundo que trabajan juntos para lograr una mejor narrativa.\nUna en la que los proveedores de servicios y los clientes tengan una relación activa, saludable y mutuamente beneficiosa.\n\nLa comunidad de código abierto.\n\nEn esencia, el software de código abierto está disponible de forma gratuita para que cualquiera lo vea. Muchos proyectos también se pueden modificar y redistribuir libremente.\nEs un software que no tiene nada que ocultar, creado por gente que reconoce que los problemas compartidos requieren soluciones compartidas.\n\nY en el maravilloso mundo del software de código abierto, existe una subcategoría: el software de alojamiento propio.\n\nEl alojamiento propio nos permite tomar cualquier computadora que no esté en uso (incluso las de bolsillo) y almacenar allí nuestros datos.\nAl alojarnos nosotros mismos, podemos controlar nuestra propia presencia digital, en lugar de ceder el control a un servidor lejano, propiedad de una corporación poco empática.\n\n¡Y existen versiones alojadas por nosotros mismos de casi todo! Desde Adobe hasta Zoom, hay hacktivistas apasionados que crean alternativas que priorizan a las personas por sobre las ganancias.\n\nEntonces, ¿cómo se hace la transición de un código cerrado que prioriza las ganancias a un código abierto? ¿Cómo empiezan a alojar sus propios archivos?\nRequiere mucho tiempo, energía y conocimientos previos.\n\nAhí es donde entramos nosotros.';
+      'Afortunadamente, hay tecnólogos increíbles en todo el mundo trabajando juntos hacia una mejor narrativa.\nUna en la que los proveedores de servicios y los clientes tienen una relación activa, sana y mutuamente beneficiosa.\n\nLa comunidad de código abierto.\n\nEn esencia, el software de código abierto está disponible libremente para que cualquiera lo vea.\nMuchos proyectos también pueden modificarse y redistribuirse libremente.\nEs software que no tiene nada que ocultar, creado por personas que reconocen que los problemas compartidos requieren soluciones compartidas.\n\nY en el maravilloso mundo del software de código abierto, existe una subcategoría: el autoalojamiento.\n\nEl autoalojamiento nos permite tomar cualquier computadora que no estemos usando (¡incluso las de bolsillo!) y guardar nuestros datos allí.\nCon el autoalojamiento podemos ser dueños de nuestra huella digital, en lugar de ceder el control a alguna megacorporación que considera el suicidio inducido por psicosis como una concesión necesaria.\n\n¡Y hay versiones autoalojadas de casi todo!\nDesde Adobe hasta Zoom, hay hacktivistas apasionados creando alternativas que ponen a las personas por encima de las ganancias.\n\nEntonces, ¿cómo se pasa de priorizar las ganancias al código abierto? ¿Cómo se empieza a autoalojar?\nSe necesita mucho tiempo, energía y conocimientos previos.\n\nAhí es donde entra YWT.';
 
   @override
-  String get hsmFirst => 'Por primera vez';
+  String get hsmGetStarted => 'Comenzar';
 
   @override
   String get hsmIDProblem => 'Identificación del problema';
 
   @override
   String get hsmIDProblemContent =>
-      'Los modelos de negocio que dan prioridad al beneficio no son sostenibles.\n\nPor definición, cosas como trabajar por una misión, tratar bien a las personas y consumir recursos de forma responsable pasan a un segundo plano.\n\nLos gigantes tecnológicos no se conforman con llevarse nuestro dinero. Ahora construyen productos para captar nuestras identidades y monopolizar nuestras mentes. Y nadie les dice nada.';
+      'Los modelos de negocio que priorizan las ganancias no son sostenibles.\n\nSi las ganancias son lo primero, entonces trabajar por una misión, tratar bien a las personas y un consumo responsable de los recursos pasan a ser algo secundario.\n\nY la codicia de priorizar las ganancias ha crecido sin control en los gigantes tecnológicos.\nLos gigantes tecnológicos ya no se conforman con nuestro dinero, y están creando productos dirigidos a nuestras identidades para monopolizar nuestras mentes.';
 
   @override
   String get hsmProvideValue => 'Haciendo el trabajo';
 
   @override
-  String get hsmProvideValueContent1 =>
-      'YWT está reequilibrando la tecnología al hacer que el autohospedaje sea más accesible.\n\nConstruiremos aplicaciones que permitan a cualquiera ser dueño de su identidad digital.\nConstruiremos puentes entre la comunidad de código abierto y aquellos sin el tiempo, la energía o los conocimientos previos requeridos.\n\n¡Y no se pueden construir puentes (ni aplicaciones) sin una base sólida! Es por eso que ';
-
-  @override
-  String get hsmProvideValueContent2 =>
-      ' existe.\nNos enorgullece respaldar las palabras con acciones y hemos hecho que nuestra interfaz de usuario accesible sea de código abierto.\n\nConstruyamos juntos un mundo mejor, bit a bit.';
+  String get hsmProvideValueContent =>
+      'YWT está reequilibrando la tecnología haciendo que el autoalojamiento sea más accesible.\n\nCreamos aplicaciones que permiten a todos ser dueños de su identidad digital.\nConstruimos puentes entre la comunidad de código abierto y quienes no tienen el tiempo, la energía o los conocimientos previos necesarios.';
 
   @override
   String get hsmSoWe => 'Así que nosotros';
@@ -356,6 +400,23 @@ class LangEs extends Lang {
 
   @override
   String get ouZeroStrain => 'cero fatiga visual';
+
+  @override
+  String get prCreative => '¡Sé creativo!';
+
+  @override
+  String get prDescription =>
+      'Y como creador, ¡tú pones tu propio precio!\nQuizás creas una configuración para daltonismo y quieres que sea gratis.\nTu altruismo no será castigado aquí: los archivos de configuración son súper baratos de almacenar (más sobre eso después).\n\nO quizás pasas semanas en un fondo gif personalizado y paquete(s) de audio.\nQuerrías que te compensaran por ese trabajo, ¿verdad? Además, los gif de alta calidad pueden ocupar bastante espacio…\n\nPara mantener las luces encendidas, cobramos a todos 1 USD/mes para mantener su cuenta activa.\nA los creadores también se les cobran (¡con transparencia!) sus costos (almacenamiento, transacciones, etc.).\n¡Pero! Ese mismo dólar cuenta para tu factura.\nAdemás, nos quedamos con el 0 % (nada, cero, etc.) de tus ventas. Lo único que hacemos es redondear hacia arriba al dólar.\n\nEntonces, en resumen: ganamos 1.00 USD/mes con quienes descargan, y 0.01-0.99 USD/mes con los creadores.\nY, como ya insinuamos: si no creaste arte personalizado, solo estarás almacenando un archivo de texto.\nCentavos al mes.\n\nQueremos que crear tenga la menor fricción posible.\nSobre todo para quienes regalan sus creaciones.\n\nSi eres creador, tendrás que mantener tu cuenta activa y al día.\nPero no te preocupes, no somos unos raros que te robarán tu contenido si alguna vez te atrasas en un pago.\nSolo eliminaremos nuestra copia (y ahorraremos en costos de servidor) hasta que estés listo para volver.\n\nSi solo descargas, todo el contenido comprado/gratuito que hayas descargado antes estará disponible mientras nuestros servidores estén encendidos.\nSimplemente no podrás obtener contenido nuevo con una cuenta inactiva.';
+
+  @override
+  String get prMoneyU2 => '¡Una forma de que tú también ganes dinero!';
+
+  @override
+  String get prTitle => 'YWT presenta...';
+
+  @override
+  String get prUGC =>
+      'Presents es nuestra tienda de Contenido Generado por Usuarios (UGC).\nToma los mejores conceptos de esa tienda mayorista estadounidense con los hot dogs, y de ese sitio web para vender cosas artísticas, etc.\n\nCasi todos los aspectos de nuestra interfaz son fáciles de personalizar.\nTambién es fácil guardar copias de las configuraciones que te encantan e intercambiarlas en cualquier momento.\nPresents te permite compartir esas configuraciones con todo el mundo. Como...';
 
   @override
   String get psComingSoon => 'Próximamente...';

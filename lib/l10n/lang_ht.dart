@@ -16,18 +16,46 @@ class LangHt extends Lang {
       'a11how rann li pi fasil pou tradui aplikasyon ki baze sou .arb (tankou ';
 
   @override
+  String get ahFlutter => 'aplikasyon Flutter';
+
+  @override
+  String get ahGit => 'kont GitHub';
+
+  @override
   String get ahMagic => '...majik la fèt!';
 
   @override
   String get ahSegway =>
-      'An palan de sa, a11how entegre nan tout lojisyèl YWT yo.\nSi w ap itilize kontni nou an ki pa an Anglè epi ou wè yon bagay ki pa bon, senpleman klike sou lyen ki anba paj la epi ranje li!\n\nToutotan ou gen yon kont GitHub, ou ka soumèt chanjman ak yon sèl klik.';
+      'An palan de sa, a11how entegre nan tout lojisyèl YWT yo.\nSi w ap itilize kontni nou an ki pa an Anglè epi ou wè yon bagay ki pa bon, senpleman klike sou lyen ki anba paj la epi ranje li!\n\nToutotan ou gen yon ';
+
+  @override
+  String get ahSubmitChange => ', ou ka soumèt chanjman ak yon sèl klik.';
+
+  @override
+  String get ahSubmitFix => 'Soumèt yon koreksyon.';
+
+  @override
+  String get coiApp => '-aplikasyon';
+
+  @override
+  String get coiDescription =>
+      'Malerezman, se tèm ofisyèl la.\nYon sipè-aplikasyon se yon pakèt ti aplikasyon mete ansanm.\nCOI POND se (prèske) tout aplikasyon YWT yo mete ansanm.\n\nSi ou vle yon tranzisyon fasil nan lavi oto-ebèje, pran yon COI POND.\n\nLi pi bon mache anpil pase yon vrè basen Koi.';
+
+  @override
+  String get coiFree => '(pa nou an gratis)';
+
+  @override
+  String get coiIts => 'Se yon';
+
+  @override
+  String get coiSuper => '\tSipè Aplikasyon';
 
   @override
   String get csBecome => ' sou kijan pou vin yon ';
 
   @override
   String get csEveryBit =>
-      'Chak ti kontribisyon ou bay nou retire yon moso (byte) nan gwo konpayi teknoloji yo.';
+      'Chak ti bit (bit) pou YWT se yon moso (byte) ki soti nan men gwo konpayi teknoloji yo.';
 
   @override
   String get csGit => 'kontribitè GitHub';
@@ -84,7 +112,13 @@ class LangHt extends Lang {
   String get fahWhats => 'Kisa ';
 
   @override
+  String get gA11howLogo => 'yon ikòn tradiksyon nan koulè YWT yo.';
+
+  @override
   String get gAnEmail => 'yon imèl';
+
+  @override
+  String get gCoiPondLogo => 'de pwason Koi nan koulè YWT yo.';
 
   @override
   String get gContributeHint => 'Louvri paj kontribye a';
@@ -138,6 +172,10 @@ class LangHt extends Lang {
   }
 
   @override
+  String get gLiminalLogo =>
+      'yon ti krapo sou yon gwo fèy nenifa, ak koulè YWT yo.';
+
+  @override
   String gLogoLabel(Object thing) {
     return 'Logo $thing: ';
   }
@@ -153,6 +191,9 @@ class LangHt extends Lang {
 
   @override
   String get gOpenWebApp => 'Louvri aplikasyon wèb la';
+
+  @override
+  String get gPresentsLogo => 'yon kado ouvè nan koulè YWT yo.';
 
   @override
   String get gProductsHint => 'Louvri yon paj pwodwi';
@@ -173,6 +214,11 @@ class LangHt extends Lang {
 
   @override
   String get gTeamHint => 'Louvri paj ekip la';
+
+  @override
+  String gTryFor(Object app, Object platform) {
+    return 'Eseye $app pou $platform';
+  }
 
   @override
   String get gTryLive => 'Eseye l an dirèk!';
@@ -201,28 +247,24 @@ class LangHt extends Lang {
 
   @override
   String get hsmFindSolutionContent =>
-      'Erezman, gen teknològ estrawòdinè toupatou nan monn nan k ap travay ansanm pou yon pi bon avni.\nYon avni kote founisè sèvis yo ak kliyan yo gen yon relasyon aktif, an sante, epi ki benefik pou toude.\n\nKominote open source la (sous louvri).\n\nNan nwayo li, lojisyèl open source la disponib gratis pou nenpòt moun wè. Anpil pwojè kapab tou modifye epi redistribiye gratis.\nSe yon lojisyèl ki pa gen anyen pou l kache, ki bati pa moun ki rekonèt pwoblèm pataje yo mande solisyon pataje.\n\nEpi nan bèl monn lojisyèl open source la, gen yon sou-kategori: lojisyèl oto-ebèje (self-hosting).\n\nOto-ebèjman pèmèt nou pran nenpòt òdinatè ki pa itilize (menm sa ki gwosè pòch) epi estoke done nou yo la.\nLè nou fè oto-ebèjman, nou ka kontwole pwòp prezans dijital nou, olye nou siyen bay kontwòl la bay yon sèvè byen lwen, ki posede pa yon kòporasyon ki pa gen senpati.\n\nE gen vèsyon oto-ebèje pou prèske tout bagay! Soti nan Adobe rive nan Zoom, gen aktivis pasyone k ap kreye altènatif ki mete moun anvan pwofi.\n\nDonk, ki jan yon moun fè tranzisyon soti nan modèl pwofi an premye/sous fèmen pou ale nan open source? Ki jan yo kòmanse oto-ebèjman?\nSa mande anpil tan, enèji, ak konesans anvan.\n\nSe la nou antre nan jwèt la.';
+      'Erezman, gen teknològ estrawòdinè toupatou nan monn nan k ap travay ansanm pou yon pi bon avni.\nYon avni kote founisè sèvis yo ak kliyan yo gen yon relasyon aktif, an sante, epi ki benefik pou toude.\n\nKominote open source la (sous louvri).\n\nNan nwayo li, lojisyèl open source la disponib gratis pou nenpòt moun wè.\nAnpil pwojè kapab tou modifye epi redistribiye lib.\nSe yon lojisyèl ki pa gen anyen pou l kache, ki bati pa moun ki rekonèt pwoblèm pataje yo mande solisyon pataje.\n\nEpi nan bèl monn lojisyèl open source la, gen yon sou-kategori: oto-ebèjman (self-hosting).\n\nOto-ebèjman pèmèt nou pran nenpòt òdinatè ki pa itilize (menm sa ki gwosè pòch yo!) epi estoke done nou yo la.\nLè nou fè oto-ebèjman, nou ka posede pwòp tras dijital nou, olye nou siyen bay kontwòl la bay yon mega-kòporasyon ki konsidere swisid ki soti nan yon sikoz kòm yon konpwomi ki nesesè.\n\nE gen vèsyon oto-ebèje pou prèske tout bagay!\nSoti nan Adobe rive nan Zoom, gen aktivis pasyone k ap kreye altènatif ki mete moun anvan pwofi.\n\nDonk, ki jan yon moun fè tranzisyon soti nan pwofi an premye pou ale nan open source? Ki jan yo kòmanse oto-ebèjman?\nSa mande anpil tan, enèji, ak konesans anvan.\n\nSe la YWT antre nan jwèt la.';
 
   @override
-  String get hsmFirst => 'Toudabò pa mwayen';
+  String get hsmGetStarted => 'Kòmanse';
 
   @override
   String get hsmIDProblem => 'Idantifye pwoblèm nan';
 
   @override
   String get hsmIDProblemContent =>
-      'Modèl biznis ki mete pwofi an premye yo pa dirab.\n\nPa definisyon: si pwofi vini an premye, lè sa a, bagay tankou travay pou yon misyon, trete moun byen, ak itilizasyon responsab resous yo vin pase nan dezyèm plan.\n\nEpi avaris sa a pa jwenn okenn kontwòl nan gwo teknoloji yo. Jeyan teknoloji yo vin pa satisfè ankò ak lajan nou sèlman, y ap kreye pwodwi ki vize idantite nou epi monopolize lespri nou.';
+      'Modèl biznis ki mete pwofi an premye yo pa dirab.\n\nSi pwofi vini an premye, lè sa a, travay pou yon misyon, trete moun byen, ak yon itilizasyon responsab resous yo tout vin pase nan dezyèm plan.\n\nEpi avaris pwofi an premye a pa jwenn okenn kontwòl nan gwo teknoloji yo.\nJeyan teknoloji yo pa satisfè ankò ak lajan nou sèlman, y ap kreye pwodwi ki vize idantite nou epi monopolize lespri nou.';
 
   @override
   String get hsmProvideValue => 'Fè travay la';
 
   @override
-  String get hsmProvideValueContent1 =>
-      'YWT ap re-ekilibre teknoloji a lè li rann oto-ebèjman pi aksesib.\n\nNou pral kreye aplikasyon ki pèmèt nenpòt moun posede idantite dijital yo.\nNou pral bati pon ant kominote open source la ak moun ki pa gen tan, enèji, oswa konesans alavans ki nesesè yo.\n\nEpi ou pa ka bati pon (oswa aplikasyon) san yon fondasyon solid! Se poutèt sa ';
-
-  @override
-  String get hsmProvideValueContent2 =>
-      ' egziste.\nNou fyè dèske nou mete aksyon dèyè pawòl nou, epi nou rann entèfas itilizatè (UI) aksesib nou an open source.\n\nAn nou bati yon pi bon monn ansanm, tikras pa tikras.';
+  String get hsmProvideValueContent =>
+      'YWT ap re-balanse teknoloji a lè li fè self-hosting vin pi aksesib.\n\nNou kreye aplikasyon ki pèmèt tout moun posede idantite dijital yo.\nNou bati pon ant kominote open source la ak moun ki pa gen tan, enèji, oswa konesans anvan yo bezwen.';
 
   @override
   String get hsmSoWe => 'Kidonk nou';
@@ -351,6 +393,23 @@ class LangHt extends Lang {
 
   @override
   String get ouZeroStrain => 'zewo fatig pou je';
+
+  @override
+  String get prCreative => 'Fè kreyativite w pale!';
+
+  @override
+  String get prDescription =>
+      'Epi kòm kreyatè, se ou ki fikse pwòp pri ou!\nPetèt ou kreye yon konfigirasyon pou daltonis ke ou vle mete gratis.\nYo p ap pini jenerozite ou isit la: fichye konfigirasyon yo pa koute anyen pou estoke (n ap pale plis sou sa pita).\n\nOswa, petèt ou pase plizyè semèn sou yon background gif pèsonalize ak pake odyo.\nOu ta vle yo peye w pou travay sa a, pa vre? Anplis, gif bon kalite ka pran yon ti kras espas…\n\nPou kenbe limyè yo limen, nou fè tout moun peye 1 USD/mwa pou kenbe kont ou aktif.\nKreyatè yo peye depans yo tou (avèk transparans!): estokaj, tranzaksyon, elatriye.\nMen! Menm dola sa a konte nan bòdwo ou.\nAnplis, nou pran 0% (anyen, zewo, pa menm yon santim) sou lavant ou yo. Sèl sa nou fè se awondi montan an anlè nan pwochen dola a.\n\nKidonk, pou rezime: nou fè 1.00 USD/mwa sou moun k ap telechaje, epi 0.01-0.99 USD/mwa sou kreyatè yo.\nEpitou, jan nou te fè konprann nan: si ou pa t kreye desen pèsonalize, ou ap jis estoke yon fichye tèks.\nKèk santim pa mwa.\n\nNou vle kreyasyon fèt ak mwens obstak posib.\nSitou pou moun k ap bay kreyasyon yo gratis.\n\nPou kreyatè yo, w ap bezwen kenbe kont ou aktif epi san dèt.\nMen pa enkyete w, nou pa moun bizar ki pral vòlè kontni ou si w ta janm rate yon peman.\nN ap jis retire kopi pa nou an (epi ekonomize sou depans sèvè) jiskaske ou pare pou retounen.\n\nPou moun k ap telechaje, tout kontni achte/gratis ki te deja telechaje ap disponib toutotan sèvè nou yo limen.\nSèlman, ou p ap ka jwenn nouvo kontni ak yon kont ki pa aktif.';
+
+  @override
+  String get prMoneyU2 => 'Yon fason pou ou fè lajan tou!';
+
+  @override
+  String get prTitle => 'YWT prezante...';
+
+  @override
+  String get prUGC =>
+      'Presents se magazen Kontni Itilizatè Kreye (UGC) nou an.\nLi pran pi bon konsèp yo nan magazen an gwo Ameriken sa a ki gen hotdog yo, ak sit entènèt sa a pou vann bagay atistik etc.\n\nPrèske chak aspè nan UI nou an fasil pou pèsonalize.\nLi fasil tou pou sove kopi konfigirasyon ou renmen, epi chanje yo nenpòt ki lè.\nPresents pèmèt ou pataje konfigirasyon sa yo ak tout moun. Tankou...';
 
   @override
   String get psComingSoon => 'Vini trè byento...';

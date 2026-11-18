@@ -7,33 +7,33 @@ import './export.dart';
 import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:open_ui/open_ui.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
+
+//* Setup *//
 
 // Titles //
 
 /// YWT
 const String ywtName = 'YWT';
 
-/// Open UI
-const String openUI = 'Open UI';
-
-/// InstaSOS
-const String sosName = 'InstaSOS';
-
-/// Insta SOS
-const String sosLabel = 'Insta SOS';
-
 // Image assets //
 
-// Open UI
-const String openUIIconPath = 'assets/images/open-ui/app-icon.png';
-const ImageProvider openUIImage = AssetImage(openUIIconPath);
+// a11how
+const String a11howIconPath = 'assets/images/a11how/app-icon.png';
+const ImageProvider a11howImage = AssetImage(a11howIconPath);
 
-// SOS
-const String sosIconPath = 'assets/images/sos/app-icon.png';
-const ImageProvider sosImage = AssetImage(sosIconPath);
+// COI POND
+const String coiPondIconPath = 'assets/images/coi/app-icon.png';
+const ImageProvider coiPondImage = AssetImage(coiPondIconPath);
+
+// etc
+const String fahIconPath = 'assets/images/etc/fah.png';
+const ImageProvider fahImage = AssetImage(fahIconPath);
 
 // Liminal
+const String liminalIconPath = 'assets/images/liminal/app-icon.png';
+const ImageProvider liminalImage = AssetImage(liminalIconPath);
+
 const String balancePath = 'assets/images/liminal/balance.png';
 const ImageProvider balanceImage = AssetImage(balancePath);
 
@@ -58,18 +58,24 @@ const ImageProvider theHoodImage = AssetImage(theHoodPath);
 const String twoDoorsPath = 'assets/images/liminal/two-doors.png';
 const ImageProvider twoDoorsImage = AssetImage(twoDoorsPath);
 
-// a11how
-const String a11howIconPath = 'assets/images/a11how/app-icon.png';
-const ImageProvider a11howImage = AssetImage(a11howIconPath);
+// Open UI
+const String ouiIconPath = 'assets/images/oui/app-icon.png';
+const ImageProvider ouiImage = AssetImage(ouiIconPath);
 
-// Community
-const String fahIconPath = 'assets/images/community/fah.png';
-const ImageProvider fahImage = AssetImage(fahIconPath);
+// Presents
+const String presentsIconPath = 'assets/images/presents/app-icon.png';
+const ImageProvider presentsImage = AssetImage(presentsIconPath);
+
+// SOS
+const String sosIconPath = 'assets/images/sos/app-icon.png';
+const ImageProvider sosImage = AssetImage(sosIconPath);
 
 // Video assets //
 
-const String openUIDemoPath = 'assets/videos/open-ui/demo.mp4';
+// Open UI
+const String openUIDemoPath = 'assets/videos/oui/demo.mp4';
 
+// SOS
 const String sosPromoPath = 'assets/videos/sos/promo.mp4';
 const String sosVerticalPromoPath = 'assets/videos/sos/vertical-promo.mp4';
 
@@ -103,7 +109,7 @@ const String aboutFaHLink = 'https://foldingathome.org/about-2/';
 
 const Set<String> assetPaths = <String>{
   // Images
-  openUIIconPath,
+  ouiIconPath,
   sosIconPath,
   theHoodPath,
   duckDuckFetchPath,
@@ -119,7 +125,7 @@ const Set<String> assetPaths = <String>{
 /// aka assetSources
 final Map<String, dynamic> credits = <String, dynamic>{
   // Images
-  openUIIconPath: founder,
+  ouiIconPath: founder,
   sosIconPath: 'https://fonts.google.com/icons',
   theHoodPath: crosby,
   duckDuckFetchPath: elinaV,
@@ -132,7 +138,7 @@ final Map<String, dynamic> credits = <String, dynamic>{
   sosVerticalPromoPath: '$founder & $montana',
 };
 
-//* EzConfig *//
+//* Runtime *//
 
 // a11how //
 
@@ -151,19 +157,32 @@ final List<String> recentUrls = <String>[
 
 // Shared //
 
-final Map<String, Object> websiteMobile = <String, Object>{
-  ...ywtMobileConfig,
+const Map<String, Type> uniquePairs = <String, Type>{
+  developingKey: bool,
+  recentUrlsKey: List<String>,
+};
+
+const Map<String, Type> neverResetPairs = <String, Type>{
+  developingKey: bool,
+  recentUrlsKey: List<String>,
+};
+
+const Map<String, Type> allWebsitePairs = <String, Type>{
+  ...allEzConfigPairs,
+  ...uniquePairs,
+};
+
+final Map<String, Object> uniqueDefaults = <String, Object>{
   developingKey: false,
   recentUrlsKey: recentUrls,
+};
+
+final Map<String, Object> websiteMobile = <String, Object>{
+  ...ywtMobileConfig,
+  ...uniqueDefaults,
 };
 
 final Map<String, Object> websiteDesktop = <String, Object>{
   ...ywtDesktopConfig,
-  developingKey: false,
-  recentUrlsKey: recentUrls,
-};
-
-const Set<String> neverResetKeys = <String>{
-  developingKey,
-  recentUrlsKey,
+  ...uniqueDefaults,
 };

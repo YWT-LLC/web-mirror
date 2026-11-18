@@ -8,41 +8,182 @@ import './utils/export.dart';
 
 import 'dart:async';
 import 'package:open_ui/open_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-void main() async {
-  // Configure the app //
+// Define the router //
 
-  WidgetsFlutterBinding.ensureInitialized();
-  await SystemChrome.setPreferredOrientations(DeviceOrientation.values);
+FutureOr<String?> colorPath(BuildContext pbc, GoRouterState pbs) {
+  final List<String> segments = pbs.uri.pathSegments;
 
-  EzCM.init(
-    appName: 'website',
-    androidPackage: null,
-    assetPaths: assetPaths,
-    orientations: DeviceOrientation.values,
-    localeFallback: americanEnglish,
-    l10nFallback: await OUILang.delegate.load(americanEnglish),
-    preferences: await SharedPreferencesWithCache.create(
-      cacheOptions: SharedPreferencesWithCacheOptions(allowList: allEZConfigKeys.keys.toSet()),
-    ),
-    defaults: isMobile() ? websiteMobile : websiteDesktop,
-    neverReset: neverResetKeys,
-  );
-
-  // Run the app //
-
-  final (Locale storedLocale, OUILang storedOUILang) = await ezStoredL10n();
-
-  runApp(Website(
-    storedLocale,
-    storedOUILang,
-    await Lang.delegate.load(storedLocale),
-  ));
+  if (segments.contains(EzSubSetting.advColor.path)) {
+    return '/$settingsPath?$typeQP=$colorRedirect&$advQP=true';
+  } else if (segments.contains(EzSubSetting.qckColor.path)) {
+    return '/$settingsPath?$typeQP=$colorRedirect&$advQP=false';
+  } else {
+    return '/$settingsPath?$typeQP=$colorRedirect';
+  }
 }
+
+FutureOr<String?> designPath(BuildContext pbc, GoRouterState pbs) {
+  final List<String> segments = pbs.uri.pathSegments;
+
+  if (segments.contains(EzSubSetting.pagDesign.path)) {
+    return '/$settingsPath?$typeQP=$designRedirect&$pageQP=true';
+  } else if (segments.contains(EzSubSetting.butDesign.path)) {
+    return '/$settingsPath?$typeQP=$designRedirect&$pageQP=false';
+  } else {
+    return '/$settingsPath?$typeQP=$designRedirect';
+  }
+}
+
+FutureOr<String?> textPath(BuildContext pbc, GoRouterState pbs) {
+  final List<String> segments = pbs.uri.pathSegments;
+
+  if (segments.contains(EzSubSetting.advText.path)) {
+    return '/$settingsPath?$typeQP=$textRedirect&$advQP=true';
+  } else if (segments.contains(EzSubSetting.qckText.path)) {
+    return '/$settingsPath?$typeQP=$textRedirect&$advQP=false';
+  } else {
+    return '/$settingsPath?$typeQP=$textRedirect';
+  }
+}
+
+final List<RouteBase> routes = <RouteBase>[
+  // Product (landing)
+  GoRoute(
+    path: 'products',
+    name: 'products',
+    builder: (_, GoRouterState state) => const LandingScreen(),
+    routes: <RouteBase>[
+      // a11how
+      GoRoute(
+        path: Product.a11how.routerPath,
+        name: Product.a11how.routerPath,
+        builder: (_, __) => const A11HowScreen(),
+      ),
+
+      // COI POND
+      GoRoute(
+        path: Product.coi.routerPath,
+        name: Product.coi.routerPath,
+        builder: (_, __) => const CoiPondScreen(),
+      ),
+
+      // Liminal
+      GoRoute(
+        path: Product.liminal.routerPath,
+        name: Product.liminal.routerPath,
+        builder: (_, __) => const LiminalScreen(),
+      ),
+
+      // Open UI
+      GoRoute(
+        path: Product.oui.routerPath,
+        name: Product.oui.routerPath,
+        builder: (_, __) => const OpenUIScreen(),
+      ),
+
+      // Presents
+      GoRoute(
+        path: Product.presents.routerPath,
+        name: Product.presents.routerPath,
+        builder: (_, __) => const PresentsScreen(),
+      ),
+
+      // SOS
+      GoRoute(
+        path: Product.sos.routerPath,
+        name: Product.sos.routerPath,
+        builder: (_, __) => const SOSScreen(),
+      ),
+    ],
+  ),
+
+  // Contribute
+  GoRoute(
+    path: contributePath,
+    name: contributePath,
+    builder: (_, __) => const ContributeScreen(),
+  ),
+
+  // Settings
+  GoRoute(
+    path: settingsPath,
+    name: settingsPath,
+    builder: (_, GoRouterState state) {
+      final int? target = targetLookup[state.uri.queryParameters[typeQP]?.toLowerCase()];
+      final bool? secondary =
+          qbParse(state.uri.queryParameters[advQP]) ?? qbParse(state.uri.queryParameters[pageQP]);
+
+      return SettingsHubScreen(
+        key: ValueKey<String>('$target:$secondary'),
+        target: target,
+        secondary: secondary,
+      );
+    },
+    routes: <RouteBase>[
+      // Redirects //
+      // Color
+      GoRoute(
+        path: colorRedirect,
+        redirect: colorPath,
+        routes: <RouteBase>[
+          GoRoute(path: EzSubSetting.qckColor.path, redirect: colorPath),
+          GoRoute(path: EzSubSetting.advColor.path, redirect: colorPath),
+        ],
+      ),
+      GoRoute(
+        path: colorSettingsPath,
+        redirect: colorPath,
+        routes: <RouteBase>[
+          GoRoute(path: EzSubSetting.qckColor.path, redirect: colorPath),
+          GoRoute(path: EzSubSetting.advColor.path, redirect: colorPath),
+        ],
+      ),
+
+      // Design
+      GoRoute(
+        path: designRedirect,
+        redirect: designPath,
+        routes: <RouteBase>[
+          GoRoute(path: EzSubSetting.butDesign.path, redirect: designPath),
+          GoRoute(path: EzSubSetting.pagDesign.path, redirect: designPath),
+        ],
+      ),
+      GoRoute(
+        path: designSettingsPath,
+        redirect: designPath,
+        routes: <RouteBase>[
+          GoRoute(path: EzSubSetting.butDesign.path, redirect: designPath),
+          GoRoute(path: EzSubSetting.pagDesign.path, redirect: designPath),
+        ],
+      ),
+
+      // Text
+      GoRoute(
+        path: textRedirect,
+        redirect: textPath,
+        routes: <RouteBase>[
+          GoRoute(path: EzSubSetting.qckText.path, redirect: textPath),
+          GoRoute(path: EzSubSetting.advText.path, redirect: textPath),
+        ],
+      ),
+      GoRoute(
+        path: textSettingsPath,
+        redirect: textPath,
+        routes: <RouteBase>[
+          GoRoute(path: EzSubSetting.qckText.path, redirect: textPath),
+          GoRoute(path: EzSubSetting.advText.path, redirect: textPath),
+        ],
+      ),
+    ],
+  ),
+];
+
+// Define the app //
 
 class Website extends StatelessWidget {
   final Locale storedLocale;
@@ -55,46 +196,6 @@ class Website extends StatelessWidget {
     this.storedLang, {
     super.key,
   });
-
-  // Define URL redirects //
-
-  FutureOr<String?> colorPath(BuildContext pbc, GoRouterState pbs) {
-    final List<String> segments = pbs.uri.pathSegments;
-
-    if (segments.contains(EzSubSetting.advColor.path)) {
-      return '/$settingsPath?$typeQP=$colorRedirect&$advQP=true';
-    } else if (segments.contains(EzSubSetting.qckColor.path)) {
-      return '/$settingsPath?$typeQP=$colorRedirect&$advQP=false';
-    } else {
-      return '/$settingsPath?$typeQP=$colorRedirect';
-    }
-  }
-
-  FutureOr<String?> designPath(BuildContext pbc, GoRouterState pbs) {
-    final List<String> segments = pbs.uri.pathSegments;
-
-    if (segments.contains(EzSubSetting.pagDesign.path)) {
-      return '/$settingsPath?$typeQP=$designRedirect&$pageQP=true';
-    } else if (segments.contains(EzSubSetting.butDesign.path)) {
-      return '/$settingsPath?$typeQP=$designRedirect&$pageQP=false';
-    } else {
-      return '/$settingsPath?$typeQP=$designRedirect';
-    }
-  }
-
-  FutureOr<String?> textPath(BuildContext pbc, GoRouterState pbs) {
-    final List<String> segments = pbs.uri.pathSegments;
-
-    if (segments.contains(EzSubSetting.advText.path)) {
-      return '/$settingsPath?$typeQP=$textRedirect&$advQP=true';
-    } else if (segments.contains(EzSubSetting.qckText.path)) {
-      return '/$settingsPath?$typeQP=$textRedirect&$advQP=false';
-    } else {
-      return '/$settingsPath?$typeQP=$textRedirect';
-    }
-  }
-
-  // Return the app //
 
   @override
   Widget build(BuildContext context) => EzConfigurableApp(
@@ -111,128 +212,44 @@ class Website extends StatelessWidget {
             // Home/intro
             GoRoute(
               path: homePath,
-              name: homePath,
+              name: homeName,
               builder: (_, GoRouterState state) => const HomeScreen(),
-              routes: <RouteBase>[
-                // Products (landing)
-                GoRoute(
-                  path: 'products',
-                  name: 'products',
-                  builder: (_, GoRouterState state) => const LandingScreen(),
-                  routes: <RouteBase>[
-                    // Open UI
-                    GoRoute(
-                      path: Products.openUI.routerPath,
-                      name: Products.openUI.routerPath,
-                      builder: (_, __) => const OpenUIScreen(),
-                    ),
-
-                    // SOS
-                    GoRoute(
-                      path: Products.sos.routerPath,
-                      name: Products.sos.routerPath,
-                      builder: (_, __) => const SOSScreen(),
-                    ),
-
-                    // Liminal
-                    GoRoute(
-                      path: Products.liminal.routerPath,
-                      name: Products.liminal.routerPath,
-                      builder: (_, __) => const LiminalScreen(),
-                    ),
-
-                    // a11how
-                    GoRoute(
-                      path: Products.a11how.routerPath,
-                      name: Products.a11how.routerPath,
-                      builder: (_, __) => const A11HowScreen(),
-                    ),
-                  ],
-                ),
-
-                // Contribute
-                GoRoute(
-                  path: contributePath,
-                  name: contributePath,
-                  builder: (_, __) => const ContributeScreen(),
-                ),
-
-                // Settings
-                GoRoute(
-                  path: settingsPath,
-                  name: settingsPath,
-                  builder: (_, GoRouterState state) {
-                    final int? target =
-                        targetLookup[state.uri.queryParameters[typeQP]?.toLowerCase()];
-                    final bool? secondary = qbParse(state.uri.queryParameters[advQP]) ??
-                        qbParse(state.uri.queryParameters[pageQP]);
-
-                    return SettingsHubScreen(
-                      key: ValueKey<String>('$target:$secondary'),
-                      target: target,
-                      secondary: secondary,
-                    );
-                  },
-                  routes: <RouteBase>[
-                    // Redirects //
-                    // Color
-                    GoRoute(
-                      path: colorRedirect,
-                      redirect: colorPath,
-                      routes: <RouteBase>[
-                        GoRoute(path: EzSubSetting.qckColor.path, redirect: colorPath),
-                        GoRoute(path: EzSubSetting.advColor.path, redirect: colorPath),
-                      ],
-                    ),
-                    GoRoute(
-                      path: colorSettingsPath,
-                      redirect: colorPath,
-                      routes: <RouteBase>[
-                        GoRoute(path: EzSubSetting.qckColor.path, redirect: colorPath),
-                        GoRoute(path: EzSubSetting.advColor.path, redirect: colorPath),
-                      ],
-                    ),
-
-                    // Design
-                    GoRoute(
-                      path: designRedirect,
-                      redirect: designPath,
-                      routes: <RouteBase>[
-                        GoRoute(path: EzSubSetting.butDesign.path, redirect: designPath),
-                        GoRoute(path: EzSubSetting.pagDesign.path, redirect: designPath),
-                      ],
-                    ),
-                    GoRoute(
-                      path: designSettingsPath,
-                      redirect: designPath,
-                      routes: <RouteBase>[
-                        GoRoute(path: EzSubSetting.butDesign.path, redirect: designPath),
-                        GoRoute(path: EzSubSetting.pagDesign.path, redirect: designPath),
-                      ],
-                    ),
-
-                    // Text
-                    GoRoute(
-                      path: textRedirect,
-                      redirect: textPath,
-                      routes: <RouteBase>[
-                        GoRoute(path: EzSubSetting.qckText.path, redirect: textPath),
-                        GoRoute(path: EzSubSetting.advText.path, redirect: textPath),
-                      ],
-                    ),
-                    GoRoute(
-                      path: textSettingsPath,
-                      redirect: textPath,
-                      routes: <RouteBase>[
-                        GoRoute(path: EzSubSetting.qckText.path, redirect: textPath),
-                        GoRoute(path: EzSubSetting.advText.path, redirect: textPath),
-                      ],
-                    ),
-                  ],
-                ),
-              ],
+              routes: routes,
             ),
           ],
         ),
       );
+}
+
+void main() async {
+  // Configure the environments //
+
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations(DeviceOrientation.values);
+
+  EzCM.init(
+    appName: 'website',
+    androidPackage: null,
+    assetPaths: assetPaths,
+    orientations: DeviceOrientation.values,
+    localeFallback: americanEnglish,
+    l10nFallback: await OUILang.delegate.load(americanEnglish),
+    preferences: await SharedPreferencesWithCache.create(
+      cacheOptions: SharedPreferencesWithCacheOptions(
+        allowList: allWebsitePairs.keys.toSet(),
+      ),
+    ),
+    defaults: isMobile() ? websiteMobile : websiteDesktop,
+    neverReset: neverResetPairs.keys.toSet(),
+  );
+
+  // Run the app //
+
+  final (Locale storedLocale, OUILang storedOUILang) = await ezStoredL10n();
+
+  runApp(Website(
+    storedLocale,
+    storedOUILang,
+    await Lang.delegate.load(storedLocale),
+  ));
 }

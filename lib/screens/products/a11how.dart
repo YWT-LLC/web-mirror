@@ -8,8 +8,8 @@ import '../../widgets/export.dart';
 import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:open_ui/open_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:material_ui/material_ui.dart';
 
 class A11HowScreen extends StatelessWidget {
   const A11HowScreen({super.key});
@@ -24,60 +24,66 @@ class A11HowScreen extends StatelessWidget {
               // Headline
               EzLink(
                 config,
-                text: Products.a11how.name,
-                url: Uri.parse(Products.a11how.liveUrl),
+                text: Product.a11how.name,
+                url: Uri.parse(Product.a11how.liveUrl),
                 hint: l10n(config).gOpenWebApp,
                 style: config.displayStyle,
                 textAlign: TextAlign.center,
               ),
               EzText(
                 config,
-                text: '...the magic happens!',
+                text: l10n(config).ahMagic,
                 textAlign: TextAlign.center,
-                style: ezSubTitleStyle(config.styles),
+                style: config.subTitleStyle,
               ),
               config.centerLine,
 
+              // Description
               EzRichText(
                 config,
                 children: <InlineSpan>[
                   EzPlainText(
-                    text: 'a11how streamlines translating .arb based apps (like ',
+                    text: l10n(config).ahDescription,
                     style: config.bodyStyle,
                   ),
                   EzInlineLink(
                     config,
-                    text: 'Flutter apps',
-                    url: Uri.parse(Products.openUI.productUrl),
-                    hint: l10n(config).gLearn(Products.openUI.name),
+                    text: l10n(config).ahFlutter,
+                    url: Uri.parse(Product.oui.productUrl),
+                    hint: l10n(config).gLearn(Product.oui.name),
                     style: config.bodyStyle,
                     textAlign: TextAlign.center,
                   ),
                   EzPlainText(
-                    text: ').\nBoth for developers and contributors.',
+                    text: l10n(config).ahBoth,
                     style: config.bodyStyle,
                   ),
                   config.richLine,
                   config.richLine,
                   EzPlainText(
-                    text:
-                        "Speaking of, a11how is integrated into all of YWT's software.\nIf you're interacting with our non-English content and see something wrong, simply click the link at the bottom of the page and fix it!\n\nAs long as you have a GitHub account, you can submit changes with one click.",
+                    text: l10n(config).ahSegway,
                     style: config.bodyStyle,
                   ),
-                  // config.richLine,
-                  // EzInlineLink(
-                  //   config,
-                  //   text: 'Try it out!',
-                  //   url: Uri.parse(link),
-                  //   hint: hint,
-                  //   style: config.bodyStyle,
-                  //   textAlign: TextAlign.center,
-                  // ),
+                  EzInlineLink(
+                    config,
+                    text: l10n(config).ahGit,
+                    url: Uri.parse(ywt.ywtGitHub),
+                    hint: l10n(config).gYWTGitHint,
+                    style: config.bodyStyle,
+                  ),
+                  EzPlainText(
+                    text: l10n(config).ahSubmitChange,
+                    style: config.bodyStyle,
+                  ),
                 ],
                 textAlign: TextAlign.center,
                 style: config.bodyStyle,
               ),
-              EzFooter(config, a11howPath: ywt.websiteContributeA11),
+              config.separator,
+
+              // Download
+              A11howLink(config),
+              config.separator,
             ]),
           ),
           fabs: <Widget>[config.spacer, SettingsFAB(config)],

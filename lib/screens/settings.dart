@@ -6,8 +6,8 @@
 import '../../widgets/export.dart';
 
 import 'package:open_ui/open_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:material_ui/material_ui.dart';
 
 class SettingsHubScreen extends StatelessWidget {
   final int? target;
@@ -86,6 +86,7 @@ class SettingsHubScreen extends StatelessWidget {
             target: target,
           ),
         ),
+        settingsA11: true,
         fabs: <Widget>[
           if (config.needsRebuild) ...<Widget>[config.spacer, EzRebuildFAB(config)],
           config.spacer,

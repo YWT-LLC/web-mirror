@@ -6,22 +6,18 @@
 import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:open_ui/open_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:material_ui/material_ui.dart';
 
 class IconLink extends StatelessWidget {
-  /// EzConfig Provider
   final EzCP config;
 
   /// Destination URL
   final Uri url;
 
-  /// [IconButton.tooltip] passthrough
   final String tooltip;
-
-  /// [IconButton.icon] passthrough
-  final Icon icon;
+  final Widget icon;
 
   const IconLink(
     this.config, {
@@ -55,9 +51,10 @@ class IconLinks extends StatelessWidget {
     config,
     url: Uri.parse(ywt.ywtGitHub),
     tooltip: 'GitHub',
-    icon: Icon(
+    icon: EzIcon(
+      config,
       LineIcons.github,
-      color: config.colors.primary,
+      fill: config.primaryFill,
       size: config.titleStyle!.fontSize,
     ),
   );

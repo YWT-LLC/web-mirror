@@ -16,18 +16,47 @@ class LangSw extends Lang {
       'a11how hurahisisha kutafsiri programu zinazotegemea .arb (kama ';
 
   @override
+  String get ahFlutter => 'programu za Flutter';
+
+  @override
+  String get ahGit => 'akaunti ya GitHub';
+
+  @override
   String get ahMagic => '...maajabu yanatokea!';
 
   @override
   String get ahSegway =>
-      'Tukizungumzia hayo, a11how imeunganishwa katika programu zote za YWT.\nIkiwa unatumia maudhui yetu yasiyo ya Kiingereza na kuona jambo ambalo si sahihi, bofya tu kiungo kilicho chini ya ukurasa na urekebishe!\n\nIlimradi una akaunti ya GitHub, unaweza kuwasilisha mabadiliko kwa kubofya mara moja tu.';
+      'Tukizungumzia hayo, a11how imeunganishwa katika programu zote za YWT.\nIkiwa unatumia maudhui yetu yasiyo ya Kiingereza na kuona jambo ambalo si sahihi, bofya tu kiungo kilicho chini ya ukurasa na urekebishe!\n\nIlimradi una ';
+
+  @override
+  String get ahSubmitChange =>
+      ', unaweza kuwasilisha mabadiliko kwa kubofya mara moja tu.';
+
+  @override
+  String get ahSubmitFix => 'Wasilisha marekebisho.';
+
+  @override
+  String get coiApp => '-app';
+
+  @override
+  String get coiDescription =>
+      'Kwa bahati mbaya, hilo ndilo neno rasmi.\nSuper-app ni rundo la programu ndogo zilizowekwa pamoja.\nCOI POND ni (karibu) programu zote za YWT zilizowekwa pamoja.\n\nIkiwa unataka mpito rahisi kuelekea maisha ya kujipangishia (self-hosted), pata COI POND.\n\nNi nafuu sana kuliko bwawa halisi la Koi.';
+
+  @override
+  String get coiFree => '(letu ni bure)';
+
+  @override
+  String get coiIts => 'Ni';
+
+  @override
+  String get coiSuper => '\tSuper App';
 
   @override
   String get csBecome => ' kuhusu kuwa ';
 
   @override
   String get csEveryBit =>
-      'Kila biti unayotoa kwa sisi huondoa baiti kutoka kwa makampuni makubwa ya teknolojia.';
+      'Kila biti kwa YWT ni baiti inayoondolewa kutoka kwa makampuni makubwa ya teknolojia.';
 
   @override
   String get csGit => 'mchangiaji wa GitHub';
@@ -84,7 +113,15 @@ class LangSw extends Lang {
   String get fahWhats => 'Nini maana ya ';
 
   @override
+  String get gA11howLogo =>
+      'aikoni ya kutafsiri katika mpangilio wa rangi wa YWT.';
+
+  @override
   String get gAnEmail => 'barua pepe';
+
+  @override
+  String get gCoiPondLogo =>
+      'samaki wawili wa Koi katika mpangilio wa rangi wa YWT.';
 
   @override
   String get gContributeHint => 'Fungua ukurasa wa kuchangia';
@@ -140,6 +177,10 @@ class LangSw extends Lang {
   }
 
   @override
+  String get gLiminalLogo =>
+      'chura mdogo juu ya jani kubwa la yungiyungi, lililotiwa rangi za YWT.';
+
+  @override
   String gLogoLabel(Object thing) {
     return 'Nembo ya $thing: ';
   }
@@ -155,6 +196,10 @@ class LangSw extends Lang {
 
   @override
   String get gOpenWebApp => 'Fungua programu ya wavuti';
+
+  @override
+  String get gPresentsLogo =>
+      'zawadi iliyofunguliwa katika mpangilio wa rangi wa YWT.';
 
   @override
   String get gProductsHint => 'Fungua ukurasa wa bidhaa';
@@ -175,6 +220,11 @@ class LangSw extends Lang {
 
   @override
   String get gTeamHint => 'Fungua ukurasa wa timu';
+
+  @override
+  String gTryFor(Object app, Object platform) {
+    return 'Jaribu $app kwa ajili ya $platform';
+  }
 
   @override
   String get gTryLive => 'Ijaribu mubashara!';
@@ -203,28 +253,24 @@ class LangSw extends Lang {
 
   @override
   String get hsmFindSolutionContent =>
-      'Kwa bahati nzuri, kuna wataalamu wa teknolojia wa ajabu duniani kote wanaofanya kazi pamoja ili kujenga mwelekeo bora zaidi.\nAmbapo watoa huduma na wateja wana uhusiano hai, thabiti, na wenye manufaa kwa pande zote mbili.\n\nJumuiya ya programu huria (open source).\n\nKimsingi, programu huria inapatikana bila malipo kwa mtu yeyote kuangalia. Miradi mingi pia inaweza kurekebishwa na kusambazwa tena bila malipo.\nNi programu isiyo na siri yoyote, inayoundwa na watu wanaotambua kuwa matatizo ya pamoja yanahitaji masuluhisho ya pamoja.\n\nNa katika ulimwengu mzuri wa programu huria, kuna aina ndogo: programu za kujihifadhi (self-hosting).\n\nKujihifadhi kunaturuhusu kuchukua kompyuta yoyote isiyotumika (hata za ukubwa wa mfukoni) na kuhifadhi data zetu hapo.\nKwa kujihifadhi, tunaweza kudhibiti uwepo wetu wa kidijitali, badala ya kutoa udhibiti kwa seva iliyo mbali, inayomilikiwa na shirika lisilo na huruma.\n\nNa kuna matoleo ya kujihifadhi kwa karibu kila kitu! Kuanzia Adobe hadi Zoom, kuna wanaharakati wa teknolojia wenye shauku wanaounda mbadala zinazowatanguliza watu badala ya faida.\n\nHivyo basi, mtu anafanyaje mabadiliko kutoka kwenye programu inayotanguliza faida/isiyo huria na kwenda kwenye programu huria? Wanaanzaje kujihifadhi?\nInachukua muda mwingi, nguvu, na ujuzi wa awali.\n\nHapo ndipo tunapoingia.';
+      'Kwa bahati nzuri, kuna wataalamu wa teknolojia wa ajabu duniani kote wanaofanya kazi pamoja ili kujenga mwelekeo bora zaidi.\nAmbapo watoa huduma na wateja wana uhusiano hai, thabiti, na wenye manufaa kwa pande zote mbili.\n\nJumuiya ya programu huria (open source).\n\nKimsingi, programu huria inapatikana bila malipo kwa mtu yeyote kuangalia.\nMiradi mingi pia inaweza kurekebishwa na kusambazwa tena bila malipo.\nNi programu isiyo na siri yoyote, inayoundwa na watu wanaotambua kuwa matatizo ya pamoja yanahitaji masuluhisho ya pamoja.\n\nNa katika ulimwengu mzuri wa programu huria, kuna aina ndogo: kujihifadhi (self-hosting).\n\nKujihifadhi kunaturuhusu kuchukua kompyuta yoyote isiyotumika (hata za ukubwa wa mfukoni!) na kuhifadhi data zetu hapo.\nKwa kujihifadhi tunaweza kumiliki nyayo zetu za kidijitali, badala ya kutoa udhibiti kwa shirika kubwa linaloona kujiua kunakosababishwa na saikosisi kama maafikiano ya lazima.\n\nNa kuna matoleo ya kujihifadhi kwa karibu kila kitu!\nKuanzia Adobe hadi Zoom, kuna wanaharakati wa teknolojia wenye shauku wanaounda mbadala zinazowatanguliza watu badala ya faida.\n\nHivyo basi, mtu anafanyaje mabadiliko kutoka kwenye kutanguliza faida hadi programu huria? Wanaanzaje kujihifadhi?\nInachukua muda mwingi, nguvu, na ujuzi wa awali.\n\nHapo ndipo YWT inapoingia.';
 
   @override
-  String get hsmFirst => 'Kwa kuanza na';
+  String get hsmGetStarted => 'Anza';
 
   @override
   String get hsmIDProblem => 'Kutambua tatizo';
 
   @override
   String get hsmIDProblemContent =>
-      'Mifumo ya biashara inayotanguliza faida si endelevu.\n\nKimsingi: ikiwa faida itatangulizwa, mambo kama vile kufanyia kazi dhamira, kuwatendea watu haki, na matumizi ya rasilimali kwa njia inayofaa huwa mambo ya ziada tu.\n\nNa uchoyo huu umekithiri katika kampuni kubwa za teknolojia. Miamba ya teknolojia hawaridhishwi tena na pesa zetu, na wanaunda bidhaa ili kulenga utambulisho wetu na kutawala akili zetu.';
+      'Mifumo ya biashara inayotanguliza faida si endelevu.\n\nIkiwa faida itatangulizwa, basi kufanyia kazi dhamira, kuwatendea watu haki, na matumizi ya rasilimali kwa uwajibikaji vyote huwa mambo ya ziada tu.\n\nNa uchoyo wa kutanguliza faida umekithiri bila kudhibitiwa katika kampuni kubwa za teknolojia.\nMiamba ya teknolojia hawaridhishwi tena na pesa zetu, na wanaunda bidhaa ili kulenga utambulisho wetu na kutawala akili zetu.';
 
   @override
   String get hsmProvideValue => 'Kufanya kazi';
 
   @override
-  String get hsmProvideValueContent1 =>
-      'YWT inaleta usawa katika teknolojia kwa kufanya upangishaji-kibinafsi kufikika kwa urahisi zaidi.\n\nTutaunda programu zinazomwezesha yeyote kumiliki utambulisho wao wa kidijitali.\nTutajenga madaraja kati ya jamii ya chanzo huria na wale ambao hawana muda, nguvu, au ujuzi wa awali unaohitajika.\n\nNa huwezi kujenga madaraja (au programu) bila msingi imara! Ndiyo maana ';
-
-  @override
-  String get hsmProvideValueContent2 =>
-      ' ipo.\nTunajivunia kutimiza maneno yetu kwa vitendo, na tumefanya kiolesura chetu kinachofikika kwa urahisi kuwa cha chanzo huria.\n\nTuijenge dunia bora pamoja, hatua kwa hatua.';
+  String get hsmProvideValueContent =>
+      'YWT inarejesha usawa katika teknolojia kwa kufanya kujiendeshea huduma (self-hosting) kuwa rahisi zaidi kufikiwa.\n\nTunajenga programu zinazowawezesha kila mtu kumiliki utambulisho wake wa kidijitali.\nTunajenga madaraja kati ya jumuiya ya chanzo huria na wale wasio na muda, nguvu, au maarifa ya awali yanayohitajika.';
 
   @override
   String get hsmSoWe => 'Hivyo basi sisi';
@@ -355,6 +401,23 @@ class LangSw extends Lang {
 
   @override
   String get ouZeroStrain => 'kutosumbua macho kabisa';
+
+  @override
+  String get prCreative => 'Kuwa mbunifu!';
+
+  @override
+  String get prDescription =>
+      'Na kama mbunifu, unaweka bei yako mwenyewe!\nLabda unatengeneza mpangilio wa upofu wa rangi ambao unataka uwe bure.\nUkarimu wako hautaadhibiwa hapa: faili za mipangilio ni nafuu sana kuhifadhi (zaidi kuhusu hilo baadaye).\n\nAu, labda unatumia wiki kadhaa kwenye mandharinyuma ya gif maalum na kifurushi/vifurushi vya sauti.\nUngependa kulipwa kwa kazi hiyo, sivyo? Zaidi ya hayo, gif za ubora wa juu zinaweza kuchukua nafasi kidogo…\n\nIli taa ziendelee kuwaka, tunamtoza kila mtu USD 1/mwezi ili akaunti yako ibaki hai.\nWabunifu pia hutozwa (kwa uwazi!) gharama zao (hifadhi, miamala, n.k.).\nLakini! Dola hiyo hiyo inahesabiwa kwenye bili yako.\nZaidi ya hayo, tunachukua 0% (hakuna, sifuri, hata senti) ya mauzo yako. Tunachofanya ni kukadiria juu hadi dola kamili tu.\n\nKwa hiyo, kwa muhtasari: tunapata USD 1.00/mwezi kutoka kwa wapakuaji, na USD 0.01-0.99/mwezi kutoka kwa wabunifu.\nPia, kama tulivyodokeza: ikiwa hukutengeneza sanaa maalum, utakuwa unahifadhi faili ya maandishi tu.\nSenti chache kwa mwezi.\n\nTunataka ubunifu uwe na vikwazo vichache iwezekanavyo.\nHasa kwa wale wanaotoa kazi zao bure.\n\nKwa wabunifu, utahitaji kuweka akaunti yako ikiwa hai na bila deni.\nLakini usijali, sisi si watu wa ajabu tutakaoiba maudhui yako ukichelewa kulipa.\nTutaondoa tu nakala yetu (na kuokoa gharama za seva) hadi utakapokuwa tayari kurudi.\n\nKwa wapakuaji, maudhui yote yaliyonunuliwa/ya bure yaliyopakuliwa awali yatapatikana ilimradi seva zetu zimewashwa.\nHutaweza tu kupata maudhui mapya ukiwa na akaunti isiyo hai.';
+
+  @override
+  String get prMoneyU2 => 'Njia ya wewe pia kupata pesa!';
+
+  @override
+  String get prTitle => 'YWT inawasilisha...';
+
+  @override
+  String get prUGC =>
+      'Presents ni duka letu la Maudhui Yanayotengenezwa na Watumiaji (UGC).\nLinachukua dhana bora za lile duka la jumla la Kimarekani lenye hotdog, na ile tovuti ya kuuza vitu vya kisanii n.k. (etc.).\n\nKaribu kila kipengele cha UI yetu kinaweza kubinafsishwa kwa urahisi.\nPia ni rahisi kuhifadhi nakala za mipangilio unayoipenda, na kuibadilisha wakati wowote.\nPresents inakuruhusu kushiriki mipangilio hiyo na kila mtu. Kama vile...';
 
   @override
   String get psComingSoon => 'Inakuja hivi karibuni...';

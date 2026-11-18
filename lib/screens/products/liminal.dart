@@ -5,24 +5,21 @@
 
 import '../../utils/export.dart';
 import '../../widgets/export.dart';
-import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:open_ui/open_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:material_ui/material_ui.dart';
 
 class LiminalScreen extends StatelessWidget {
   const LiminalScreen({super.key});
 
   @override
   Widget build(BuildContext context) => Consumer<EzCP>(builder: (_, EzCP config, __) {
-        final EdgeInsets wrapPadding = EzInsets.wrap(config.spacing);
-
         Widget balance() => Tooltip(
               enableTapToDismiss: false,
               message: l10n(config).gImageCredit(founder),
-              child: Padding(
-                padding: wrapPadding,
+              child: ezWrap(
+                config,
                 child: EzImage(
                   width: ezImageSize(config, context: context) * 1.5,
                   image: balanceImage,
@@ -54,8 +51,8 @@ class LiminalScreen extends StatelessWidget {
                 ],
                 style: config.bodyStyle,
               ),
-              child: Padding(
-                padding: wrapPadding,
+              child: ezWrap(
+                config,
                 child: EzImage(
                   width: ezImageSize(config, context: context) * 1.5,
                   image: duckDuckFetchImage,
@@ -67,8 +64,8 @@ class LiminalScreen extends StatelessWidget {
         Widget lasRosas() => Tooltip(
               enableTapToDismiss: false,
               message: l10n(config).gImageCredit(founder),
-              child: Padding(
-                padding: wrapPadding,
+              child: ezWrap(
+                config,
                 child: EzImage(
                   width: ezImageSize(config, context: context) * 1.5,
                   image: lasRosasImage,
@@ -100,8 +97,8 @@ class LiminalScreen extends StatelessWidget {
                 ],
                 style: config.bodyStyle,
               ),
-              child: Padding(
-                padding: wrapPadding,
+              child: ezWrap(
+                config,
                 child: EzImage(
                   width: ezImageSize(config, context: context) * 1.5,
                   image: natureIsFabImage,
@@ -113,8 +110,8 @@ class LiminalScreen extends StatelessWidget {
         Widget productivity() => Tooltip(
               enableTapToDismiss: false,
               message: l10n(config).gImageCredit(founder),
-              child: Padding(
-                padding: wrapPadding,
+              child: ezWrap(
+                config,
                 child: EzImage(
                   width: ezImageSize(config, context: context) * 1.5,
                   image: productivityImage,
@@ -126,8 +123,8 @@ class LiminalScreen extends StatelessWidget {
         Widget seaBombCleaner() => Tooltip(
               enableTapToDismiss: false,
               message: l10n(config).gImageCredit(founder),
-              child: Padding(
-                padding: wrapPadding,
+              child: ezWrap(
+                config,
                 child: EzImage(
                   width: ezImageSize(config, context: context) * 1.5,
                   image: seaBombCleanerImage,
@@ -139,8 +136,8 @@ class LiminalScreen extends StatelessWidget {
         Widget theHood() => Tooltip(
               enableTapToDismiss: false,
               message: l10n(config).gImageCredit(crosby),
-              child: Padding(
-                padding: wrapPadding,
+              child: ezWrap(
+                config,
                 child: EzImage(
                   width: ezImageSize(config, context: context) * 1.5,
                   image: theHoodImage,
@@ -172,8 +169,8 @@ class LiminalScreen extends StatelessWidget {
                 ],
                 style: config.bodyStyle,
               ),
-              child: Padding(
-                padding: wrapPadding,
+              child: ezWrap(
+                config,
                 child: EzImage(
                   width: ezImageSize(config, context: context) * 1.5,
                   image: twoDoorsImage,
@@ -190,8 +187,8 @@ class LiminalScreen extends StatelessWidget {
               // Headline
               EzLink(
                 config,
-                text: Products.liminal.name,
-                url: Uri.parse(Products.liminal.sourceUrl),
+                text: Product.liminal.name,
+                url: Uri.parse(Product.liminal.sourceUrl),
                 hint: l10n(config).gRepoHint,
                 style: config.displayStyle,
                 textAlign: TextAlign.center,
@@ -207,9 +204,9 @@ class LiminalScreen extends StatelessWidget {
                   EzPlainText(text: l10n(config).llDesign, style: config.bodyStyle),
                   EzInlineLink(
                     config,
-                    text: Products.openUI.name,
-                    url: Uri.parse(Products.openUI.productUrl),
-                    hint: l10n(config).gLearn(Products.openUI.name),
+                    text: Product.oui.name,
+                    url: Uri.parse(Product.oui.productUrl),
+                    hint: l10n(config).gLearn(Product.oui.name),
                     style: config.bodyStyle,
                     textAlign: TextAlign.center,
                   ),
@@ -259,34 +256,16 @@ class LiminalScreen extends StatelessWidget {
               ),
               config.separator,
 
-              // Availability
-              EzRichText(
+              // Download
+              EzText(
                 config,
-                children: <InlineSpan>[
-                  EzPlainText(text: l10n(config).llModel, style: config.bodyStyle),
-                  EzInlineLink(
-                    config,
-                    text: 'Google Play',
-                    url: Uri.parse(ywt.liminalGPlay),
-                    hint: l10n(config).gLearn('Liminal'),
-                    style: config.bodyStyle,
-                    textAlign: TextAlign.center,
-                  ),
-                  EzPlainText(text: l10n(config).llPaid, style: config.bodyStyle),
-                  EzInlineLink(
-                    config,
-                    text: l10n(config).llGit,
-                    url: Uri.parse(ywt.liminalReleases),
-                    hint: l10n(config).gRepoHint,
-                    style: config.bodyStyle,
-                    textAlign: TextAlign.center,
-                  ),
-                  EzPlainText(text: l10n(config).llFree, style: config.bodyStyle),
-                ],
+                text: config.ezL10n.ssHaveFun,
+                style: config.subTitleStyle,
                 textAlign: TextAlign.center,
-                style: config.bodyStyle,
               ),
-              EzFooter(config, a11howPath: ywt.websiteContributeA11),
+              config.margin,
+              LiminalLink(config),
+              config.separator,
             ]),
           ),
           fabs: <Widget>[config.spacer, SettingsFAB(config)],

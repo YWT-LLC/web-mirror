@@ -6,7 +6,7 @@
 import './export.dart';
 
 import 'package:open_ui/open_ui.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 // Artists/Assets creators //
 
@@ -207,8 +207,8 @@ class FreelancerCoin extends StatelessWidget {
   Widget build(BuildContext context) => EzCol(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Container(
-            constraints: EzBox.sym(ezImageSize(config, context: context)),
+          SizedBox.square(
+            dimension: ezImageSize(config, context: context),
             child: EzLinkWidget(
               config,
               isImage: true,

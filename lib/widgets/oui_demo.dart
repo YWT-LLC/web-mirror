@@ -6,8 +6,8 @@
 import '../utils/export.dart';
 
 import 'package:open_ui/open_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:material_ui/material_ui.dart';
 
 class OUIDemo extends StatelessWidget {
   final EzCP config;
@@ -54,7 +54,7 @@ class OUIDemo extends StatelessWidget {
         // and
         Text(
           '&',
-          style: ezSubTitleStyle(config.styles),
+          style: config.subTitleStyle,
           textAlign: TextAlign.center,
           semanticsLabel: config.ezL10n.gAnd,
         ),
@@ -68,7 +68,11 @@ class OUIDemo extends StatelessWidget {
             config,
             onPressed: () =>
                 config.rebuildUI(changes: () async => await EzCM.randomize(config.isDark)),
-            icon: EzIcon(config, LineIcons.diceD6),
+            icon: EzIcon(
+              config,
+              LineIcons.diceD6,
+              fill: ezRainbowSwitch,
+            ),
             label: l10n(config).ouEverything,
           ),
         ),

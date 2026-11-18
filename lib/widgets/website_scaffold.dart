@@ -7,8 +7,8 @@ import './export.dart';
 import '../utils/export.dart';
 import 'package:ywt_private/ywt_private.dart' as ywt;
 
-import 'package:flutter/material.dart';
 import 'package:open_ui/open_ui.dart';
+import 'package:material_ui/material_ui.dart';
 
 class WebsiteScaffold extends StatelessWidget {
   final EzCP config;
@@ -16,6 +16,7 @@ class WebsiteScaffold extends StatelessWidget {
   final Widget body;
   final List<Widget>? fabs;
   final bool isHome;
+  final bool settingsA11;
 
   /// Standardized [Scaffold] for Open UI screens
   const WebsiteScaffold(
@@ -25,6 +26,7 @@ class WebsiteScaffold extends StatelessWidget {
     required this.body,
     this.fabs,
     this.isHome = false,
+    this.settingsA11 = false,
   });
 
   // Define custom functions //
@@ -60,7 +62,7 @@ class WebsiteScaffold extends StatelessWidget {
       child: SizedBox(
         width: toolbarHeight,
         height: toolbarHeight,
-        child: ywt.Logo(margin: config.marginVal, colorScheme: config.colors),
+        child: ywt.Logo(margin: config.marginVal, colorScheme: config.theme.colorScheme),
       ),
     );
 
@@ -71,7 +73,7 @@ class WebsiteScaffold extends StatelessWidget {
     final List<Widget> finalFabs = <Widget>[
       updater(config),
       if (fabs != null) ...fabs!,
-      ...config.backFABs(isHome),
+      ...config.backFABs(isHome: isHome),
     ];
 
     final _RestrictedScaffold restricted = _RestrictedScaffold(
@@ -82,6 +84,7 @@ class WebsiteScaffold extends StatelessWidget {
       body: body,
       fabs: finalFabs,
       isHome: isHome,
+      settingsA11: settingsA11,
     );
 
     final _ExpandedScaffold expanded = _ExpandedScaffold(
@@ -92,6 +95,7 @@ class WebsiteScaffold extends StatelessWidget {
       body: body,
       fabs: finalFabs,
       isHome: isHome,
+      settingsA11: settingsA11,
     );
 
     // Return the build //
@@ -111,9 +115,9 @@ class _RestrictedScaffold extends EzScaffold {
   final Widget linkLogo;
   final WebsiteDrawer swapDrawer;
   final bool isHome;
+  final bool settingsA11;
 
   /// [WebsiteScaffold] for when there is limited screen space
-  /// Has a mobile-like layout
   _RestrictedScaffold(
     super.config, {
     required this.toolbarHeight,
@@ -122,6 +126,7 @@ class _RestrictedScaffold extends EzScaffold {
     required super.body,
     required super.fabs,
     required this.isHome,
+    required this.settingsA11,
   }) : super(
           appBar: PreferredSize(
             preferredSize: Size(double.infinity, toolbarHeight),
@@ -131,6 +136,11 @@ class _RestrictedScaffold extends EzScaffold {
               title: isHome ? const SizedBox.shrink() : linkLogo,
               actions: config.isLefty ? <Widget>[EzBackAction(config)] : null,
             ),
+          ),
+          footer: EzFooter(
+            config,
+            quiet: true,
+            a11howPath: settingsA11 ? ywt.openUIContributeA11 : ywt.websiteContributeA11,
           ),
           drawer: config.isLefty ? swapDrawer : null,
           endDrawer: config.isLefty ? null : swapDrawer,
@@ -142,9 +152,8 @@ class _ExpandedScaffold extends EzScaffold {
   final Widget linkLogo;
   final Widget iconLinksMenu;
   final bool isHome;
+  final bool settingsA11;
 
-  /// [WebsiteScaffold] for when there is ample screen space
-  /// Has a traditional footer-less web page layout
   _ExpandedScaffold(
     super.config, {
     required this.toolbarHeight,
@@ -153,6 +162,7 @@ class _ExpandedScaffold extends EzScaffold {
     required super.body,
     required super.fabs,
     required this.isHome,
+    required this.settingsA11,
   }) : super(
           appBar: PreferredSize(
             preferredSize: Size(double.infinity, toolbarHeight),
@@ -160,11 +170,16 @@ class _ExpandedScaffold extends EzScaffold {
               config,
               height: toolbarHeight,
               leading: config.isLefty ? iconLinksMenu : (isHome ? null : linkLogo),
-              leadingWidth: isHome ? null : toolbarHeight,
+              leadingWidth: config.isLefty ? toolbarHeight : (isHome ? null : toolbarHeight),
               title: PageLinks(config),
               actions:
                   config.isLefty ? (isHome ? null : <Widget>[linkLogo]) : <Widget>[iconLinksMenu],
             ),
+          ),
+          footer: EzFooter(
+            config,
+            quiet: true,
+            a11howPath: settingsA11 ? ywt.openUIContributeA11 : ywt.websiteContributeA11,
           ),
         );
 }

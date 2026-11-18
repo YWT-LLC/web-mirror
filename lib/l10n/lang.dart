@@ -135,6 +135,18 @@ abstract class Lang {
   /// **'a11how streamlines translating .arb based apps (like '**
   String get ahDescription;
 
+  /// No description provided for @ahFlutter.
+  ///
+  /// In en, this message translates to:
+  /// **'Flutter apps'**
+  String get ahFlutter;
+
+  /// No description provided for @ahGit.
+  ///
+  /// In en, this message translates to:
+  /// **'GitHub account'**
+  String get ahGit;
+
   /// No description provided for @ahMagic.
   ///
   /// In en, this message translates to:
@@ -144,8 +156,50 @@ abstract class Lang {
   /// No description provided for @ahSegway.
   ///
   /// In en, this message translates to:
-  /// **'Speaking of, a11how is integrated into all of YWT\'s software.\nIf you\'re interacting with our non-English content and see something wrong, simply click the link at the bottom of the page and fix it!\n\nAs long as you have a GitHub account, you can submit changes with one click.'**
+  /// **'Speaking of, a11how is integrated into all of YWT\'s software.\nIf you\'re interacting with our non-English content and see something wrong, simply click the link at the bottom of the page and fix it!\n\nAs long as you have a '**
   String get ahSegway;
+
+  /// No description provided for @ahSubmitChange.
+  ///
+  /// In en, this message translates to:
+  /// **', you can submit changes with one click.'**
+  String get ahSubmitChange;
+
+  /// No description provided for @ahSubmitFix.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit a fix.'**
+  String get ahSubmitFix;
+
+  /// No description provided for @coiApp.
+  ///
+  /// In en, this message translates to:
+  /// **'-app'**
+  String get coiApp;
+
+  /// No description provided for @coiDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Unfortunately, that is the official term.\nA super-app is a bunch of small apps put together.\nCOI POND is all(ish) of YWT\'s apps put together.\n\nIf you want an easy transition to the self-hosted life, get a COI POND.\n\nIt\'s a lot cheaper than a real Koi Pond.'**
+  String get coiDescription;
+
+  /// No description provided for @coiFree.
+  ///
+  /// In en, this message translates to:
+  /// **'(ours is free)'**
+  String get coiFree;
+
+  /// No description provided for @coiIts.
+  ///
+  /// In en, this message translates to:
+  /// **'It\'s a'**
+  String get coiIts;
+
+  /// No description provided for @coiSuper.
+  ///
+  /// In en, this message translates to:
+  /// **'\tSuper App'**
+  String get coiSuper;
 
   /// No description provided for @csBecome.
   ///
@@ -156,7 +210,7 @@ abstract class Lang {
   /// No description provided for @csEveryBit.
   ///
   /// In en, this message translates to:
-  /// **'Every bit to us is a byte out of big tech.'**
+  /// **'Every bit to YWT is a byte out of big tech.'**
   String get csEveryBit;
 
   /// No description provided for @csGit.
@@ -261,11 +315,23 @@ abstract class Lang {
   /// **'What\'s '**
   String get fahWhats;
 
+  /// No description provided for @gA11howLogo.
+  ///
+  /// In en, this message translates to:
+  /// **'a translate icon in YWT\'s color scheme.'**
+  String get gA11howLogo;
+
   /// No description provided for @gAnEmail.
   ///
   /// In en, this message translates to:
   /// **'an email'**
   String get gAnEmail;
+
+  /// No description provided for @gCoiPondLogo.
+  ///
+  /// In en, this message translates to:
+  /// **'two Koi fish in YWT\'s color scheme.'**
+  String get gCoiPondLogo;
 
   /// No description provided for @gContributeHint.
   ///
@@ -345,6 +411,12 @@ abstract class Lang {
   /// **'Learn about {name}'**
   String gLearn(Object name);
 
+  /// No description provided for @gLiminalLogo.
+  ///
+  /// In en, this message translates to:
+  /// **'a small frog on a large lily pad, tinted with YWT\'s color scheme.'**
+  String get gLiminalLogo;
+
   /// No description provided for @gLogoLabel.
   ///
   /// In en, this message translates to:
@@ -374,6 +446,12 @@ abstract class Lang {
   /// In en, this message translates to:
   /// **'Open the web app'**
   String get gOpenWebApp;
+
+  /// No description provided for @gPresentsLogo.
+  ///
+  /// In en, this message translates to:
+  /// **'an open present in YWT\'s color scheme.'**
+  String get gPresentsLogo;
 
   /// No description provided for @gProductsHint.
   ///
@@ -410,6 +488,12 @@ abstract class Lang {
   /// In en, this message translates to:
   /// **'Open the team page'**
   String get gTeamHint;
+
+  /// No description provided for @gTryFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Try {app} for {platform}'**
+  String gTryFor(Object app, Object platform);
 
   /// No description provided for @gTryLive.
   ///
@@ -462,14 +546,14 @@ abstract class Lang {
   /// No description provided for @hsmFindSolutionContent.
   ///
   /// In en, this message translates to:
-  /// **'Fortunately, there are amazing technologists all over the world working together towards a better narrative.\nOne where the service providers and the customers have an active, healthy, and mutually beneficial relationship.\n\nThe open source community.\n\nAt its core, open source software is freely available for anyone to view. Many projects can also be freely modified and redistributed.\nIt\'s software with nothing to hide, built by folks who recognize shared problems require shared solutions.\n\nAnd in the wonderful world of open source software, there lies a sub category: self-hosting software.\n\nSelf-hosting lets us take any not-in-use computer (pocket sized ones too) and store our data there.\nBy self-hosting, we can control our own digital presence, rather than sign away control to some far away server, owned by an un-empathetic corporation.\n\nAnd there are self-hosted versions of just about everything! From Adobe to Zoom, there are passionate hacktivists building alternatives that put people over profits.\n\nSo, how does one make the switch from profit first/closed source to open source? How do they start self-hosting?\nIt takes a lot of time, energy, and prior knowledge.\n\nThat\'s where we come in.'**
+  /// **'Fortunately, there are amazing technologists all over the world working together towards a better narrative.\nOne where the service providers and the customers have an active, healthy, and mutually beneficial relationship.\n\nThe open source community.\n\nAt its core, open source software is freely available for anyone to view.\nMany projects can also be freely modified and redistributed.\nIt\'s software with nothing to hide, built by folks who recognize shared problems require shared solutions.\n\nAnd in the wonderful world of open source software, there lies a sub category: self-hosting.\n\nSelf-hosting lets us take any not-in-use computer (pocket sized ones too!) and store our data there.\nBy self-hosting we can own our digital footprints, rather than sign away control to some mega-corp that views psychosis induced suicide as a necessary compromise.\n\nAnd there are self-hosted versions of just about everything!\nFrom Adobe to Zoom, there are passionate hacktivists building alternatives that put people over profits.\n\nSo, how does one make the switch from profit first to open source? How do they start self-hosting?\nIt takes a lot of time, energy, and prior knowledge.\n\nThat\'s where YWT comes in.'**
   String get hsmFindSolutionContent;
 
-  /// No description provided for @hsmFirst.
+  /// No description provided for @hsmGetStarted.
   ///
   /// In en, this message translates to:
-  /// **'By first'**
-  String get hsmFirst;
+  /// **'Get started'**
+  String get hsmGetStarted;
 
   /// No description provided for @hsmIDProblem.
   ///
@@ -480,7 +564,7 @@ abstract class Lang {
   /// No description provided for @hsmIDProblemContent.
   ///
   /// In en, this message translates to:
-  /// **'Profit first business models aren\'t sustainable.\n\nBy definition: if profit comes first, then things like working towards a mission, treating people right, and responsible consumption of resources all become afterthoughts.\n\nAnd this greed has gone unchecked in big tech. The tech giants have grown dissatisfied with our money, and are building products to target our identities and monopolize our minds.'**
+  /// **'Profit first business models aren\'t sustainable.\n\nIf profit comes first, then working towards a mission, treating people right, and a responsible consumption of resources all become afterthoughts.\n\nAnd profit first greed has gone unchecked in big tech.\nThe tech giants have grown dissatisfied with our money, and are building products to target our identities and monopolize our minds.'**
   String get hsmIDProblemContent;
 
   /// No description provided for @hsmProvideValue.
@@ -489,17 +573,11 @@ abstract class Lang {
   /// **'Doing the work'**
   String get hsmProvideValue;
 
-  /// No description provided for @hsmProvideValueContent1.
+  /// No description provided for @hsmProvideValueContent.
   ///
   /// In en, this message translates to:
-  /// **'YWT is re-balancing tech by making self-hosting more accessible.\n\nWe will build apps that enable anyone to own their digital identity.\nWe will build bridges between the open source community and those without the required time, energy, or prior knowledge.\n\nAnd you can\'t build bridges (or apps) without a strong foundation! That\'s why '**
-  String get hsmProvideValueContent1;
-
-  /// No description provided for @hsmProvideValueContent2.
-  ///
-  /// In en, this message translates to:
-  /// **' exists.\nWe take pride in meeting words with actions, and have made our accessible UI open source.\n\nLet\'s build a better world together, bit by bit.'**
-  String get hsmProvideValueContent2;
+  /// **'YWT is re-balancing tech by making self-hosting more accessible.\n\nWe build apps that enable everyone to own their digital identity.\nWe build bridges between the open source community and those without the required time, energy, or prior knowledge.'**
+  String get hsmProvideValueContent;
 
   /// No description provided for @hsmSoWe.
   ///
@@ -728,6 +806,36 @@ abstract class Lang {
   /// In en, this message translates to:
   /// **'zero eye strain'**
   String get ouZeroStrain;
+
+  /// No description provided for @prCreative.
+  ///
+  /// In en, this message translates to:
+  /// **'Get creative!'**
+  String get prCreative;
+
+  /// No description provided for @prDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'And as a creator, you set your own price!\nMaybe you create a color blindness config that you want to make free.\nYour altruism won\'t be punished here: config files are super cheap to store (more on that later).\n\nOr, maybe you spend weeks on a custom gif background and audio pack(s).\nYou would want to be compensated for that work, right? Plus, high quality gif\'s can take up a bit of space…\n\nTo keep the lights on, we charge everyone 1 USD/month to keep your account active.\nCreators are also (transparently!) billed their costs (storage, transaction, etc).\nBut! That same dollar counts towards your bill.\nPlus, we take 0% (nada, zilch, etc) of your sales. All we do is round up the dollar.\n\nSo, to recap: we make 1.00 USD/month on downloaders, and 0.01-0.99 USD/month on creators.\nAlso, as alluded to: if you didn\'t create custom art, you\'ll just be storing a text file.\nCents per month.\n\nWe want creation to have as little friction as possible.\nEspecially for those giving their creations away for free.\n\nFor creators, you will need to keep your account active && balanced.\nBut don\'t worry, we\'re not weirdos who\'ll steal your content if you ever lapse in payment.\nWe\'ll just remove our copy (and save on server costs) until you\'re ready to come back.\n\nFor downloaders, all purchased/free content previously downloaded will be available as long as our servers are on.\nYou just won\'t be able to get new content with an inactive account.'**
+  String get prDescription;
+
+  /// No description provided for @prMoneyU2.
+  ///
+  /// In en, this message translates to:
+  /// **'A way for you to make money too!'**
+  String get prMoneyU2;
+
+  /// No description provided for @prTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'YWT Presents...'**
+  String get prTitle;
+
+  /// No description provided for @prUGC.
+  ///
+  /// In en, this message translates to:
+  /// **'Presents is our User Generated Content (UGC) store.\nIt takes the best concepts of that one American wholesale store with the hotdogs, and that one website for selling etc. artsy things.\n\nJust about every aspect of our UI is easily customizable.\nIt\'s also easy to save copies of configs you love, and swap them out at any time.\nPresents lets you share those configs with everyone. Like...'**
+  String get prUGC;
 
   /// No description provided for @psComingSoon.
   ///

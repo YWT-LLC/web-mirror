@@ -7,7 +7,7 @@ import '../utils/export.dart';
 import 'package:ywt_private/ywt_private.dart' as ywt;
 
 import 'package:open_ui/open_ui.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 class FaHBanner extends StatelessWidget {
   final EzCP config;
@@ -26,8 +26,8 @@ class FaHBanner extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               // Icon
-              Container(
-                constraints: EzBox.sym(ezImageSize(config, context: context)),
+              SizedBox.square(
+                dimension: ezImageSize(config, context: context),
                 child: EzImageLink(
                   config,
                   image: fahImage,

@@ -7,9 +7,10 @@ import '../screens/export.dart';
 import '../utils/export.dart';
 
 import 'dart:async';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:open_ui/open_ui.dart';
+import 'package:flutter/services.dart';
+import 'package:material_ui/material_ui.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PageLinks extends StatelessWidget {
   final EzCP config;
@@ -24,12 +25,12 @@ class PageLinks extends StatelessWidget {
     required TextStyle? style,
     dynamic Function(bool)? onHover,
   }) =>
-      Products.values
-          .map((Products product) => EzLink(
+      Product.values
+          .map((Product product) => EzLink(
                 config,
                 text: product.name,
                 style: style,
-                textColor: config.colors.onSurface,
+                textColor: config.onSurface,
                 backgroundColor: Colors.transparent,
                 textAlign: TextAlign.center,
                 url: Uri.parse(product.productUrl),
@@ -59,7 +60,7 @@ class PageLinks extends StatelessWidget {
         dontClose?.cancel();
         dontClose = Timer(
           const Duration(milliseconds: 500),
-          doNothing, // Stops the UX of instinctively clicking on 'Products', having it open/close, and then having to open it again
+          doNothing,
         );
 
         if (!controller.isOpen) controller.open();
@@ -76,20 +77,11 @@ class PageLinks extends StatelessWidget {
           config,
           text: l10n(config).psPageTitle,
           style: config.headlineStyle,
-          textColor: config.colors.onSurface,
+          textColor: config.onSurface,
           backgroundColor: Colors.transparent,
           textAlign: TextAlign.center,
           hint: l10n(config).psTitleHint,
-          onTap: () {
-            autoClose?.cancel();
-
-            if (!controller.isOpen) {
-              controller.open();
-            } else {
-              if (dontClose?.isActive == true) return;
-              controller.close();
-            }
-          },
+          onTap: () => launchUrl(Uri.parse(Product.coi.productUrl)),
         ),
         menuChildren: products(
           config,
@@ -104,7 +96,7 @@ class PageLinks extends StatelessWidget {
         config,
         text: l10n(config).csPageTitle,
         style: config.headlineStyle,
-        textColor: config.colors.onSurface,
+        textColor: config.onSurface,
         backgroundColor: Colors.transparent,
         textAlign: TextAlign.center,
         url: Uri.parse(contributeURL),

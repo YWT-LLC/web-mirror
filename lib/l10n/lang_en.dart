@@ -16,17 +16,45 @@ class LangEn extends Lang {
       'a11how streamlines translating .arb based apps (like ';
 
   @override
+  String get ahFlutter => 'Flutter apps';
+
+  @override
+  String get ahGit => 'GitHub account';
+
+  @override
   String get ahMagic => '...the magic happens!';
 
   @override
   String get ahSegway =>
-      'Speaking of, a11how is integrated into all of YWT\'s software.\nIf you\'re interacting with our non-English content and see something wrong, simply click the link at the bottom of the page and fix it!\n\nAs long as you have a GitHub account, you can submit changes with one click.';
+      'Speaking of, a11how is integrated into all of YWT\'s software.\nIf you\'re interacting with our non-English content and see something wrong, simply click the link at the bottom of the page and fix it!\n\nAs long as you have a ';
+
+  @override
+  String get ahSubmitChange => ', you can submit changes with one click.';
+
+  @override
+  String get ahSubmitFix => 'Submit a fix.';
+
+  @override
+  String get coiApp => '-app';
+
+  @override
+  String get coiDescription =>
+      'Unfortunately, that is the official term.\nA super-app is a bunch of small apps put together.\nCOI POND is all(ish) of YWT\'s apps put together.\n\nIf you want an easy transition to the self-hosted life, get a COI POND.\n\nIt\'s a lot cheaper than a real Koi Pond.';
+
+  @override
+  String get coiFree => '(ours is free)';
+
+  @override
+  String get coiIts => 'It\'s a';
+
+  @override
+  String get coiSuper => '\tSuper App';
 
   @override
   String get csBecome => ' about becoming a ';
 
   @override
-  String get csEveryBit => 'Every bit to us is a byte out of big tech.';
+  String get csEveryBit => 'Every bit to YWT is a byte out of big tech.';
 
   @override
   String get csGit => 'GitHub contributor';
@@ -83,7 +111,13 @@ class LangEn extends Lang {
   String get fahWhats => 'What\'s ';
 
   @override
+  String get gA11howLogo => 'a translate icon in YWT\'s color scheme.';
+
+  @override
   String get gAnEmail => 'an email';
+
+  @override
+  String get gCoiPondLogo => 'two Koi fish in YWT\'s color scheme.';
 
   @override
   String get gContributeHint => 'Open the contribute page';
@@ -138,6 +172,10 @@ class LangEn extends Lang {
   }
 
   @override
+  String get gLiminalLogo =>
+      'a small frog on a large lily pad, tinted with YWT\'s color scheme.';
+
+  @override
   String gLogoLabel(Object thing) {
     return '$thing logo: ';
   }
@@ -153,6 +191,9 @@ class LangEn extends Lang {
 
   @override
   String get gOpenWebApp => 'Open the web app';
+
+  @override
+  String get gPresentsLogo => 'an open present in YWT\'s color scheme.';
 
   @override
   String get gProductsHint => 'Open a product page';
@@ -173,6 +214,11 @@ class LangEn extends Lang {
 
   @override
   String get gTeamHint => 'Open the team page';
+
+  @override
+  String gTryFor(Object app, Object platform) {
+    return 'Try $app for $platform';
+  }
 
   @override
   String get gTryLive => 'Try it live!';
@@ -201,28 +247,24 @@ class LangEn extends Lang {
 
   @override
   String get hsmFindSolutionContent =>
-      'Fortunately, there are amazing technologists all over the world working together towards a better narrative.\nOne where the service providers and the customers have an active, healthy, and mutually beneficial relationship.\n\nThe open source community.\n\nAt its core, open source software is freely available for anyone to view. Many projects can also be freely modified and redistributed.\nIt\'s software with nothing to hide, built by folks who recognize shared problems require shared solutions.\n\nAnd in the wonderful world of open source software, there lies a sub category: self-hosting software.\n\nSelf-hosting lets us take any not-in-use computer (pocket sized ones too) and store our data there.\nBy self-hosting, we can control our own digital presence, rather than sign away control to some far away server, owned by an un-empathetic corporation.\n\nAnd there are self-hosted versions of just about everything! From Adobe to Zoom, there are passionate hacktivists building alternatives that put people over profits.\n\nSo, how does one make the switch from profit first/closed source to open source? How do they start self-hosting?\nIt takes a lot of time, energy, and prior knowledge.\n\nThat\'s where we come in.';
+      'Fortunately, there are amazing technologists all over the world working together towards a better narrative.\nOne where the service providers and the customers have an active, healthy, and mutually beneficial relationship.\n\nThe open source community.\n\nAt its core, open source software is freely available for anyone to view.\nMany projects can also be freely modified and redistributed.\nIt\'s software with nothing to hide, built by folks who recognize shared problems require shared solutions.\n\nAnd in the wonderful world of open source software, there lies a sub category: self-hosting.\n\nSelf-hosting lets us take any not-in-use computer (pocket sized ones too!) and store our data there.\nBy self-hosting we can own our digital footprints, rather than sign away control to some mega-corp that views psychosis induced suicide as a necessary compromise.\n\nAnd there are self-hosted versions of just about everything!\nFrom Adobe to Zoom, there are passionate hacktivists building alternatives that put people over profits.\n\nSo, how does one make the switch from profit first to open source? How do they start self-hosting?\nIt takes a lot of time, energy, and prior knowledge.\n\nThat\'s where YWT comes in.';
 
   @override
-  String get hsmFirst => 'By first';
+  String get hsmGetStarted => 'Get started';
 
   @override
   String get hsmIDProblem => 'Identifying the problem';
 
   @override
   String get hsmIDProblemContent =>
-      'Profit first business models aren\'t sustainable.\n\nBy definition: if profit comes first, then things like working towards a mission, treating people right, and responsible consumption of resources all become afterthoughts.\n\nAnd this greed has gone unchecked in big tech. The tech giants have grown dissatisfied with our money, and are building products to target our identities and monopolize our minds.';
+      'Profit first business models aren\'t sustainable.\n\nIf profit comes first, then working towards a mission, treating people right, and a responsible consumption of resources all become afterthoughts.\n\nAnd profit first greed has gone unchecked in big tech.\nThe tech giants have grown dissatisfied with our money, and are building products to target our identities and monopolize our minds.';
 
   @override
   String get hsmProvideValue => 'Doing the work';
 
   @override
-  String get hsmProvideValueContent1 =>
-      'YWT is re-balancing tech by making self-hosting more accessible.\n\nWe will build apps that enable anyone to own their digital identity.\nWe will build bridges between the open source community and those without the required time, energy, or prior knowledge.\n\nAnd you can\'t build bridges (or apps) without a strong foundation! That\'s why ';
-
-  @override
-  String get hsmProvideValueContent2 =>
-      ' exists.\nWe take pride in meeting words with actions, and have made our accessible UI open source.\n\nLet\'s build a better world together, bit by bit.';
+  String get hsmProvideValueContent =>
+      'YWT is re-balancing tech by making self-hosting more accessible.\n\nWe build apps that enable everyone to own their digital identity.\nWe build bridges between the open source community and those without the required time, energy, or prior knowledge.';
 
   @override
   String get hsmSoWe => 'So we';
@@ -350,6 +392,23 @@ class LangEn extends Lang {
 
   @override
   String get ouZeroStrain => 'zero eye strain';
+
+  @override
+  String get prCreative => 'Get creative!';
+
+  @override
+  String get prDescription =>
+      'And as a creator, you set your own price!\nMaybe you create a color blindness config that you want to make free.\nYour altruism won\'t be punished here: config files are super cheap to store (more on that later).\n\nOr, maybe you spend weeks on a custom gif background and audio pack(s).\nYou would want to be compensated for that work, right? Plus, high quality gif\'s can take up a bit of space…\n\nTo keep the lights on, we charge everyone 1 USD/month to keep your account active.\nCreators are also (transparently!) billed their costs (storage, transaction, etc).\nBut! That same dollar counts towards your bill.\nPlus, we take 0% (nada, zilch, etc) of your sales. All we do is round up the dollar.\n\nSo, to recap: we make 1.00 USD/month on downloaders, and 0.01-0.99 USD/month on creators.\nAlso, as alluded to: if you didn\'t create custom art, you\'ll just be storing a text file.\nCents per month.\n\nWe want creation to have as little friction as possible.\nEspecially for those giving their creations away for free.\n\nFor creators, you will need to keep your account active && balanced.\nBut don\'t worry, we\'re not weirdos who\'ll steal your content if you ever lapse in payment.\nWe\'ll just remove our copy (and save on server costs) until you\'re ready to come back.\n\nFor downloaders, all purchased/free content previously downloaded will be available as long as our servers are on.\nYou just won\'t be able to get new content with an inactive account.';
+
+  @override
+  String get prMoneyU2 => 'A way for you to make money too!';
+
+  @override
+  String get prTitle => 'YWT Presents...';
+
+  @override
+  String get prUGC =>
+      'Presents is our User Generated Content (UGC) store.\nIt takes the best concepts of that one American wholesale store with the hotdogs, and that one website for selling etc. artsy things.\n\nJust about every aspect of our UI is easily customizable.\nIt\'s also easy to save copies of configs you love, and swap them out at any time.\nPresents lets you share those configs with everyone. Like...';
 
   @override
   String get psComingSoon => 'Coming soon...';
@@ -429,17 +488,45 @@ class LangEnUs extends LangEn {
       'a11how streamlines translating .arb based apps (like ';
 
   @override
+  String get ahFlutter => 'Flutter apps';
+
+  @override
+  String get ahGit => 'GitHub account';
+
+  @override
   String get ahMagic => '...the magic happens!';
 
   @override
   String get ahSegway =>
-      'Speaking of, a11how is integrated into all of YWT\'s software.\nIf you\'re interacting with our non-English content and see something wrong, simply click the link at the bottom of the page and fix it!\n\nAs long as you have a GitHub account, you can submit changes with one click.';
+      'Speaking of, a11how is integrated into all of YWT\'s software.\nIf you\'re interacting with our non-English content and see something wrong, simply click the link at the bottom of the page and fix it!\n\nAs long as you have a ';
+
+  @override
+  String get ahSubmitChange => ', you can submit changes with one click.';
+
+  @override
+  String get ahSubmitFix => 'Submit a fix.';
+
+  @override
+  String get coiApp => '-app';
+
+  @override
+  String get coiDescription =>
+      'Unfortunately, that is the official term.\nA super-app is a bunch of small apps put together.\nCOI POND is all(ish) of YWT\'s apps put together.\n\nIf you want an easy transition to the self-hosted life, get a COI POND.\n\nIt\'s a lot cheaper than a real Koi Pond.';
+
+  @override
+  String get coiFree => '(ours is free)';
+
+  @override
+  String get coiIts => 'It\'s a';
+
+  @override
+  String get coiSuper => '\tSuper App';
 
   @override
   String get csBecome => ' about becoming a ';
 
   @override
-  String get csEveryBit => 'Every bit to us is a byte out of big tech.';
+  String get csEveryBit => 'Every bit to YWT is a byte out of big tech.';
 
   @override
   String get csGit => 'GitHub contributor';
@@ -496,7 +583,13 @@ class LangEnUs extends LangEn {
   String get fahWhats => 'What\'s ';
 
   @override
+  String get gA11howLogo => 'a translate icon in YWT\'s color scheme.';
+
+  @override
   String get gAnEmail => 'an email';
+
+  @override
+  String get gCoiPondLogo => 'two Koi fish in YWT\'s color scheme.';
 
   @override
   String get gContributeHint => 'Open the contribute page';
@@ -551,6 +644,10 @@ class LangEnUs extends LangEn {
   }
 
   @override
+  String get gLiminalLogo =>
+      'a small frog on a large lily pad, tinted with YWT\'s color scheme.';
+
+  @override
   String gLogoLabel(Object thing) {
     return '$thing logo: ';
   }
@@ -566,6 +663,9 @@ class LangEnUs extends LangEn {
 
   @override
   String get gOpenWebApp => 'Open the web app';
+
+  @override
+  String get gPresentsLogo => 'an open present in YWT\'s color scheme.';
 
   @override
   String get gProductsHint => 'Open a product page';
@@ -586,6 +686,11 @@ class LangEnUs extends LangEn {
 
   @override
   String get gTeamHint => 'Open the team page';
+
+  @override
+  String gTryFor(Object app, Object platform) {
+    return 'Try $app for $platform';
+  }
 
   @override
   String get gTryLive => 'Try it live!';
@@ -614,28 +719,24 @@ class LangEnUs extends LangEn {
 
   @override
   String get hsmFindSolutionContent =>
-      'Fortunately, there are amazing technologists all over the world working together towards a better narrative.\nOne where the service providers and the customers have an active, healthy, and mutually beneficial relationship.\n\nThe open source community.\n\nAt its core, open source software is freely available for anyone to view. Many projects can also be freely modified and redistributed.\nIt\'s software with nothing to hide, built by folks who recognize shared problems require shared solutions.\n\nAnd in the wonderful world of open source software, there lies a sub category: self-hosting software.\n\nSelf-hosting lets us take any not-in-use computer (pocket sized ones too) and store our data there.\nBy self-hosting, we can control our own digital presence, rather than sign away control to some far away server, owned by an un-empathetic corporation.\n\nAnd there are self-hosted versions of just about everything! From Adobe to Zoom, there are passionate hacktivists building alternatives that put people over profits.\n\nSo, how does one make the switch from profit first/closed source to open source? How do they start self-hosting?\nIt takes a lot of time, energy, and prior knowledge.\n\nThat\'s where we come in.';
+      'Fortunately, there are amazing technologists all over the world working together towards a better narrative.\nOne where the service providers and the customers have an active, healthy, and mutually beneficial relationship.\n\nThe open source community.\n\nAt its core, open source software is freely available for anyone to view.\nMany projects can also be freely modified and redistributed.\nIt\'s software with nothing to hide, built by folks who recognize shared problems require shared solutions.\n\nAnd in the wonderful world of open source software, there lies a sub category: self-hosting.\n\nSelf-hosting lets us take any not-in-use computer (pocket sized ones too!) and store our data there.\nBy self-hosting we can own our digital footprints, rather than sign away control to some mega-corp that views psychosis induced suicide as a necessary compromise.\n\nAnd there are self-hosted versions of just about everything!\nFrom Adobe to Zoom, there are passionate hacktivists building alternatives that put people over profits.\n\nSo, how does one make the switch from profit first to open source? How do they start self-hosting?\nIt takes a lot of time, energy, and prior knowledge.\n\nThat\'s where YWT comes in.';
 
   @override
-  String get hsmFirst => 'By first';
+  String get hsmGetStarted => 'Get started';
 
   @override
   String get hsmIDProblem => 'Identifying the problem';
 
   @override
   String get hsmIDProblemContent =>
-      'Profit first business models aren\'t sustainable.\n\nBy definition: if profit comes first, then things like working towards a mission, treating people right, and responsible consumption of resources all become afterthoughts.\n\nAnd this greed has gone unchecked in big tech. The tech giants have grown dissatisfied with our money, and are building products to target our identities and monopolize our minds.';
+      'Profit first business models aren\'t sustainable.\n\nIf profit comes first, then working towards a mission, treating people right, and a responsible consumption of resources all become afterthoughts.\n\nAnd profit first greed has gone unchecked in big tech.\nThe tech giants have grown dissatisfied with our money, and are building products to target our identities and monopolize our minds.';
 
   @override
   String get hsmProvideValue => 'Doing the work';
 
   @override
-  String get hsmProvideValueContent1 =>
-      'YWT is re-balancing tech by making self-hosting more accessible.\n\nWe will build apps that enable anyone to own their digital identity.\nWe will build bridges between the open source community and those without the required time, energy, or prior knowledge.\n\nAnd you can\'t build bridges (or apps) without a strong foundation! That\'s why ';
-
-  @override
-  String get hsmProvideValueContent2 =>
-      ' exists.\nWe take pride in meeting words with actions, and have made our accessible UI open source.\n\nLet\'s build a better world together, bit by bit.';
+  String get hsmProvideValueContent =>
+      'YWT is re-balancing tech by making self-hosting more accessible.\n\nWe build apps that enable everyone to own their digital identity.\nWe build bridges between the open source community and those without the required time, energy, or prior knowledge.';
 
   @override
   String get hsmSoWe => 'So we';
@@ -763,6 +864,23 @@ class LangEnUs extends LangEn {
 
   @override
   String get ouZeroStrain => 'zero eye strain';
+
+  @override
+  String get prCreative => 'Get creative!';
+
+  @override
+  String get prDescription =>
+      'And as a creator, you set your own price!\nMaybe you create a color blindness config that you want to make free.\nYour altruism won\'t be punished here: config files are super cheap to store (more on that later).\n\nOr, maybe you spend weeks on a custom gif background and audio pack(s).\nYou would want to be compensated for that work, right? Plus, high quality gif\'s can take up a bit of space…\n\nTo keep the lights on, we charge everyone 1 USD/month to keep your account active.\nCreators are also (transparently!) billed their costs (storage, transaction, etc).\nBut! That same dollar counts towards your bill.\nPlus, we take 0% (nada, zilch, etc) of your sales. All we do is round up the dollar.\n\nSo, to recap: we make 1.00 USD/month on downloaders, and 0.01-0.99 USD/month on creators.\nAlso, as alluded to: if you didn\'t create custom art, you\'ll just be storing a text file.\nCents per month.\n\nWe want creation to have as little friction as possible.\nEspecially for those giving their creations away for free.\n\nFor creators, you will need to keep your account active && balanced.\nBut don\'t worry, we\'re not weirdos who\'ll steal your content if you ever lapse in payment.\nWe\'ll just remove our copy (and save on server costs) until you\'re ready to come back.\n\nFor downloaders, all purchased/free content previously downloaded will be available as long as our servers are on.\nYou just won\'t be able to get new content with an inactive account.';
+
+  @override
+  String get prMoneyU2 => 'A way for you to make money too!';
+
+  @override
+  String get prTitle => 'YWT Presents...';
+
+  @override
+  String get prUGC =>
+      'Presents is our User Generated Content (UGC) store.\nIt takes the best concepts of that one American wholesale store with the hotdogs, and that one website for selling etc. artsy things.\n\nJust about every aspect of our UI is easily customizable.\nIt\'s also easy to save copies of configs you love, and swap them out at any time.\nPresents lets you share those configs with everyone. Like...';
 
   @override
   String get psComingSoon => 'Coming soon...';

@@ -8,9 +8,11 @@ import 'package:ywt_private/ywt_private.dart' as ywt;
 //* Files *//
 
 export 'products/a11how.dart';
+export 'products/coi_pond.dart';
 export 'products/landing.dart';
 export 'products/liminal.dart';
 export 'products/open_ui.dart';
+export 'products/presents.dart';
 export 'products/sos.dart';
 
 export 'contribute.dart';
@@ -20,7 +22,9 @@ export 'settings.dart';
 
 //* Paths && URLs *//
 
-const String baseURL = '${ywt.ywtSite}/#';
+const String homePath = '/';
+const String homeName = 'web-home';
+const String baseUrl = '${ywt.ywtSite}/#';
 
 const String typeQP = 'type';
 const String advQP = 'advanced';
@@ -28,13 +32,16 @@ const String pageQP = 'page';
 
 // Core //
 
+const String productsPath = 'products';
+const String productsURL = '$baseUrl/products';
+
 const String contributePath = 'contribute';
-const String contributeURL = '$baseURL/contribute';
+const String contributeURL = '$baseUrl/contribute';
 
 // Settings //
 
 const String settingsPath = 'settings';
-const String settingsURL = '$baseURL/settings';
+const String settingsURL = '$baseUrl/settings';
 
 const String colorSettingsPath = 'color-settings';
 const String colorRedirect = 'color';

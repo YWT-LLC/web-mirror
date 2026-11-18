@@ -16,18 +16,47 @@ class LangDe extends Lang {
       'a11how vereinfacht die Übersetzung von .arb-basierten Apps (wie ';
 
   @override
+  String get ahFlutter => 'Flutter-Apps';
+
+  @override
+  String get ahGit => 'GitHub-Konto';
+
+  @override
   String get ahMagic => '...passiert die Magie!';
 
   @override
   String get ahSegway =>
-      'Apropos, a11how ist in alle Software von YWT integriert.\nWenn du mit unseren nicht-englischen Inhalten interagierst und einen Fehler bemerkst, klicke einfach auf den Link unten auf der Seite und behebe ihn!\n\nSolange du ein GitHub-Konto hast, kannst du Änderungen mit einem Klick einreichen.';
+      'Apropos, a11how ist in alle Software von YWT integriert.\nWenn du mit unseren nicht-englischen Inhalten interagierst und einen Fehler bemerkst, klicke einfach auf den Link unten auf der Seite und behebe ihn!\n\nSolange du ein ';
+
+  @override
+  String get ahSubmitChange =>
+      ' hast, kannst du Änderungen mit einem Klick einreichen.';
+
+  @override
+  String get ahSubmitFix => 'Reiche eine Korrektur ein.';
+
+  @override
+  String get coiApp => '-App';
+
+  @override
+  String get coiDescription =>
+      'Leider ist das der offizielle Begriff.\nEine Super-App ist ein Haufen kleiner Apps, die zusammengefasst sind.\nCOI POND sind (fast) alle Apps von YWT zusammengefasst.\n\nWenn du einen einfachen Einstieg ins Self-Hosting-Leben willst, hol dir einen COI POND.\n\nDas ist viel günstiger als ein echter Koi-Teich.';
+
+  @override
+  String get coiFree => '(unserer ist kostenlos)';
+
+  @override
+  String get coiIts => 'Es ist eine';
+
+  @override
+  String get coiSuper => '\tSuper-App';
 
   @override
   String get csBecome => ' darüber, wie du ein ';
 
   @override
   String get csEveryBit =>
-      'Jedes Bit, das du uns gibst, nimmt ein Byte von Big Tech.';
+      'Jedes Bit für YWT ist ein Byte weniger für Big Tech.';
 
   @override
   String get csGit => 'GitHub-Mitwirkender wirst';
@@ -84,7 +113,13 @@ class LangDe extends Lang {
   String get fahWhats => 'Was ist ';
 
   @override
+  String get gA11howLogo => 'ein Übersetzungssymbol im Farbschema von YWT.';
+
+  @override
   String get gAnEmail => 'eine E-Mail';
+
+  @override
+  String get gCoiPondLogo => 'zwei Koi-Fische im Farbschema von YWT.';
 
   @override
   String get gContributeHint => 'Mitwirkungsseite öffnen';
@@ -140,6 +175,10 @@ class LangDe extends Lang {
   }
 
   @override
+  String get gLiminalLogo =>
+      'ein kleiner Frosch auf einem großen Seerosenblatt, im Farbschema von YWT eingefärbt.';
+
+  @override
   String gLogoLabel(Object thing) {
     return '$thing-Logo: ';
   }
@@ -155,6 +194,9 @@ class LangDe extends Lang {
 
   @override
   String get gOpenWebApp => 'Web-App öffnen';
+
+  @override
+  String get gPresentsLogo => 'ein geöffnetes Geschenk im Farbschema von YWT.';
 
   @override
   String get gProductsHint => 'Produktseite öffnen';
@@ -175,6 +217,11 @@ class LangDe extends Lang {
 
   @override
   String get gTeamHint => 'Teamseite öffnen';
+
+  @override
+  String gTryFor(Object app, Object platform) {
+    return 'Teste $app für $platform';
+  }
 
   @override
   String get gTryLive => 'Live ausprobieren!';
@@ -203,28 +250,24 @@ class LangDe extends Lang {
 
   @override
   String get hsmFindSolutionContent =>
-      'Glücklicherweise gibt es auf der ganzen Welt großartige Technologen, die gemeinsam an einem besseren Narrativ arbeiten.\nEines, bei dem Dienstleister und Kunden eine aktive, gesunde und für beide Seiten vorteilhafte Beziehung führen.\n\nDie Open-Source-Community.\n\nIm Kern ist Open-Source-Software für jeden frei zugänglich. Viele Projekte können auch frei modifiziert und weitergegeben werden.\nEs ist Software, die nichts zu verbergen hat, entwickelt von Menschen, die erkennen, dass gemeinsame Probleme gemeinsame Lösungen erfordern.\n\nUnd in der wunderbaren Welt der Open-Source-Software gibt es eine Unterkategorie: Self-Hosting-Software.\n\nSelf-Hosting ermöglicht es uns, jeden nicht genutzten Computer (auch im Taschenformat) zu nehmen und unsere Daten dort zu speichern.\nDurch Self-Hosting können wir unsere eigene digitale Präsenz kontrollieren, anstatt die Kontrolle an einen weit entfernten Server abzutreten, der einem unempathischen Unternehmen gehört.\n\nUnd es gibt selbst gehostete Versionen von fast allem! Von Adobe bis Zoom gibt es leidenschaftliche Hacktivisten, die Alternativen entwickeln, die Menschen über Profite stellen.\n\nWie also vollzieht man den Wechsel von Profit-First/Closed-Source zu Open-Source? Wie beginnt man mit dem Self-Hosting?\nEs erfordert viel Zeit, Energie und Vorwissen.\n\nUnd da kommen wir ins Spiel.';
+      'Glücklicherweise gibt es auf der ganzen Welt großartige Technologen, die gemeinsam an einem besseren Narrativ arbeiten.\nEines, bei dem Dienstleister und Kunden eine aktive, gesunde und für beide Seiten vorteilhafte Beziehung führen.\n\nDie Open-Source-Community.\n\nIm Kern ist Open-Source-Software für jeden frei einsehbar.\nViele Projekte können auch frei verändert und weitergegeben werden.\nEs ist Software, die nichts zu verbergen hat, entwickelt von Menschen, die erkennen, dass gemeinsame Probleme gemeinsame Lösungen erfordern.\n\nUnd in der wunderbaren Welt der Open-Source-Software gibt es eine Unterkategorie: Self-Hosting.\n\nSelf-Hosting ermöglicht es uns, jeden ungenutzten Computer (auch welche im Taschenformat!) zu nehmen und unsere Daten dort zu speichern.\nDurch Self-Hosting können wir unseren digitalen Fußabdruck selbst besitzen, anstatt die Kontrolle an einen Megakonzern abzutreten, der durch Psychosen ausgelöste Suizide als notwendigen Kompromiss betrachtet.\n\nUnd es gibt selbst gehostete Versionen von fast allem!\nVon Adobe bis Zoom gibt es leidenschaftliche Hacktivisten, die Alternativen entwickeln, die Menschen über Profite stellen.\n\nWie also vollzieht man den Wechsel von Profit-First zu Open Source? Wie beginnt man mit dem Self-Hosting?\nEs erfordert viel Zeit, Energie und Vorwissen.\n\nUnd genau da kommt YWT ins Spiel.';
 
   @override
-  String get hsmFirst => 'Indem wir zuerst';
+  String get hsmGetStarted => 'Los geht\'s';
 
   @override
   String get hsmIDProblem => 'Das Problem identifizieren';
 
   @override
   String get hsmIDProblemContent =>
-      'Geschäftsmodelle, die Profit an die erste Stelle setzen, sind nicht nachhaltig.\n\nPer Definition: Wenn Profit an erster Stelle steht, werden Dinge wie das Hinarbeiten auf eine Mission, der richtige Umgang mit Menschen und der verantwortungsvolle Umgang mit Ressourcen zu Nebensachen.\n\nUnd diese Gier ist in Big Tech ungebremst. Die Tech-Giganten sind mit unserem Geld nicht mehr zufrieden und bauen Produkte, die auf unsere Identitäten abzielen und unsere Gedanken monopolisieren.';
+      'Geschäftsmodelle, die Profit an die erste Stelle setzen, sind nicht nachhaltig.\n\nWenn Profit an erster Stelle steht, werden das Hinarbeiten auf eine Mission, der richtige Umgang mit Menschen und ein verantwortungsvoller Umgang mit Ressourcen zu Nebensachen.\n\nUnd die Profit-First-Gier ist in Big Tech ungebremst.\nDie Tech-Giganten sind mit unserem Geld nicht mehr zufrieden und bauen Produkte, die auf unsere Identitäten abzielen und unsere Gedanken monopolisieren.';
 
   @override
   String get hsmProvideValue => 'Die Arbeit erledigen';
 
   @override
-  String get hsmProvideValueContent1 =>
-      'YWT bringt Technologie wieder ins Gleichgewicht, indem es Self-Hosting zugänglicher macht.\n\nWir werden Apps entwickeln, die es jedem ermöglichen, seine digitale Identität zu besitzen.\nWir werden Brücken bauen zwischen der Open-Source-Community und denjenigen, denen es an der nötigen Zeit, Energie oder den Vorkenntnissen fehlt.\n\nUnd man kann keine Brücken (oder Apps) ohne ein starkes Fundament bauen! Das ist der Grund, warum ';
-
-  @override
-  String get hsmProvideValueContent2 =>
-      ' existiert.\nWir sind stolz darauf, unseren Worten Taten folgen zu lassen, und haben unsere zugängliche Benutzeroberfläche Open Source gemacht.\n\nLasst uns gemeinsam eine bessere Welt aufbauen, Bit für Bit.';
+  String get hsmProvideValueContent =>
+      'YWT bringt die Tech-Welt wieder ins Gleichgewicht, indem es Self-Hosting zugänglicher macht.\n\nWir entwickeln Apps, die es jedem ermöglichen, seine digitale Identität selbst zu besitzen.\nWir bauen Brücken zwischen der Open-Source-Community und denen, die nicht über die nötige Zeit, Energie oder das nötige Vorwissen verfügen.';
 
   @override
   String get hsmSoWe => 'Deshalb wir';
@@ -353,6 +396,24 @@ class LangDe extends Lang {
 
   @override
   String get ouZeroStrain => 'keine Augenbelastung';
+
+  @override
+  String get prCreative => 'Werde kreativ!';
+
+  @override
+  String get prDescription =>
+      'Und als Creator legst du deinen Preis selbst fest!\nVielleicht erstellst du eine Konfiguration für Farbenblindheit, die du kostenlos anbieten möchtest.\nDein Altruismus wird hier nicht bestraft: Konfigurationsdateien sind super günstig zu speichern (mehr dazu später).\n\nOder vielleicht verbringst du Wochen mit einem eigenen GIF-Hintergrund und Audio-Paket(en).\nDafür möchtest du doch entlohnt werden, oder? Außerdem können hochwertige GIFs ganz schön Platz verbrauchen…\n\nDamit die Lichter anbleiben, berechnen wir allen 1 USD/Monat, um das Konto aktiv zu halten.\nCreators werden außerdem (transparent!) ihre Kosten in Rechnung gestellt (Speicher, Transaktionen usw.).\nAber! Genau dieser Dollar wird auf deine Rechnung angerechnet.\nAußerdem nehmen wir 0 % (nada, null, nix) von deinen Verkäufen. Wir runden lediglich auf den nächsten Dollar auf.\n\nAlso, kurz zusammengefasst: Wir verdienen 1,00 USD/Monat an Downloadern und 0,01-0,99 USD/Monat an Creators.\nUnd, wie schon angedeutet: Wenn du keine eigenen Grafiken erstellt hast, speicherst du nur eine Textdatei.\nEin paar Cent pro Monat.\n\nWir wollen, dass das Erstellen so reibungslos wie möglich ist.\nVor allem für alle, die ihre Kreationen kostenlos weitergeben.\n\nAls Creator musst du dein Konto aktiv und ausgeglichen halten.\nAber keine Sorge, wir sind keine Spinner, die deine Inhalte klauen, wenn du mal mit einer Zahlung im Rückstand bist.\nWir entfernen nur unsere Kopie (und sparen Serverkosten), bis du bereit bist zurückzukommen.\n\nFür Downloader bleiben alle gekauften/kostenlosen Inhalte, die bereits heruntergeladen wurden, verfügbar, solange unsere Server laufen.\nMit einem inaktiven Konto kannst du nur keine neuen Inhalte beziehen.';
+
+  @override
+  String get prMoneyU2 =>
+      'Eine Möglichkeit, wie auch du Geld verdienen kannst!';
+
+  @override
+  String get prTitle => 'YWT präsentiert...';
+
+  @override
+  String get prUGC =>
+      'Presents ist unser Store für nutzergenerierte Inhalte (UGC).\nEr vereint die besten Konzepte dieses einen amerikanischen Großhandelsmarkts mit den Hotdogs und dieser einen Website, auf der man künstlerische Dinge usw. (etc.) verkauft.\n\nSo gut wie jeder Aspekt unserer Oberfläche lässt sich einfach anpassen.\nAußerdem kannst du ganz einfach Kopien von Konfigurationen speichern, die du liebst, und sie jederzeit austauschen.\nMit Presents kannst du diese Konfigurationen mit allen teilen. Zum Beispiel...';
 
   @override
   String get psComingSoon => 'Demnächst...';

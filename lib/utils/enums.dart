@@ -60,7 +60,7 @@ extension Config on Product {
         Product.coi => ywt.coiPondProduct,
         Product.liminal => ywt.liminalProduct,
         Product.oui => ywt.openUIProduct,
-        Product.presents => ywt.presentsLive,
+        Product.presents => ywt.presentsProduct,
         Product.sos => ywt.sosProduct,
       };
 

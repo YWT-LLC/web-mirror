@@ -10,7 +10,7 @@ import 'package:material_ui/material_ui.dart';
 
 EzUpdaterFAB updater(EzCP config) => EzUpdaterFAB(
       config,
-      appVersion: '9.1.1',
+      appVersion: '9.1.2',
       versionSource:
           'https://raw.githubusercontent.com/YWT-LLC/web-mirror/refs/heads/main/APP_VERSION',
       isWeb: true,

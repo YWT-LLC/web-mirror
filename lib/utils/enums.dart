@@ -84,7 +84,7 @@ extension Config on Product {
   String get versionFallback => switch (this) {
         Product.a11how => '1.1.1',
         Product.coi => '1.0.1',
-        Product.liminal => '1.1.2',
+        Product.liminal => '1.1.3',
         Product.oui => '13.2.0',
         Product.presents => '1.0.0',
         Product.sos => '3.1.1',

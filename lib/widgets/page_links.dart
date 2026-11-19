@@ -10,7 +10,6 @@ import 'dart:async';
 import 'package:open_ui/open_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:material_ui/material_ui.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class PageLinks extends StatelessWidget {
   final EzCP config;
@@ -81,7 +80,7 @@ class PageLinks extends StatelessWidget {
           backgroundColor: Colors.transparent,
           textAlign: TextAlign.center,
           hint: l10n(config).psTitleHint,
-          onTap: () => launchUrl(Uri.parse(Product.coi.productUrl)),
+          url: Uri.parse(productsURL),
         ),
         menuChildren: products(
           config,

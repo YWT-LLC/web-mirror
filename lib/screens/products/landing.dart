@@ -79,10 +79,12 @@ class _LandingScreenState extends State<LandingScreen> with SingleTickerProvider
             alignment: Alignment.center,
             child: EzScrollView(
               config,
+              startCentered: true,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 EzScrollView(
                   config,
+                  startCentered: true,
                   thumbVisibility: false,
                   scrollDirection: Axis.horizontal,
                   mainAxisAlignment: MainAxisAlignment.center,
